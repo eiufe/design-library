@@ -1,4 +1,4 @@
 # eiufe.github.io
 
-Front end only code repository
+Front end only code repository.
 
