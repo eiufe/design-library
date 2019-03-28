@@ -1,0 +1,27 @@
+{
+  "name": "eiu-design-library",
+  "version": "1.0.0",
+  "description": "EIU Design Library - Global components and theme driven code setup",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eiufe/design-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eiufe/design-library/issues"
+  },
+  "homepage": "https://github.com/eiufe/design-library#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-header": "^2.0.7",
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.11.0",
+    "yargs": "^13.2.2"
+  }
+}
