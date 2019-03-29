@@ -1,0 +1,7 @@
+﻿
+@import "components/style1.css";
+@import "components/style2.css";
+
+div {
+  background-color: red;
+}
