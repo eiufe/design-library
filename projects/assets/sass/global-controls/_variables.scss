@@ -1,0 +1,8 @@
+$themeColor: '#fff';
+
+@if $theme == 'vw' {
+  $themeColor: green;
+}
+@else{
+  $themeColor: blue;
+}
