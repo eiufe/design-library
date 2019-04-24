@@ -23,12 +23,18 @@ var gulp = require('gulp'),
 gulp.task('sassToCss', function() {
     return gulp.src([pathConfig.projectsSassSrcFolder + '*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest(pathConfig.projectsCssDestFolder)); //"projects/assets/scripts/" + argv.theme + "-main.js"
+        .pipe(gulp.dest(pathConfig.projectsCssDestFolder));
+});
+
+gulp.task('dlSassToCss', function() {
+    return gulp.src([pathConfig.designLibrarySrc + '*.scss'])
+        .pipe(sass())
+        .pipe(gulp.dest(pathConfig.designLibrarySrc + '/public/css'));
 });
 
 
 gulp.task('js', function() {
-    //argv.theme = argv.theme ? argv.theme : 'vw';
+    argv.theme = argv.theme ? argv.theme : 'vw';
 
     var bundler = browserify("projects/assets/scripts/" + argv.theme + "-main.js");
     bundler.transform(babelify);
@@ -59,12 +65,26 @@ gulp.task("watch", function() {
 
 // Setting up and running the design library
 const fractal = require('@frctl/fractal').create();
+const logger = fractal.cli.console;
 
-fractal.set('project.title', 'EIU Design Library');
+fractal.set('project.title', 'EIU Elements');
+
 fractal.components.set('path', pathConfig.designLibrarySrc + 'components');
+fractal.components.set('default.status', 'wip');
+fractal.components.set('default.preview', '@preview');
+
 fractal.docs.set('path', pathConfig.designLibrarySrc + 'docs');
 
-const logger = fractal.cli.console;
+
+
+
+const mandelbrot = require('@frctl/mandelbrot');
+const myCustomisedTheme = mandelbrot({
+    skin: "red"
+});
+fractal.web.set('static.path', pathConfig.designLibrarySrc + '/public');
+fractal.web.set('builder.dest', './design-library/build');
+fractal.web.theme(myCustomisedTheme);
 
 gulp.task('fractal:start', function() {
     const server = fractal.web.server({
@@ -76,9 +96,7 @@ gulp.task('fractal:start', function() {
     });
 });
 
-fractal.web.set('builder.dest', './design-library/build');
-
-gulp.task('fractal:build', function(){
+gulp.task('fractal:build', function() {
     const builder = fractal.web.builder();
     builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
     builder.on('error', err => logger.error(err.message));
@@ -88,4 +106,10 @@ gulp.task('fractal:build', function(){
 });
 
 
-gulp.task("server", ['js','sassToCss','watch', 'webserver','fractal:start']);
+gulp.task("projectServer", ['js', 'sassToCss', 'watch', 'webserver']);
+
+gulp.task("dlServer", ['dlSassToCss','fractal:start']);
+
+gulp.task("libraryBuild", ['fractal:build']);
+
+gulp.task("server", ['js', 'sassToCss', 'dlSassToCss', 'watch', 'webserver', 'fractal:start']);
