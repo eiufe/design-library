@@ -1,0 +1,135 @@
+{
+    "context": {
+        "fonts": [{
+            "name": "TERA",
+            "className": "type_tera",
+            "fontDetails": "Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "GIGA",
+            "className": "type_giga",
+            "fontDetails": "Econ Sans Light • Font Size: 86px / 5.375rem • Line height: 108px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "MEGA",
+            "className": "type_mega",
+            "fontDetails": "Econ Sans Light • Font Size: 67px / 4.1875rem • Line height: 84px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "ALPHA",
+            "className": "type_alpha",
+            "fontDetails": "Econ Sans Regular • Font Size: 51px / 3.1875rem • Line height: 64px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "BETA",
+            "className": "type_beta",
+            "fontDetails": "Econ Sans Regular • Font Size: 45px / 2.8125rem • Line height: 56px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "GAMMA",
+            "className": "type_gamma",
+            "fontDetails": "Econ Sans Medium • Font Size: 35px / 2.1875rem • Line height: 44px",
+            "sampleText":"Power Plant Expansion Contract: Sinohydro"
+        },{
+            "name": "DELTA",
+            "className": "type_delta",
+            "fontDetails": "Econ Sans Medium • Font Size: 29px / 1.8125rem • Line height: 36px",
+            "sampleText":"Power Plant Expansion Contract: Sinohydro"
+        },{
+            "name": "EPSILON",
+            "className": "type_epsilon",
+            "fontDetails": "Econ Sans Bold • Font Size: 24px / 1.5rem • Line height: 36px",
+            "sampleText":"Power Plant Expansion Contract: Sinohydro"
+        },{
+            "name": "ZETA",
+            "className": "type_zeta_econ_regular",
+            "fontDetails": "Econ Sans Regular • Font Size: 21px / 1.3125rem • Line height: 32px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "ZETA",
+            "className": "type_zeta_econ_bold",
+            "fontDetails": "Econ Sans Bold • Font Size: 21px / 1.3125rem • Line height: 32px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "ZETA",
+            "className": "type_zeta_milo_regular",
+            "fontDetails": "Milo TE Regular • Font Size: 21px / 1.3125rem • Line-height: 32px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "ZETA",
+            "className": "type_zeta_milo_bold",
+            "fontDetails": "Milo TE Bold • Font Size: 21px / 1.3125rem • Line-height: 32px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "ETA",
+            "className": "type_eta_econ_regular",
+            "fontDetails": "Econ Sans Regular • Font Size: 18px / 1.125rem • Line-height: 28px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "ETA",
+            "className": "type_eta_econ_bold",
+            "fontDetails": "Econ Sans Bold • Font Size: 18px / 1.125rem • Line-height: 28px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "ETA",
+            "className": "type_eta_milo_regular",
+            "fontDetails": "Milo TE Regular • Font Size: 18px / 1.125rem • Line-height: 28px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "ETA",
+            "className": "type_eta_milo_bold",
+            "fontDetails": "Milo TE Bold • Font Size: 18px / 1.125rem • Line-height: 28px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "THETA",
+            "className": "type_theta_econ_regular",
+            "fontDetails": "Econ Sans Regular • Font Size: 16 px / 1rem • Line-height: 24 px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "THETA",
+            "className": "type_theta_econ_bold",
+            "fontDetails": "Econ Sans Bold • Font Size: 16 px / 1rem • Line-height: 24 px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "THETA",
+            "className": "type_theta_milo_regular",
+            "fontDetails": "Milo TE Regular • Font Size: 16 px / 1rem • Line-height: 24 px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "THETA",
+            "className": "type_theta_milo_bold",
+            "fontDetails": "Milo TE Bold • Font Size: 16 px / 1rem • Line-height: 24 px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "IOTA",
+            "className": "type_iota_econ_regular",
+            "fontDetails": "Econ Sans Regular • Font Size: 13px / 0.8125rem • Line-height: 20 px ",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "IOTA",
+            "className": "type_iota_econ_bold",
+            "fontDetails": "Econ Sans Bold • Font Size: 16 px / 1rem • Line-height: 20 px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "IOTA",
+            "className": "type_iota_milo_regular",
+            "fontDetails": "Milo TE Regular • Font Size: 16 px / 1rem • Line-height: 20 px",
+            "sampleText":"In late January, at the 2019 Tourism Focus event in the capital, Honiara, the government's marketing arm, Tourism Solomons, announced an ambitious target of 60,000 visitor arrivals per year by 2025. Speaking at the tourism event, the prime minister, Rick Hou, indicated that the tourism sector could help to plug the gap left by the expected decline in the forestry sector, upon which the economy is heavily dependent."
+        },{
+            "name": "IOTA",
+            "className": "type_iota_milo_bold",
+            "fontDetails": "Milo TE Bold • Font Size: 16 px / 1rem • Line-height: 20 px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        },{
+            "name": "CAPTION",
+            "className": "type_caption",
+            "fontDetails": "Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px",
+            "sampleText":"Trucks on plant field"
+        },{
+            "name": "OVERLINE",
+            "className": "type_overline",
+            "fontDetails": "Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px",
+            "sampleText":"Daily Chart"
+        }]
+    }
+}

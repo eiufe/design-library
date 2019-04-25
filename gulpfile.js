@@ -32,6 +32,9 @@ gulp.task('dlSassToCss', function() {
         .pipe(gulp.dest(pathConfig.designLibrarySrc + '/public/css'));
 });
 
+gulp.task("dlWatch", function() {
+    gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
+});
 
 gulp.task('js', function() {
     argv.theme = argv.theme ? argv.theme : 'vw';
@@ -108,7 +111,7 @@ gulp.task('fractal:build', function() {
 
 gulp.task("projectServer", ['js', 'sassToCss', 'watch', 'webserver']);
 
-gulp.task("dlServer", ['dlSassToCss','fractal:start']);
+gulp.task("dlServer", ['dlSassToCss', 'dlWatch','fractal:start']);
 
 gulp.task("libraryBuild", ['fractal:build']);
 
