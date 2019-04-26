@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'EconSans Medium';
+    src: url('../fonts/EOT/econsans-md-os.eot') format('eot'), url('../fonts/WOFF/econsans-md-os.woff') format('woff'), url('../fonts/TTF/econsans-md-os.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'EconSans Bold';
     src: url('../fonts/EOT/econsans-bd-os.eot') format('eot'), url('../fonts/WOFF/econsans-bd-os.woff') format('woff'), url('../fonts/TTF/econsans-bd-os.ttf') format('truetype');
 }
@@ -63,6 +68,183 @@ p {
     font-size: 45px;
     line-height: 56px;
 }
+
+.type_gamma {
+    font-family: 'EconSans Medium';
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.type_delta {
+    font-family: 'EconSans Medium';
+    font-size: 29px;
+    line-height: 36px;
+}
+
+.type_epsilon {
+    font-family: 'EconSans Bold';
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.type_zeta_econ_regular {
+    font-family: 'EconSans Regular';
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.type_zeta_econ_bold {
+    font-family: 'EconSans Bold';
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.type_zeta_milo_regular {
+    font-family: 'Milo Regular';
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.type_zeta_milo_bold {
+    font-family: 'Milo Bold';
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.type_eta_econ_regular {
+    font-family: 'EconSans Regular';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.type_eta_econ_bold {
+    font-family: 'EconSans Bold';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.type_eta_milo_regular {
+    font-family: 'Milo Regular';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.type_eta_milo_bold {
+    font-family: 'Milo Bold';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.type_theta_econ_regular {
+    font-family: 'EconSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.type_theta_econ_bold {
+    font-family: 'EconSans Bold';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.type_theta_milo_regular {
+    font-family: 'Milo Regular';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.type_theta_milo_bold {
+    font-family: 'Milo Bold';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.type_iota_econ_regular {
+    font-family: 'EconSans Regular';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.type_iota_econ_bold {
+    font-family: 'EconSans Bold';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.type_iota_milo_regular {
+    font-family: 'Milo Regular';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.type_iota_milo_bold {
+    font-family: 'Milo Bold';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.type_caption {
+    font-family: 'EconSans Regular';
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.type_overline {
+    font-family: 'EconSans Bold';
+    font-size: 13px;
+    line-height: 20px;
+    color: red;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .border {
     position: relative;
