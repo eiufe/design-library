@@ -34,6 +34,7 @@ gulp.task('dlSassToCss', function() {
 
 gulp.task("dlWatch", function() {
     gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['dlSassToCss']);
 });
 
 gulp.task('js', function() {

@@ -1,0 +1,8 @@
+{
+    "context":{
+        "categories":[{
+            "catName": "Institutional range",
+            "colors": ["brand_red", "text_black", "white"]
+        }]
+    }
+}

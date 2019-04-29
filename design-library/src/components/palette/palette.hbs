@@ -1,0 +1,13 @@
+<div class="component-wrapper">
+	<div class="border"></div>
+	<p class="type_overline">palette</p>
+	{{#each categories}}
+		<h2 class="type_zeta_econ_bold">{{catName}}</h2>
+		{{#if colors}}
+			{{#each colors}}
+				<h3 class="type_eta_econ_bold">{{this}}</h3>
+				<div class="color_box {{this}}"></div>
+			{{/each}}
+		{{/if}}
+	{{/each}}
+</div>
