@@ -52,14 +52,14 @@
             "types": [
             {
                 "typeName": "Fluid Button",
-                "className": "btn_fluid"
+                "className": "btn_fluid btn_md btn_secondary"
             }]
         },
         {
             "catName": "States",
             "types": [{
                 "typeName": "Disabled",
-                "className": "disabled btn_md"
+                "className": "btn_disabled btn_md"
             }]
         },
         {
@@ -67,11 +67,11 @@
             "types": [
             {
                 "typeName": "Icon Left",
-                "className": "btn_icon_left btn_md"
+                "className": "btn_icon_left btn_md btn_primary"
             },
             {
                 "typeName": "Icon Right",
-                "className": "btn_icon_right btn_md"
+                "className": "btn_icon_right btn_md btn_primary"
             }]
         },
         {
@@ -79,7 +79,8 @@
             "types": [
             {
                 "typeName": "Icon only",
-                "className": "btn_icon_only"
+                "hidetype": true,
+                "className": "btn_circle btn_primary"
             }]
         }]
     }

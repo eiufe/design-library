@@ -22,13 +22,13 @@ var gulp = require('gulp'),
 
 gulp.task('sassToCss', function() {
     return gulp.src([pathConfig.projectsSassSrcFolder + '*.scss'])
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(pathConfig.projectsCssDestFolder));
 });
 
 gulp.task('dlSassToCss', function() {
     return gulp.src([pathConfig.designLibrarySrc + '*.scss'])
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(pathConfig.designLibrarySrc + '/public/css'));
 });
 
