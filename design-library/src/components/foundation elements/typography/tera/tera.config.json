@@ -1,0 +1,10 @@
+{
+    "context": {
+        "fonts": [{
+            "name": "TERA",
+            "className": "type_tera",
+            "fontDetails": "Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px",
+            "sampleText":"Solomon Islands: State aims to double visitor arrivals by 2025"
+        }]
+    }
+}

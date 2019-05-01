@@ -166,17 +166,8 @@ p {
   text-transform: uppercase; }
 
 .border {
-  position: relative;
   height: 2px;
-  background-color: red; }
-  .border:before {
-    position: absolute;
-    content: ' ';
-    top: 2px;
-    left: 0;
-    width: 40px;
-    height: 10px;
-    background-color: red; }
+  background-color: #eee; }
 
 /* Extra CSS to be removed*/
 .component-wrapper {
@@ -242,7 +233,7 @@ button {
   background-color: #CFCFCF;
   pointer-events: none; }
 
-/* Temporary CSS*/
+/* Temporary CSS */
 .color_box {
   height: 200px;
   width: 200px;
