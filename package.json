@@ -23,7 +23,9 @@
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^13.2.2"
