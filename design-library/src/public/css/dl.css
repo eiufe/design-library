@@ -1,3 +1,4 @@
+/* Foundation Elements */
 @font-face {
   font-family: 'EconSans Light';
   src: url("../fonts/EOT/econsans-lt-os.eot") format("eot"), url("../fonts/WOFF/econsans-lt-os.woff") format("woff"), url("../fonts/TTF/econsans-lt-os.ttf") format("truetype"); }
@@ -173,6 +174,21 @@ p {
 .component-wrapper {
   padding: 20px; }
 
+/* Temporary CSS */
+.color-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #EEEEEE; }
+
+.brand-red {
+  background-color: #E3120B; }
+
+.text-black {
+  background-color: #121212; }
+
+.white {
+  background-color: #FFFFFF; }
+
 .elevate-0, .btn-disabled {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
 
@@ -223,7 +239,8 @@ button {
   border-radius: 4px;
   display: inline-block;
   position: relative;
-  transition: box-shadow 0.5s ease-in-out; }
+  transition: box-shadow 0.5s ease-in-out;
+  overflow: hidden; }
 
 .btn-sm {
   padding: 8px 16px; }
@@ -270,43 +287,28 @@ button {
   background-color: #CFCFCF;
   pointer-events: none; }
 
-.ripple {
+.ripple-primary {
   width: 0;
   height: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
-  -webkit-transform: scale(0);
   transform: scale(0);
   position: absolute;
   opacity: 1; }
 
-.rippleEffect {
-  -webkit-animation: rippleDrop .6s linear;
-  animation: rippleDrop .6s linear; }
-
-@-webkit-keyframes rippleDrop {
-  100% {
-    -webkit-transform: scale(6);
-    transform: scale(6);
-    opacity: 0; } }
+.ripple-secondary {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(96, 117, 234, 0.2);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1; }
 
 @keyframes rippleDrop {
   100% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    transform: scale(3);
     opacity: 0; } }
 
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 200px;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
+.rippleEffect {
+  animation: rippleDrop .6s linear; }
