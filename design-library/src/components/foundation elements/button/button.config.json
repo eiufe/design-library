@@ -7,11 +7,11 @@
             "types": [
             {
                 "typeName": "Primary",
-                "className": "btn_md btn_primary"
+                "className": "btn-md btn-primary"
             },
             {
                 "typeName": "Secondary",
-                "className": "btn_md btn_secondary"
+                "className": "btn-md btn-secondary"
             }]
         },
         {
@@ -19,15 +19,15 @@
             "types": [
             {
                 "typeName": "Small",
-                "className": "btn_primary btn_sm"
+                "className": "btn-primary btn-sm"
             },
             {
                 "typeName": "Medium",
-                "className": "btn_primary btn_md"
+                "className": "btn-primary btn-md"
             },
             {
                 "typeName": "Large",
-                "className": "btn_primary btn_lg"
+                "className": "btn-primary btn-lg"
             }]
         },
         {
@@ -35,16 +35,16 @@
             "types": [
             {
                 "typeName": "Rounded Button",
-                "className": "btn_rounded btn_md btn_primary"
+                "className": "btn-rounded btn-md btn-primary"
             },
             {
                 "typeName": "Pill Button",
-                "className": "btn_pill btn_md btn_primary"
+                "className": "btn-pill btn-md btn-primary"
             },
             {
                 "typeName": "Circle",
                 "hidetype": true,
-                "className": "btn_circle btn_primary"
+                "className": "btn-circle btn-primary"
             }]
         },
         {
@@ -52,14 +52,14 @@
             "types": [
             {
                 "typeName": "Fluid Button",
-                "className": "btn_fluid btn_md btn_secondary"
+                "className": "btn-fluid btn-md btn-secondary"
             }]
         },
         {
             "catName": "States",
             "types": [{
                 "typeName": "Disabled",
-                "className": "btn_disabled btn_md"
+                "className": "btn-disabled btn-md"
             }]
         },
         {
@@ -67,11 +67,11 @@
             "types": [
             {
                 "typeName": "Icon Left",
-                "className": "btn_icon_left btn_md btn_primary"
+                "className": "btn-icon-left btn-md btn-primary"
             },
             {
                 "typeName": "Icon Right",
-                "className": "btn_icon_right btn_md btn_primary"
+                "className": "btn-icon-right btn-md btn-primary"
             }]
         },
         {
@@ -80,7 +80,7 @@
             {
                 "typeName": "Icon only",
                 "hidetype": true,
-                "className": "btn_circle btn_primary"
+                "className": "btn-circle btn-primary"
             }]
         }]
     }

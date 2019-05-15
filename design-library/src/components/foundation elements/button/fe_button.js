@@ -1,5 +1,5 @@
 export default function testComponent1() {
-    $('.btn_md').on('click', function(e) {
+    $('.btn-md').on('click', function(e) {
         $(".ripple").remove();
 
         var posX = $(this).offset().left,
