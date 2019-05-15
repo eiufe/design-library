@@ -1,0 +1,51 @@
+/* mobile first grids: 4 column layout by default */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex-grid {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.col {
+    width: 23.4%;
+    margin: 5px 0.8%;
+    background-color: #9d9d9d;
+    height: 100px;
+}
+
+
+/*6 column layout*/
+@media only screen and (min-width: 540px) and (max-width: 991px) {
+    .col {
+        width: 15.066%;
+    }
+}
+
+
+/*8 column layout*/
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+    .col {
+        width: 10.9%;
+    }
+}
+
+/*12 column layout*/
+@media only screen and (min-width: 1024px) {
+    .col{
+        width:6.73%;
+     }
+
+    .flex-grid {
+        max-width: 1440px;
+    }
+}
