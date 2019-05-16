@@ -173,21 +173,6 @@ p {
 .component-wrapper {
   padding: 20px; }
 
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 200px;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
-
 /* mobile first grids: 4 column layout by default -xs */
 html {
   box-sizing: border-box; }
@@ -375,6 +360,21 @@ button {
 
 .rippleEffect {
   animation: rippleDrop .6s linear; }
+
+/* Temporary CSS */
+.color-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #EEEEEE; }
+
+.brand-red {
+  background-color: #E3120B; }
+
+.text-black {
+  background-color: #121212; }
+
+.white {
+  background-color: #FFFFFF; }
 
 .elevate-0, .btn-disabled {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
