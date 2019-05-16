@@ -35,6 +35,23 @@ gulp.task('dlSassToCss', function() {
 gulp.task("dlWatch", function() {
     gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
     gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['dlSassToCss']);
+    gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['dljs']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.js', ['dljs']);
+});
+
+gulp.task('dljs', function() {
+
+    var bundler = browserify(pathConfig.designLibrarySrc + "dl.js");
+    bundler.transform(babelify);
+
+    bundler.bundle()
+        .on('error', function(err) {
+            console.error(err);
+        })
+        .pipe(source("dl.js"))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(gulp.dest(pathConfig.designLibrarySrc +'public/js'));
 });
 
 gulp.task('js', function() {
@@ -112,7 +129,7 @@ gulp.task('fractal:build', function() {
 
 gulp.task("projectServer", ['js', 'sassToCss', 'watch', 'webserver']);
 
-gulp.task("dlServer", ['dlSassToCss', 'dlWatch','fractal:start']);
+gulp.task("dlServer", ['dlSassToCss', 'dljs', 'dlWatch', 'fractal:start']);
 
 gulp.task("libraryBuild", ['fractal:build']);
 

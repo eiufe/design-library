@@ -2,7 +2,7 @@
     "context": {
         "fonts": [{
             "name": "CAPTION",
-            "className": "type_caption",
+            "className": "type-caption",
             "fontDetails": "Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px",
             "sampleText":"Trucks on plant field"
         }]
