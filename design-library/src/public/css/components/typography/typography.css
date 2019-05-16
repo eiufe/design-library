@@ -1,0 +1,9 @@
+/* EconSans Light */
+@font-face {
+  font-family: 'EconSans Light OS';
+  src: url("../fonts/EOT/econsans-lt-os.eot") format("eot"), url("../fonts/WOFF/econsans-lt-os.woff") format("woff"), url("../fonts/TTF/econsans-lt-os.ttf") format("truetype"); }
+
+.type_tera {
+  font-family: 'EconSans Light OS';
+  font-weight: 112px;
+  line-height: 140px; }

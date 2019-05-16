@@ -1,0 +1,87 @@
+{
+    "context":
+    {
+        "categories": [
+        {
+            "catName": "Basic Usage",
+            "types": [
+            {
+                "typeName": "Primary",
+                "className": "js-btn btn-md btn-primary"
+            },
+            {
+                "typeName": "Secondary",
+                "className": "js-btn btn-md btn-secondary"
+            }]
+        },
+        {
+            "catName": "Sizes",
+            "types": [
+            {
+                "typeName": "Small",
+                "className": "js-btn btn-primary btn-sm"
+            },
+            {
+                "typeName": "Medium",
+                "className": "js-btn btn-primary btn-md"
+            },
+            {
+                "typeName": "Large",
+                "className": "js-btn btn-primary btn-lg"
+            }]
+        },
+        {
+            "catName": "Shapes",
+            "types": [
+            {
+                "typeName": "Rounded Button",
+                "className": "js-btn btn-rounded btn-md btn-primary"
+            },
+            {
+                "typeName": "Pill Button",
+                "className": "js-btn btn-pill btn-md btn-primary"
+            },
+            {
+                "typeName": "Circle",
+                "hidetype": true,
+                "className": "js-btn btn-circle btn-primary"
+            }]
+        },
+        {
+            "catName": "Fluid Button",
+            "types": [
+            {
+                "typeName": "Fluid Button",
+                "className": "js-btn btn-fluid btn-md btn-secondary"
+            }]
+        },
+        {
+            "catName": "States",
+            "types": [{
+                "typeName": "Disabled",
+                "className": "js-btn btn-disabled btn-md"
+            }]
+        },
+        {
+            "catName": "Text and Icons",
+            "types": [
+            {
+                "typeName": "Icon Left",
+                "className": "js-btn btn-icon-left btn-md btn-primary"
+            },
+            {
+                "typeName": "Icon Right",
+                "className": "js-btn btn-icon-right btn-md btn-primary"
+            }]
+        },
+        {
+            "catName": "Icon Only",
+            "types": [
+            {
+                "typeName": "Icon only",
+                "hidetype": true,
+                "className": "js-btn btn-circle btn-primary"
+            }]
+        }]
+    }
+}

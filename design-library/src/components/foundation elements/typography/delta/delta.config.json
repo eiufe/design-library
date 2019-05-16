@@ -1,0 +1,11 @@
+{
+    "context":
+    {
+        "fonts": [{
+            "name": "DELTA",
+            "className": "type-delta",
+            "fontDetails": "Econ Sans Medium • Font Size: 29px / 1.8125rem • Line height: 36px",
+            "sampleText": "Power Plant Expansion Contract: Sinohydro"
+        }]
+    }
+}

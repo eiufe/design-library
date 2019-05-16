@@ -1,0 +1,17 @@
+{
+	"context":{
+		"logos":[{
+			"name" : "EIU Logo Landscape",
+			"src" : "/images/logos/EIU_PL_RGB.png"
+		},{
+			"name" : "EIU Logo Potrait",
+			"src" : "/images/logos/EIU_PP_RGB.png"
+		},{
+			"name" : "Sub Brands - Logo Landscape",
+			"src" : "/images/logos/EIUCAN_PL_RBG.png"
+		},{
+			"name" : "Sub Brands - Logo Potrait",
+			"src" : "/images/logos/EIUCAN_PP_RBG.png"
+		}]
+	}
+}

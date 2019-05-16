@@ -1,0 +1,10 @@
+{
+    "context": {
+        "fonts": [{
+      "name": "OVERLINE",
+      "className": "type-overline",
+      "fontDetails": "Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px",
+      "sampleText": "Daily Chart"
+    }]
+    }
+}

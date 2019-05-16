@@ -1,0 +1,41 @@
+{
+    "context":{
+        "levels":[{
+            "desc": "Level 0",
+            "level": 0
+        },{
+            "desc": "Level 1",
+            "level": 1
+        },{
+            "desc": "Level 2",
+            "level": 2
+        },{
+            "desc": "Level 3",
+            "level": 3
+        },{
+            "desc": "Level 4",
+            "level": 4
+        },{
+            "desc": "Level 6",
+            "level": 6
+        },{
+            "desc": "Level 8",
+            "level": 8
+        },{
+            "desc": "Level 9",
+            "level": 9
+        },{
+            "desc": "Level 10",
+            "level": 10
+        },{
+            "desc": "Level 12",
+            "level": 12
+        },{
+            "desc": "Level 16",
+            "level": 16
+        },{
+            "desc": "Level 24",
+            "level": 24
+        }]
+    }
+}
