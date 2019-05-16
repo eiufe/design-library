@@ -2,7 +2,7 @@
     "context":{
         "categories":[{
             "catName": "Institutional range",
-            "colors": ["brand_red", "text_black", "white"]
+            "colors": ["brand-red", "text-black", "white"]
         }]
     }
 }
