@@ -1,2 +1,2 @@
 [Reference Invision Design Document](https://economist.invisionapp.com/d/main/#/console/17224453/360167785/preview)
-<p>  EIU Logos (landscape and potrait versions) to be used across viewports (desktop and mobile)</p>
+<p>  EIU Logos (landscape and portrait versions) to be used across viewports (desktop and mobile)</p>
