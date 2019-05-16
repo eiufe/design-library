@@ -173,6 +173,21 @@ p {
 .component-wrapper {
   padding: 20px; }
 
+/* Temporary CSS */
+.color-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #EEEEEE; }
+
+.brand-red {
+  background-color: #E3120B; }
+
+.text-black {
+  background-color: #121212; }
+
+.white {
+  background-color: #FFFFFF; }
+
 /* mobile first grids: 4 column layout by default -xs */
 html {
   box-sizing: border-box; }
@@ -192,7 +207,9 @@ html {
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-  margin: 5px 0.8%;
+  margin: 5px 0.8%; }
+
+.color-view {
   background-color: #9d9d9d;
   height: 100px; }
 
@@ -230,9 +247,9 @@ html {
   .col-md-2 {
     width: 23.4%; }
   .col-md-3 {
-    width: 10.9%; }
+    width: 35.9%; }
   .col-md-4 {
-    width: 37.5%; }
+    width: 48.4%; }
   .col-md-5 {
     width: 60.9%; }
   .col-md-6 {
@@ -358,21 +375,6 @@ button {
 
 .rippleEffect {
   animation: rippleDrop .6s linear; }
-
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 200px;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
 
 .elevate-0, .btn-disabled {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
