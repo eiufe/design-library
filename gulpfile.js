@@ -40,8 +40,8 @@ gulp.task('project-scripts', function() {
         .pipe(gulp.dest('projects/build/scripts'));
 });
 gulp.task("project-watch", function() {
-    gulp.watch("projects/**/*.js", ['js']);
-    gulp.watch("projects/**/*.scss", ['sassToCss']);
+    gulp.watch("projects/**/*.js", ['project-scripts']);
+    gulp.watch("projects/**/*.scss", ['project-styles']);
 });
 gulp.task('project-server', function() {
     gulp.src('projects')
