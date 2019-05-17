@@ -30,7 +30,8 @@ h5,
 h6,
 span,
 p {
-  font-family: 'EconSans Regular'; }
+  font-family: 'EconSans Regular';
+  color: #121212; }
 
 .type-tera {
   font-family: 'EconSans Light';
@@ -165,14 +166,6 @@ p {
   color: red;
   text-transform: uppercase; }
 
-.border {
-  height: 2px;
-  background-color: #eee; }
-
-/* Extra CSS to be removed*/
-.component-wrapper {
-  padding: 20px; }
-
 /* mobile first grids: 4 column layout by default -xs */
 html {
   box-sizing: border-box; }
@@ -188,10 +181,10 @@ html {
   width: 100%;
   flex-flow: row wrap; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .font-wrapper,
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
-.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .font-wrapper, .col-md-7, .col-md-8,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .font-wrapper, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   margin: 5px 0.8%; }
 
 .color-view {
@@ -207,7 +200,7 @@ html {
 .col-xs-3 {
   width: 73.4%; }
 
-.col-xs-4 {
+.col-xs-4, .font-wrapper {
   width: 98.4%; }
 
 /* 6 column layout -sm */
@@ -237,7 +230,7 @@ html {
     width: 48.4%; }
   .col-md-5 {
     width: 60.9%; }
-  .col-md-6 {
+  .col-md-6, .font-wrapper {
     width: 73.4%; }
   .col-md-7 {
     width: 85.9%; }
@@ -254,7 +247,7 @@ html {
     width: 15.06%; }
   .col-lg-3 {
     width: 23.39%; }
-  .col-lg-4 {
+  .col-lg-4, .font-wrapper {
     width: 31.72%; }
   .col-lg-5 {
     width: 40.05%; }
@@ -408,3 +401,18 @@ a.js-btn, button.js-btn {
 
 .elevate-24 {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
+/* Extra CSS to be removed*/
+.border {
+  height: 2px;
+  background-color: #eee; }
+
+.component-wrapper {
+  padding: 20px; }
+
+.font-wrapper {
+  padding: 10px;
+  margin: 0;
+  background: #666666; }
+  .font-wrapper p {
+    color: #FFFFFF; }
