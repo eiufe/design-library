@@ -18,43 +18,13 @@ var gulp = require('gulp'),
     uglify = require("gulp-uglify");
 
 
-// Setting up project specific build
-
-gulp.task('sassToCss', function() {
+/* EIU Projects (VW/CGG) - CSS, JS, Watch Tasks */
+gulp.task('project-styles', function() {
     return gulp.src([pathConfig.projectsSassSrcFolder + '*.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(pathConfig.projectsCssDestFolder));
 });
-
-gulp.task('dlSassToCss', function() {
-    return gulp.src([pathConfig.designLibrarySrc + '*.scss'])
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(pathConfig.designLibrarySrc + '/public/css'));
-});
-
-gulp.task("dlWatch", function() {
-    gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
-    gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['dlSassToCss']);
-    gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['dljs']);
-    gulp.watch(pathConfig.designLibrarySrc + '/*.js', ['dljs']);
-});
-
-gulp.task('dljs', function() {
-
-    var bundler = browserify(pathConfig.designLibrarySrc + "dl.js");
-    bundler.transform(babelify);
-
-    bundler.bundle()
-        .on('error', function(err) {
-            console.error(err);
-        })
-        .pipe(source("dl.js"))
-        .pipe(buffer())
-        .pipe(uglify())
-        .pipe(gulp.dest(pathConfig.designLibrarySrc +'public/js'));
-});
-
-gulp.task('js', function() {
+gulp.task('project-scripts', function() {
     argv.theme = argv.theme ? argv.theme : 'vw';
 
     var bundler = browserify("projects/assets/scripts/" + argv.theme + "-main.js");
@@ -69,8 +39,11 @@ gulp.task('js', function() {
         .pipe(uglify())
         .pipe(gulp.dest('projects/build/scripts'));
 });
-
-gulp.task('webserver', function() {
+gulp.task("project-watch", function() {
+    gulp.watch("projects/**/*.js", ['js']);
+    gulp.watch("projects/**/*.scss", ['sassToCss']);
+});
+gulp.task('project-server', function() {
     gulp.src('projects')
         .pipe(webserver({
             livereload: true,
@@ -79,33 +52,55 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task("watch", function() {
-    gulp.watch("projects/**/*.js", ['js']);
-    gulp.watch("projects/**/*.scss", ['sassToCss']);
+
+/* Design System - CSS, JS, Watch Tasks */
+gulp.task('elements-styles', function() {
+    return gulp.src([pathConfig.designLibrarySrc + '*.scss'])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(pathConfig.designLibrarySrc + '/public/css'));
+});
+gulp.task('elements-scripts', function() {
+    var bundler = browserify(pathConfig.designLibrarySrc + "dl.js");
+    bundler.transform(babelify);
+    bundler.bundle()
+        .on('error', function(err) {
+            console.error(err);
+        })
+        .pipe(source("dl.js"))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(gulp.dest(pathConfig.designLibrarySrc + 'public/js'));
+});
+gulp.task("elements-watch", function() {
+    gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['dlSassToCss']);
+    gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['dljs']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.js', ['dljs']);
 });
 
-// Setting up and running the design library
+
+
+
+/* Design System Foundation (Fractal) - Configuration */
+
 const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console;
-
-fractal.set('project.title', 'EIU Elements');
-
-fractal.components.set('path', pathConfig.designLibrarySrc + 'components');
-fractal.components.set('default.status', 'wip');
-fractal.components.set('default.preview', '@preview');
-
-fractal.docs.set('path', pathConfig.designLibrarySrc + 'docs');
-
-
-
-
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
     skin: "red"
 });
+
+fractal.set('project.title', 'EIU Elements');
+fractal.components.set('path', pathConfig.designLibrarySrc + 'components');
+fractal.components.set('default.status', 'wip');
+fractal.components.set('default.preview', '@preview');
+fractal.docs.set('path', pathConfig.designLibrarySrc + 'docs');
 fractal.web.set('static.path', pathConfig.designLibrarySrc + '/public');
-fractal.web.set('builder.dest', './design-library/build');
+fractal.web.set('builder.dest', '../design-library/home');
 fractal.web.theme(myCustomisedTheme);
+
+
+/* Fractal Server and Build Tasks */
 
 gulp.task('fractal:start', function() {
     const server = fractal.web.server({
@@ -127,10 +122,10 @@ gulp.task('fractal:build', function() {
 });
 
 
-gulp.task("projectServer", ['js', 'sassToCss', 'watch', 'webserver']);
+gulp.task("projects", ['project-scripts', 'project-styles', 'project-watch', 'project-server']);
 
-gulp.task("dlServer", ['dlSassToCss', 'dljs', 'dlWatch', 'fractal:start']);
+gulp.task("elements", ['elements-styles', 'elements-scripts', 'elements-watch', 'fractal:start']);
 
-gulp.task("libraryBuild", ['fractal:build']);
+gulp.task("build-elements", ['fractal:build']);
 
-gulp.task("server", ['js', 'sassToCss', 'dlSassToCss', 'watch', 'webserver', 'fractal:start']);
+gulp.task("default", ['project-scripts', 'project-styles', 'elements-styles','elements-scripts' ,'project-watch', 'project-server', 'fractal:start','elements-watch']);
