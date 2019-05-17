@@ -1,7 +1,9 @@
 <div class="component-wrapper">
     {{#each fonts}}
-	    <p>{{className}}</p>
-	    <p>{{fontDetails}}</p>
+    	<div class="font-wrapper">
+		    <p>{{className}}</p>
+		    <p>{{fontDetails}}</p>
+		</div>
 	    <p class={{className}}>{{sampleText}}</p>
     {{/each}}
 </div>

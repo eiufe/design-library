@@ -1,5 +1,30 @@
-/* Foundation Elements */
 @import "./components/foundation elements/typography/typography";
+@import "./components/foundation elements/grid/grid";
+@import "./components/foundation elements/button/button";
 @import "./components/foundation elements/palette/palette";
 @import "./components/foundation elements/elevation levels/elevation levels";
-@import "./components/foundation elements/button/button";
+
+
+/* Extra CSS to be removed*/
+.border {
+    height: 2px;
+    background-color: #eee;
+}
+
+.component-wrapper {
+    padding: 20px;
+}
+
+.font-wrapper {
+    padding: 10px;
+    @extend .col-lg-4;
+    @extend .col-md-6;
+    @extend .col-xs-4;
+    margin: 0;
+    background: #666666;
+
+    p {
+        color: #FFFFFF;
+    }
+
+}
