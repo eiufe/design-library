@@ -4,7 +4,7 @@
 	<thead>
 		<tr>
 			<th>Components</th>
-			<th>Claasname</th>
+			<th>ClassName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -32,7 +32,7 @@
 	<thead>
 		<tr>
 			<th>Components</th>
-			<th>Claasname</th>
+			<th>ClassName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -68,7 +68,7 @@
 	<thead>
 		<tr>
 			<th>Components</th>
-			<th>Claasname</th>
+			<th>ClassName</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -112,7 +112,7 @@
 	<thead>
 		<tr>
 			<th>Components</th>
-			<th>Claasname</th>
+			<th>ClassName</th>
 		</tr>
 	</thead>
 	<tbody>
