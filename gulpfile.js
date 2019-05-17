@@ -72,10 +72,10 @@ gulp.task('elements-scripts', function() {
         .pipe(gulp.dest(pathConfig.designLibrarySrc + 'public/js'));
 });
 gulp.task("elements-watch", function() {
-    gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['dlSassToCss']);
-    gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['dlSassToCss']);
-    gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['dljs']);
-    gulp.watch(pathConfig.designLibrarySrc + '/*.js', ['dljs']);
+    gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['elements-styles']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['elements-styles']);
+    gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['elements-scripts']);
+    gulp.watch(pathConfig.designLibrarySrc + '/*.js', ['elements-scripts']);
 });
 
 
