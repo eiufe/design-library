@@ -22,10 +22,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* make sure to set some focus styles for accessibility */
-:focus {
-  outline: 0; }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -800,6 +796,11 @@ a.js-btn, button.js-btn {
 .font-wrapper {
   padding: 10px;
   margin: 0;
-  background: #666666; }
+  background: #666666;
+  margin-bottom: 25px; }
   .font-wrapper p {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    line-height: 24px; }
+
+p {
+  margin-bottom: 1em; }
