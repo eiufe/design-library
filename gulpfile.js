@@ -72,6 +72,7 @@ gulp.task('elements-scripts', function() {
         .pipe(gulp.dest(pathConfig.designLibrarySrc + 'public/js'));
 });
 gulp.task("elements-watch", function() {
+    gulp.watch(pathConfig.designLibrarySrc + '**/**/*.scss', ['elements-styles']);
     gulp.watch(pathConfig.designLibrarySrc + '**/*.scss', ['elements-styles']);
     gulp.watch(pathConfig.designLibrarySrc + '/*.scss', ['elements-styles']);
     gulp.watch(pathConfig.designLibrarySrc + 'components/**/**/*.js', ['elements-scripts']);
