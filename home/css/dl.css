@@ -785,6 +785,9 @@ a.js-btn, button.js-btn {
           right: -2px;
           top: 3px; }
 
+img {
+  max-width: 100%; }
+
 /* Extra CSS to be removed*/
 .border {
   height: 2px;
