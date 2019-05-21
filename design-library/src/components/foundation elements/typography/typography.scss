@@ -38,165 +38,173 @@ span,
 p {
     font-family: 'EconSans Regular';
     color: #121212;
-    font-weight: normal;
 }
 
-.type-tera {
-    font-family: 'EconSans Light';
-    font-size: 112px;
-    line-height: 140px;
-}
+.type {
+    &-tera {
+        font-family: 'EconSans Light';
+        font-size: 112px;
+        line-height: 140px;
+    }
 
-.type-giga {
-    font-family: 'EconSans Light';
-    font-size: 86px;
-    line-height: 108px;
-}
+    &-giga {
+        font-family: 'EconSans Light';
+        font-size: 86px;
+        line-height: 108px;
+    }
 
-.type-mega {
-    font-family: 'EconSans Light';
-    font-size: 67px;
-    line-height: 84px;
-}
+    &-mega {
+        font-family: 'EconSans Light';
+        font-size: 67px;
+        line-height: 84px;
+    }
 
-.type-alpha {
-    font-family: 'EconSans Regular';
-    font-size: 51px;
-    line-height: 64px;
-}
+    &-alpha {
+        font-family: 'EconSans Regular';
+        font-size: 51px;
+        line-height: 64px;
+    }
 
-.type-beta {
-    font-family: 'EconSans Regular';
-    font-size: 45px;
-    line-height: 56px;
-}
+    &-beta {
+        font-family: 'EconSans Regular';
+        font-size: 45px;
+        line-height: 56px;
+    }
 
-.type-gamma {
-    font-family: 'EconSans Medium';
-    font-size: 35px;
-    line-height: 44px;
-}
+    &-gamma {
+        font-family: 'EconSans Medium';
+        font-size: 35px;
+        line-height: 44px;
+    }
 
-.type-delta {
-    font-family: 'EconSans Medium';
-    font-size: 29px;
-    line-height: 36px;
-}
+    &-delta {
+        font-family: 'EconSans Medium';
+        font-size: 29px;
+        line-height: 36px;
+    }
 
-.type-epsilon {
-    font-family: 'EconSans Bold';
-    font-size: 24px;
-    line-height: 36px;
-}
+    &-epsilon {
+        font-family: 'EconSans Bold';
+        font-size: 24px;
+        line-height: 36px;
+    }
 
-.type-zeta-econ-regular {
-    font-family: 'EconSans Regular';
-    font-size: 21px;
-    line-height: 32px;
-}
+    &-zeta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 21px;
+            line-height: 32px;
+        }
 
-.type-zeta-econ-bold {
-    font-family: 'EconSans Bold';
-    font-size: 21px;
-    line-height: 32px;
-}
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 21px;
+            line-height: 32px;
+        }
 
-.type-zeta-milo-regular {
-    font-family: 'Milo Regular';
-    font-size: 21px;
-    line-height: 32px;
-}
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 21px;
+            line-height: 32px;
+        }
 
-.type-zeta-milo-bold {
-    font-family: 'Milo Bold';
-    font-size: 21px;
-    line-height: 32px;
-}
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
 
-.type-eta-econ-regular {
-    font-family: 'EconSans Regular';
-    font-size: 18px;
-    line-height: 28px;
-}
+    &-eta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 18px;
+            line-height: 28px;
+        }
 
-.type-eta-econ-bold {
-    font-family: 'EconSans Bold';
-    font-size: 18px;
-    line-height: 28px;
-}
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 18px;
+            line-height: 28px;
+        }
 
-.type-eta-milo-regular {
-    font-family: 'Milo Regular';
-    font-size: 18px;
-    line-height: 28px;
-}
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 18px;
+            line-height: 28px;
+        }
 
-.type-eta-milo-bold {
-    font-family: 'Milo Bold';
-    font-size: 18px;
-    line-height: 28px;
-}
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
 
-.type-theta-econ-regular {
-    font-family: 'EconSans Regular';
-    font-size: 16px;
-    line-height: 24px;
-}
+    &-theta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-.type-theta-econ-bold {
-    font-family: 'EconSans Bold';
-    font-size: 16px;
-    line-height: 24px;
-}
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-.type-theta-milo-regular {
-    font-family: 'Milo Regular';
-    font-size: 16px;
-    line-height: 24px;
-}
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 16px;
+            line-height: 24px;
+        }
 
-.type-theta-milo-bold {
-    font-family: 'Milo Bold';
-    font-size: 16px;
-    line-height: 24px;
-}
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
 
+    &-iota {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 16px;
+            line-height: 20px;
+        }
 
-.type-iota-econ-regular {
-    font-family: 'EconSans Regular';
-    font-size: 16px;
-    line-height: 20px;
-}
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 16px;
+            line-height: 20px;
+        }
 
-.type-iota-econ-bold {
-    font-family: 'EconSans Bold';
-    font-size: 16px;
-    line-height: 20px;
-}
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 16px;
+            line-height: 20px;
+        }
 
-.type-iota-milo-regular {
-    font-family: 'Milo Regular';
-    font-size: 16px;
-    line-height: 20px;
-}
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 
-.type-iota-milo-bold {
-    font-family: 'Milo Bold';
-    font-size: 16px;
-    line-height: 20px;
-}
+    &-caption {
+        font-family: 'EconSans Regular';
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+    }
 
-.type-caption {
-    font-family: 'EconSans Regular';
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 300;
-}
-
-.type-overline {
-    font-family: 'EconSans Bold';
-    font-size: 13px;
-    line-height: 20px;
-    color: red;
-    text-transform: uppercase;
+    &-overline {
+        font-family: 'EconSans Bold';
+        font-size: 13px;
+        line-height: 20px;
+        color: red;
+        text-transform: uppercase;
+    }
 }

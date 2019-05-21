@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'EconSans Light';
+    src: url('../fonts/EOT/econsans-lt-os.eot') format('eot'), url('../fonts/WOFF/econsans-lt-os.woff') format('woff'), url('../fonts/TTF/econsans-lt-os.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Regular';
+    src: url('../fonts/EOT/econsans-rg-os.eot') format('eot'), url('../fonts/WOFF/econsans-rg-os.woff') format('woff'), url('../fonts/TTF/econsans-rg-os.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Medium';
+    src: url('../fonts/EOT/econsans-md-os.eot') format('eot'), url('../fonts/WOFF/econsans-md-os.woff') format('woff'), url('../fonts/TTF/econsans-md-os.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Bold';
+    src: url('../fonts/EOT/econsans-bd-os.eot') format('eot'), url('../fonts/WOFF/econsans-bd-os.woff') format('woff'), url('../fonts/TTF/econsans-bd-os.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Milo Regular';
+    src: url('../fonts/EOT/milo-rg.eot') format('eot'), url('../fonts/WOFF/milo-rg.woff') format('woff'), url('../fonts/TTF/milo-rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Milo Bold';
+    src: url('../fonts/EOT/milo-bd.eot') format('eot'), url('../fonts/WOFF/milo-bd.woff') format('woff'), url('../fonts/TTF/milo-bd.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+    font-family: 'EconSans Regular';
+    color: #121212;
+}
+
+.type {
+    &-tera {
+        font-family: 'EconSans Light';
+        font-size: 112px;
+        line-height: 140px;
+    }
+
+    &-giga {
+        font-family: 'EconSans Light';
+        font-size: 86px;
+        line-height: 108px;
+    }
+
+    &-mega {
+        font-family: 'EconSans Light';
+        font-size: 67px;
+        line-height: 84px;
+    }
+
+    &-alpha {
+        font-family: 'EconSans Regular';
+        font-size: 51px;
+        line-height: 64px;
+    }
+
+    &-beta {
+        font-family: 'EconSans Regular';
+        font-size: 45px;
+        line-height: 56px;
+    }
+
+    &-gamma {
+        font-family: 'EconSans Medium';
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    &-delta {
+        font-family: 'EconSans Medium';
+        font-size: 29px;
+        line-height: 36px;
+    }
+
+    &-epsilon {
+        font-family: 'EconSans Bold';
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &-zeta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+
+    &-eta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &-theta {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &-iota {
+        &-econ-regular {
+            font-family: 'EconSans Regular';
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &-econ-bold {
+            font-family: 'EconSans Bold';
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &-milo-regular {
+            font-family: 'Milo Regular';
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &-milo-bold {
+            font-family: 'Milo Bold';
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &-caption {
+        font-family: 'EconSans Regular';
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    &-overline {
+        font-family: 'EconSans Bold';
+        font-size: 13px;
+        line-height: 20px;
+        color: red;
+        text-transform: uppercase;
+    }
+}
