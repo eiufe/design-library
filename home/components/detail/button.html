@@ -339,23 +339,22 @@
                             <code class="Code Code--lang-JavaScript FileBrowser-code">
                                 <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buttonUI</span>(<span class="hljs-params"></span>) </span>{
 
-    $(<span class="hljs-built_in">document</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-string">'.js-btn'</span> ,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    $(<span class="hljs-built_in">document</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-string">'.js-btn'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
         e.preventDefault();
         <span class="hljs-keyword">var</span> $self = $(<span class="hljs-keyword">this</span>);
-            $self.find(<span class="hljs-string">".ripple"</span>).remove();
+        $self.find(<span class="hljs-string">".ripple"</span>).remove();
 
         <span class="hljs-keyword">var</span> posX = $self.offset().left,
             posY = $self.offset().top,
             buttonWidth = $self.width(),
             buttonHeight = $self.height();
 
-        <span class="hljs-keyword">if</span>($self.hasClass(<span class="hljs-string">'btn-primary'</span>)){
+        <span class="hljs-keyword">if</span> ($self.hasClass(<span class="hljs-string">'btn-primary'</span>)) {
             $self.prepend(<span class="hljs-string">"&lt;span class='ripple ripple-primary'&gt;&lt;/span&gt;"</span>);
-        }
-        <span class="hljs-keyword">else</span>{
+        } <span class="hljs-keyword">else</span> {
             $self.prepend(<span class="hljs-string">"&lt;span class='ripple ripple-secondary'&gt;&lt;/span&gt;"</span>);
         }
-        
+
 
         <span class="hljs-keyword">if</span> (buttonWidth &gt;= buttonHeight) {
             buttonHeight = buttonWidth;
@@ -404,95 +403,91 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.js-btn</span>, <span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.js-btn</span> {
+                                <pre><span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.js-btn</span>,
+<span class="hljs-selector-tag">button</span><span class="hljs-selector-class">.js-btn</span> {
     <span class="hljs-attribute">text-decoration</span>: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'EconSans Bold'</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">20px</span>;
+    @<span class="hljs-keyword">extend</span> .type-iota-econ-bold;
     <span class="hljs-attribute">text-align</span>: center;
     <span class="hljs-attribute">display</span>: inline-block;
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">transition</span>: box-shadow <span class="hljs-number">0.5s</span> ease-in-out;
+    <span class="hljs-attribute">transition</span>: box-shadow <span class="hljs-number">0.3s</span> ease-in-out;
     <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFFFFF</span>;
+
+    &amp;<span class="hljs-selector-class">.btn</span> {
+        &amp;-sm {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">16px</span>;
+        }
+
+        &amp;-md {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">48px</span>;
+        }
+
+        &amp;-lg {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">24px</span> <span class="hljs-number">64px</span>;
+        }
+
+        &amp;-primary {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#3E51B5</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFFFFF</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+            @<span class="hljs-keyword">extend</span> .elevate-2;
+
+            &amp;:hover,
+            &amp;:focus {
+                <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4C60EB</span>;
+                @<span class="hljs-keyword">extend</span> .elevate-4;
+            }
+
+            &amp;:active {
+                <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#6075EA</span>;
+                @<span class="hljs-keyword">extend</span> .elevate-8;
+            }
+        }
+
+        &amp;-secondary {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFFFFF</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#3E51B5</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#3E51B5</span>;
+            @<span class="hljs-keyword">extend</span> .elevate-2;
+
+            &amp;:hover,
+            &amp;:focus {
+                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#4C60EB</span>;
+                <span class="hljs-attribute">color</span>: <span class="hljs-number">#4C60EB</span>;
+                @<span class="hljs-keyword">extend</span> .elevate-4;
+            }
+
+            &amp;:active {
+                <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#002984</span>;
+                <span class="hljs-attribute">color</span>: <span class="hljs-number">#002984</span>;
+                @<span class="hljs-keyword">extend</span> .elevate-8;
+            }
+        }
+
+        &amp;-pill {
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">22px</span>;
+        }
+
+        &amp;-circle {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+        }
+
+        &amp;-fluid {
+            <span class="hljs-attribute">display</span>: block;
+        }
+
+        &amp;-disabled {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#CFCFCF</span>;
+            <span class="hljs-attribute">pointer-events</span>: none;
+            @<span class="hljs-keyword">extend</span> .elevate-0;
+        }
+    }
 }
-
-<span class="hljs-selector-class">.btn</span> {
-    &amp;-sm {
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">16px</span>;
-    }
-
-    &amp;-md {
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">48px</span>;
-    }
-
-    &amp;-lg {
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">24px</span> <span class="hljs-number">64px</span>;
-    }
-
-    &amp;-primary {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#3E51B5</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFFFFF</span>;
-        <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.14</span>), <span class="hljs-number">0</span> <span class="hljs-number">3px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">2px</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.12</span>), <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
-        @<span class="hljs-keyword">extend</span> .elevate-2;
-
-        &amp;:hover,
-        &amp;:focus {
-            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4C60EB</span>;
-            @<span class="hljs-keyword">extend</span> .elevate-4;
-        }
-
-        &amp;:active {
-            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#6075EA</span>;
-            @<span class="hljs-keyword">extend</span> .elevate-8;
-        }
-    }
-
-    &amp;-secondary {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFFFFF</span>;
-        <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.14</span>), <span class="hljs-number">0</span> <span class="hljs-number">3px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">2px</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.12</span>), <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
-        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#3E51B5</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-number">#3E51B5</span>;
-        @<span class="hljs-keyword">extend</span> .elevate-2;
-
-        &amp;:hover,
-        &amp;:focus {
-            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#4C60EB</span>;
-            <span class="hljs-attribute">color</span>: <span class="hljs-number">#4C60EB</span>;
-            @<span class="hljs-keyword">extend</span> .elevate-4;
-        }
-
-        &amp;:active {
-            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#002984</span>;
-            <span class="hljs-attribute">color</span>: <span class="hljs-number">#002984</span>;
-            @<span class="hljs-keyword">extend</span> .elevate-8;
-        }
-    }
-
-    &amp;-pill {
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">22px</span>;
-    }
-
-    &amp;-circle {
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span>;
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-    }
-
-    &amp;-fluid {
-        <span class="hljs-attribute">display</span>: block;
-    }
-
-    &amp;-disabled {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#CFCFCF</span>;
-        <span class="hljs-attribute">pointer-events</span>: none;
-        @<span class="hljs-keyword">extend</span> .elevate-0;
-    }
-}
-
-
 <span class="hljs-selector-class">.ripple</span> {
     &amp;-primary {
         <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
@@ -523,7 +518,7 @@
 }
 
 <span class="hljs-selector-class">.rippleEffect</span> {
-    <span class="hljs-attribute">animation</span>: rippleDrop .<span class="hljs-number">6s</span> linear;
+    <span class="hljs-attribute">animation</span>: rippleDrop .<span class="hljs-number">3s</span> linear;
 }</pre>
                             </code>
                             
@@ -900,16 +895,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../index.html" data-pjax>
                 <span>Overview</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/logos.html" data-pjax>
-                <span>Logos</span>
                 
             </a>
         </li>

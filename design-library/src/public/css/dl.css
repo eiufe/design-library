@@ -188,16 +188,18 @@ html {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-a:focus {
-  outline: thin dotted; }
-
+/**a:focus {
+    outline: thin dotted;
+} */
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
- */
+
+
 a:active,
 a:hover {
-  outline: 0; }
-
+    outline: 0;
+}
+ */
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
@@ -541,7 +543,8 @@ p {
   font-size: 16px;
   line-height: 20px; }
 
-.type-iota-econ-bold {
+.type-iota-econ-bold, a.js-btn,
+button.js-btn {
   font-family: 'EconSans Bold';
   font-size: 16px;
   line-height: 20px; }
@@ -704,64 +707,67 @@ html {
   .col-lg-12 {
     width: 98.36%; } }
 
-a.js-btn, button.js-btn {
+a.js-btn,
+button.js-btn {
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: 'EconSans Bold';
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   display: inline-block;
   position: relative;
-  transition: box-shadow 0.5s ease-in-out;
-  overflow: hidden; }
-
-.btn-sm {
-  padding: 8px 16px; }
-
-.btn-md {
-  padding: 16px 48px; }
-
-.btn-lg {
-  padding: 24px 64px; }
-
-.btn-primary {
-  background-color: #3E51B5;
-  color: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
-  .btn-primary:hover, .btn-primary:focus {
-    background-color: #4C60EB; }
-  .btn-primary:active {
-    background-color: #6075EA; }
-
-.btn-secondary {
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  border: 1px solid #3E51B5;
-  color: #3E51B5; }
-  .btn-secondary:hover, .btn-secondary:focus {
-    border: 1px solid #4C60EB;
-    color: #4C60EB; }
-  .btn-secondary:active {
-    border: 1px solid #002984;
-    color: #002984; }
-
-.btn-pill {
-  border-radius: 22px; }
-
-.btn-circle {
-  padding: 25px;
-  border-radius: 50%; }
-
-.btn-fluid {
-  display: block; }
-
-.btn-disabled {
-  background-color: #CFCFCF;
-  pointer-events: none; }
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  color: #FFFFFF; }
+  a.js-btn.btn-sm,
+  button.js-btn.btn-sm {
+    padding: 8px 16px; }
+  a.js-btn.btn-md,
+  button.js-btn.btn-md {
+    padding: 16px 48px; }
+  a.js-btn.btn-lg,
+  button.js-btn.btn-lg {
+    padding: 24px 64px; }
+  a.js-btn.btn-primary,
+  button.js-btn.btn-primary {
+    background-color: #3E51B5;
+    color: #FFFFFF;
+    border-radius: 4px; }
+    a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
+    button.js-btn.btn-primary:hover,
+    button.js-btn.btn-primary:focus {
+      background-color: #4C60EB; }
+    a.js-btn.btn-primary:active,
+    button.js-btn.btn-primary:active {
+      background-color: #6075EA; }
+  a.js-btn.btn-secondary,
+  button.js-btn.btn-secondary {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #3E51B5;
+    color: #3E51B5; }
+    a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
+    button.js-btn.btn-secondary:hover,
+    button.js-btn.btn-secondary:focus {
+      border: 1px solid #4C60EB;
+      color: #4C60EB; }
+    a.js-btn.btn-secondary:active,
+    button.js-btn.btn-secondary:active {
+      border: 1px solid #002984;
+      color: #002984; }
+  a.js-btn.btn-pill,
+  button.js-btn.btn-pill {
+    border-radius: 22px; }
+  a.js-btn.btn-circle,
+  button.js-btn.btn-circle {
+    padding: 25px;
+    border-radius: 50%; }
+  a.js-btn.btn-fluid,
+  button.js-btn.btn-fluid {
+    display: block; }
+  a.js-btn.btn-disabled,
+  button.js-btn.btn-disabled {
+    background-color: #CFCFCF;
+    pointer-events: none; }
 
 .ripple-primary {
   width: 0;
@@ -787,7 +793,7 @@ a.js-btn, button.js-btn {
     opacity: 0; } }
 
 .rippleEffect {
-  animation: rippleDrop .6s linear; }
+  animation: rippleDrop .3s linear; }
 
 /* Temporary CSS */
 .color-box {
@@ -804,25 +810,34 @@ a.js-btn, button.js-btn {
 .white {
   background-color: #FFFFFF; }
 
-.elevate-0, .btn-disabled {
+.elevate-0, a.js-btn.btn-disabled,
+button.js-btn.btn-disabled {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
 
 .elevate-1, .elem-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
 
-.elevate-2, .btn-primary, .btn-secondary {
+.elevate-2, a.js-btn.btn-primary,
+button.js-btn.btn-primary, a.js-btn.btn-secondary,
+button.js-btn.btn-secondary {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
 .elevate-3 {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2); }
 
-.elevate-4, .btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus {
+.elevate-4, a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
+button.js-btn.btn-primary:hover,
+button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
+button.js-btn.btn-secondary:hover,
+button.js-btn.btn-secondary:focus {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
 .elevate-6 {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
 
-.elevate-8, .btn-primary:active, .btn-secondary:active {
+.elevate-8, a.js-btn.btn-primary:active,
+button.js-btn.btn-primary:active, a.js-btn.btn-secondary:active,
+button.js-btn.btn-secondary:active {
   box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
 
 .elevate-9 {
