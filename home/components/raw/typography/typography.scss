@@ -28,6 +28,26 @@
     src: url('../fonts/EOT/milo-bd.eot') format('eot'), url('../fonts/WOFF/milo-bd.woff') format('woff'), url('../fonts/TTF/milo-bd.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'EconSans Light LF';
+    src: url('../fonts/TTF/ecosalig-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Regular LF';
+    src: url('../fonts/TTF/ecosareg-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Medium LF';
+    src: url('../fonts/TTF/ecosamed-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EconSans Bold LF';
+    src: url('../fonts/TTF/ecosabol-webfont.ttf') format('truetype');
+}
+
 h1,
 h2,
 h3,
@@ -45,48 +65,80 @@ p {
         font-family: 'EconSans Light';
         font-size: 112px;
         line-height: 140px;
+
+        &.typo-lf {
+            font-family: 'EconSans Light LF';
+        }
     }
 
     &-giga {
         font-family: 'EconSans Light';
         font-size: 86px;
         line-height: 108px;
+
+        &.typo-lf {
+            font-family: 'EconSans Light LF';
+        }
     }
 
     &-mega {
         font-family: 'EconSans Light';
         font-size: 67px;
         line-height: 84px;
+
+        &.typo-lf {
+            font-family: 'EconSans Light LF';
+        }
     }
 
     &-alpha {
         font-family: 'EconSans Regular';
         font-size: 51px;
         line-height: 64px;
+
+        &.typo-lf {
+            font-family: 'EconSans Regular LF';
+        }
     }
 
     &-beta {
         font-family: 'EconSans Regular';
         font-size: 45px;
         line-height: 56px;
+
+        &.typo-lf {
+            font-family: 'EconSans Regular LF';
+        }
     }
 
     &-gamma {
         font-family: 'EconSans Medium';
         font-size: 35px;
         line-height: 44px;
+
+        &.typo-lf {
+            font-family: 'EconSans Medium LF';
+        }
     }
 
     &-delta {
         font-family: 'EconSans Medium';
         font-size: 29px;
         line-height: 36px;
+
+        &.typo-lf {
+            font-family: 'EconSans Medium LF';
+        }
     }
 
     &-epsilon {
         font-family: 'EconSans Bold';
         font-size: 24px;
         line-height: 36px;
+
+        &.typo-lf {
+            font-family: 'EconSans Bold LF';
+        }
     }
 
     &-zeta {
@@ -94,12 +146,20 @@ p {
             font-family: 'EconSans Regular';
             font-size: 21px;
             line-height: 32px;
+
+            &.typo-lf {
+                font-family: 'EconSans Regular LF';
+            }
         }
 
         &-econ-bold {
             font-family: 'EconSans Bold';
             font-size: 21px;
             line-height: 32px;
+
+            &.typo-lf {
+                font-family: 'EconSans Bold LF';
+            }
         }
 
         &-milo-regular {
@@ -120,12 +180,20 @@ p {
             font-family: 'EconSans Regular';
             font-size: 18px;
             line-height: 28px;
+
+            &.typo-lf {
+                font-family: 'EconSans Regular LF';
+            }
         }
 
         &-econ-bold {
             font-family: 'EconSans Bold';
             font-size: 18px;
             line-height: 28px;
+
+            &.typo-lf {
+                font-family: 'EconSans Bold LF';
+            }
         }
 
         &-milo-regular {
@@ -146,12 +214,20 @@ p {
             font-family: 'EconSans Regular';
             font-size: 16px;
             line-height: 24px;
+
+            &.typo-lf {
+                font-family: 'EconSans Regular LF';
+            }
         }
 
         &-econ-bold {
             font-family: 'EconSans Bold';
             font-size: 16px;
             line-height: 24px;
+
+            &.typo-lf {
+                font-family: 'EconSans Bold LF';
+            }
         }
 
         &-milo-regular {
@@ -172,12 +248,20 @@ p {
             font-family: 'EconSans Regular';
             font-size: 16px;
             line-height: 20px;
+
+            &.typo-lf {
+                font-family: 'EconSans Regular LF';
+            }
         }
 
         &-econ-bold {
             font-family: 'EconSans Bold';
             font-size: 16px;
             line-height: 20px;
+
+            &.typo-lf {
+                font-family: 'EconSans Bold LF';
+            }
         }
 
         &-milo-regular {
@@ -198,6 +282,10 @@ p {
         font-size: 13px;
         line-height: 20px;
         font-weight: 300;
+
+        &.typo-lf {
+            font-family: 'EconSans Regular LF';
+        }
     }
 
     &-overline {
@@ -206,5 +294,9 @@ p {
         line-height: 20px;
         color: red;
         text-transform: uppercase;
+
+        &.typo-lf {
+            font-family: 'EconSans Bold LF';
+        }
     }
 }
