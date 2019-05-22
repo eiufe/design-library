@@ -1,11 +1,13 @@
 @import "./reset";
 @import "./components/foundation elements/typography/typography";
 @import "./components/foundation elements/grid/grid";
-@import "./components/foundation elements/button/button";
-@import "./components/foundation elements/palette/palette";
 @import "./components/foundation elements/elevation levels/elevation levels";
-@import "./components/foundation elements/cards/cards";
+@import "./components/foundation elements/palette/palette";
+@import "./components/foundation elements/navigation-links/navigation-links";
+@import "./components/foundation elements/button/button";
 @import "./components/foundation elements/imagery/imagery";
+@import "./components/foundation elements/cards/cards";
+
 /* Extra CSS to be removed*/
 .border {
     height: 2px;
@@ -29,15 +31,16 @@
         color: #FFFFFF;
         line-height: 24px;
     }
+
     margin-bottom: 25px;
 
 }
 
-p{
+p {
     margin-bottom: 1em;
 }
 
-label{
-    display:block;
+label {
+    display: block;
     @extend .type-theta-econ-bold;
 }

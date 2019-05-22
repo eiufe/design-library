@@ -518,7 +518,7 @@ p {
   font-size: 18px;
   line-height: 28px; }
 
-.type-theta-econ-regular {
+.type-theta-econ-regular, a {
   font-family: 'EconSans Regular';
   font-size: 16px;
   line-height: 24px; }
@@ -707,6 +707,75 @@ html {
   .col-lg-12 {
     width: 98.36%; } }
 
+.elevate-0, a.js-btn.btn-disabled,
+button.js-btn.btn-disabled {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
+
+.elevate-1, .elem-card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-2, a.js-btn.btn-primary,
+button.js-btn.btn-primary, a.js-btn.btn-secondary,
+button.js-btn.btn-secondary {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-3 {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-4, a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
+button.js-btn.btn-primary:hover,
+button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
+button.js-btn.btn-secondary:hover,
+button.js-btn.btn-secondary:focus {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+
+.elevate-6 {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
+
+.elevate-8, a.js-btn.btn-primary:active,
+button.js-btn.btn-primary:active, a.js-btn.btn-secondary:active,
+button.js-btn.btn-secondary:active {
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
+
+.elevate-9 {
+  box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2); }
+
+.elevate-10 {
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
+
+.elevate-12 {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12); }
+
+.elevate-16 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.elevate-24 {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
+/* Temporary CSS */
+.color-box {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #EEEEEE; }
+
+.brand-red {
+  background-color: #E3120B; }
+
+.text-black {
+  background-color: #121212; }
+
+.white {
+  background-color: #FFFFFF; }
+
+a {
+  color: #121212;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease-in-out; }
+  a:hover {
+    color: #3E51B5;
+    border-bottom: 1px solid #3E51B5; }
+
 a.js-btn,
 button.js-btn {
   text-decoration: none;
@@ -795,65 +864,8 @@ button.js-btn {
 .rippleEffect {
   animation: rippleDrop .3s linear; }
 
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 100%;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
-
-.elevate-0, a.js-btn.btn-disabled,
-button.js-btn.btn-disabled {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
-
-.elevate-1, .elem-card {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-2, a.js-btn.btn-primary,
-button.js-btn.btn-primary, a.js-btn.btn-secondary,
-button.js-btn.btn-secondary {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-3 {
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-4, a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
-button.js-btn.btn-primary:hover,
-button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
-button.js-btn.btn-secondary:hover,
-button.js-btn.btn-secondary:focus {
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
-
-.elevate-6 {
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
-
-.elevate-8, a.js-btn.btn-primary:active,
-button.js-btn.btn-primary:active, a.js-btn.btn-secondary:active,
-button.js-btn.btn-secondary:active {
-  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
-
-.elevate-9 {
-  box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2); }
-
-.elevate-10 {
-  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
-
-.elevate-12 {
-  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12); }
-
-.elevate-16 {
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-
-.elevate-24 {
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+img {
+  max-width: 100%; }
 
 .elem-card {
   background: #FFFF; }
@@ -879,9 +891,6 @@ button.js-btn.btn-secondary:active {
           position: absolute;
           right: -2px;
           top: 3px; }
-
-img {
-  max-width: 100%; }
 
 /* Extra CSS to be removed*/
 .border {
