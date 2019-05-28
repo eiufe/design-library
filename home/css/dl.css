@@ -427,6 +427,22 @@ textarea {
   font-family: 'Milo Bold';
   src: url("../fonts/EOT/milo-bd.eot") format("eot"), url("../fonts/WOFF/milo-bd.woff") format("woff"), url("../fonts/TTF/milo-bd.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'EconSans Light LF';
+  src: url("../fonts/TTF/ecosalig-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'EconSans Regular LF';
+  src: url("../fonts/TTF/ecosareg-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'EconSans Medium LF';
+  src: url("../fonts/TTF/ecosamed-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'EconSans Bold LF';
+  src: url("../fonts/TTF/ecosabol-webfont.ttf") format("truetype"); }
+
 h1,
 h2,
 h3,
@@ -442,51 +458,71 @@ p {
   font-family: 'EconSans Light';
   font-size: 112px;
   line-height: 140px; }
+  .type-tera.type-lf {
+    font-family: 'EconSans Light LF'; }
 
 .type-giga {
   font-family: 'EconSans Light';
   font-size: 86px;
   line-height: 108px; }
+  .type-giga.type-lf {
+    font-family: 'EconSans Light LF'; }
 
 .type-mega {
   font-family: 'EconSans Light';
   font-size: 67px;
   line-height: 84px; }
+  .type-mega.type-lf {
+    font-family: 'EconSans Light LF'; }
 
 .type-alpha {
   font-family: 'EconSans Regular';
   font-size: 51px;
   line-height: 64px; }
+  .type-alpha.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-beta {
   font-family: 'EconSans Regular';
   font-size: 45px;
   line-height: 56px; }
+  .type-beta.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-gamma {
   font-family: 'EconSans Medium';
   font-size: 35px;
   line-height: 44px; }
+  .type-gamma.type-lf {
+    font-family: 'EconSans Medium LF'; }
 
 .type-delta {
   font-family: 'EconSans Medium';
   font-size: 29px;
   line-height: 36px; }
+  .type-delta.type-lf {
+    font-family: 'EconSans Medium LF'; }
 
 .type-epsilon {
   font-family: 'EconSans Bold';
   font-size: 24px;
   line-height: 36px; }
+  .type-epsilon.type-lf {
+    font-family: 'EconSans Bold LF'; }
 
 .type-zeta-econ-regular {
   font-family: 'EconSans Regular';
   font-size: 21px;
   line-height: 32px; }
+  .type-zeta-econ-regular.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-zeta-econ-bold {
   font-family: 'EconSans Bold';
   font-size: 21px;
   line-height: 32px; }
+  .type-zeta-econ-bold.type-lf {
+    font-family: 'EconSans Bold LF'; }
 
 .type-zeta-milo-regular {
   font-family: 'Milo Regular';
@@ -502,11 +538,15 @@ p {
   font-family: 'EconSans Regular';
   font-size: 18px;
   line-height: 28px; }
+  .type-eta-econ-regular.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-eta-econ-bold {
   font-family: 'EconSans Bold';
   font-size: 18px;
   line-height: 28px; }
+  .type-eta-econ-bold.type-lf {
+    font-family: 'EconSans Bold LF'; }
 
 .type-eta-milo-regular {
   font-family: 'Milo Regular';
@@ -522,11 +562,15 @@ p {
   font-family: 'EconSans Regular';
   font-size: 16px;
   line-height: 24px; }
+  .type-theta-econ-regular.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-theta-econ-bold, label {
   font-family: 'EconSans Bold';
   font-size: 16px;
   line-height: 24px; }
+  .type-theta-econ-bold.type-lf, label.type-lf {
+    font-family: 'EconSans Bold LF'; }
 
 .type-theta-milo-regular {
   font-family: 'Milo Regular';
@@ -542,12 +586,17 @@ p {
   font-family: 'EconSans Regular';
   font-size: 16px;
   line-height: 20px; }
+  .type-iota-econ-regular.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-iota-econ-bold, a.js-btn,
 button.js-btn {
   font-family: 'EconSans Bold';
   font-size: 16px;
   line-height: 20px; }
+  .type-iota-econ-bold.type-lf, a.type-lf.js-btn,
+  button.type-lf.js-btn {
+    font-family: 'EconSans Bold LF'; }
 
 .type-iota-milo-regular {
   font-family: 'Milo Regular';
@@ -564,6 +613,8 @@ button.js-btn {
   font-size: 13px;
   line-height: 20px;
   font-weight: 300; }
+  .type-caption.type-lf {
+    font-family: 'EconSans Regular LF'; }
 
 .type-overline {
   font-family: 'EconSans Bold';
@@ -571,6 +622,8 @@ button.js-btn {
   line-height: 20px;
   color: red;
   text-transform: uppercase; }
+  .type-overline.type-lf {
+    font-family: 'EconSans Bold LF'; }
 
 /* mobile first grids: 4 column layout by default -xs */
 html {
