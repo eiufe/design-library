@@ -9,9 +9,13 @@
 @import "./components/foundation elements/cards/cards";
 
 /* Extra CSS to be removed*/
-.border {
-    height: 2px;
-    background-color: #eee;
+.color-box {
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    margin: 25px;
 }
 
 .component-wrapper {
@@ -36,11 +40,12 @@
 
 }
 
-p {
-    margin-bottom: 1em;
-}
-
 label {
     display: block;
     @extend .type-theta-econ-bold;
+}
+
+.elem-space{
+    height:20px;
+    width:100%;
 }

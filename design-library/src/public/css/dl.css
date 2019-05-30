@@ -558,7 +558,7 @@ p {
   font-size: 18px;
   line-height: 28px; }
 
-.type-theta-econ-regular, a {
+.type-theta-econ-regular {
   font-family: 'EconSans Regular';
   font-size: 16px;
   line-height: 24px; }
@@ -805,30 +805,6 @@ button.js-btn.btn-secondary:active {
 .elevate-24 {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
 
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 100%;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
-
-a {
-  color: #121212;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s ease-in-out; }
-  a:hover {
-    color: #3E51B5;
-    border-bottom: 1px solid #3E51B5; }
-
 a.js-btn,
 button.js-btn {
   text-decoration: none;
@@ -946,9 +922,13 @@ img {
           top: 3px; }
 
 /* Extra CSS to be removed*/
-.border {
-  height: 2px;
-  background-color: #eee; }
+.color-box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  margin: 25px; }
 
 .component-wrapper {
   padding: 20px; }
@@ -963,8 +943,9 @@ img {
     color: #FFFFFF;
     line-height: 24px; }
 
-p {
-  margin-bottom: 1em; }
-
 label {
   display: block; }
+
+.elem-space {
+  height: 20px;
+  width: 100%; }

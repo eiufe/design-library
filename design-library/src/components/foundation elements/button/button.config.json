@@ -1,5 +1,16 @@
 {
-    "context": {
-        
-    }
+    "title": "Buttons",
+    "default": "primary",
+    "variants": [{
+        "name": "primary",
+        "label": "Primary"
+    },
+    {
+        "name": "secondary",
+        "label": "Secondary"
+    },
+    {
+        "name": "variations",
+        "label": "Variations"
+    }]
 }

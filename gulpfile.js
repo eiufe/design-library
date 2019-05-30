@@ -88,7 +88,8 @@ const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console;
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
-    skin: "red"
+    "skin": "red",
+    "panels": ["html", "resources", "notes"]
 });
 
 fractal.set('project.title', 'EIU Elements');
@@ -129,4 +130,4 @@ gulp.task("elements", ['elements-styles', 'elements-scripts', 'elements-watch', 
 
 gulp.task("build-elements", ['fractal:build']);
 
-gulp.task("default", ['project-scripts', 'project-styles', 'elements-styles','elements-scripts' ,'project-watch', 'project-server', 'fractal:start','elements-watch']);
+gulp.task("default", ['project-scripts', 'project-styles', 'elements-styles', 'elements-scripts', 'project-watch', 'project-server', 'fractal:start', 'elements-watch']);
