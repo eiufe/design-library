@@ -584,7 +584,7 @@ p {
 
 .type-iota-econ-regular {
   font-family: 'EconSans Regular';
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px; }
   .type-iota-econ-regular.type-lf {
     font-family: 'EconSans Regular LF'; }
@@ -592,7 +592,7 @@ p {
 .type-iota-econ-bold, a.js-btn,
 button.js-btn {
   font-family: 'EconSans Bold';
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px; }
   .type-iota-econ-bold.type-lf, a.type-lf.js-btn,
   button.type-lf.js-btn {
@@ -600,12 +600,12 @@ button.js-btn {
 
 .type-iota-milo-regular {
   font-family: 'Milo Regular';
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px; }
 
 .type-iota-milo-bold {
   font-family: 'Milo Bold';
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px; }
 
 .type-caption {
@@ -902,24 +902,22 @@ img {
     width: 100%; }
   .elem-card .elem-card-content {
     padding: 24px 16px; }
-    .elem-card .elem-card-content .elem-card-tags {
-      margin-bottom: 5px; }
-      .elem-card .elem-card-content .elem-card-tags span {
-        color: #666666;
-        margin-right: 5px;
-        display: inline-block;
-        padding-right: 5px;
-        position: relative; }
-        .elem-card .elem-card-content .elem-card-tags span:last-child:after {
-          display: none; }
-        .elem-card .elem-card-content .elem-card-tags span:after {
-          content: " ";
-          height: 12px;
-          width: 1px;
-          background: #666666;
-          position: absolute;
-          right: -2px;
-          top: 3px; }
+    .elem-card .elem-card-content .elem-card-tags span {
+      color: #666666;
+      margin-right: 5px;
+      display: inline-block;
+      padding-right: 5px;
+      position: relative; }
+      .elem-card .elem-card-content .elem-card-tags span:last-child:after {
+        display: none; }
+      .elem-card .elem-card-content .elem-card-tags span:after {
+        content: " ";
+        height: 12px;
+        width: 1px;
+        background: #666666;
+        position: absolute;
+        right: -2px;
+        top: 3px; }
 
 /* Extra CSS to be removed*/
 .color-box {
