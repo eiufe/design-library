@@ -589,13 +589,11 @@ p {
   .type-iota-econ-regular.type-lf {
     font-family: 'EconSans Regular LF'; }
 
-.type-iota-econ-bold, a.js-btn,
-button.js-btn {
+.type-iota-econ-bold {
   font-family: 'EconSans Bold';
   font-size: 13px;
   line-height: 20px; }
-  .type-iota-econ-bold.type-lf, a.type-lf.js-btn,
-  button.type-lf.js-btn {
+  .type-iota-econ-bold.type-lf {
     font-family: 'EconSans Bold LF'; }
 
 .type-iota-milo-regular {
@@ -751,11 +749,59 @@ html {
   .col-lg-12 {
     width: 98.36%; } }
 
+.elevate-0, a.js-btn.btn-disabled,
+button.js-btn.btn-disabled {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
+
+.elevate-1, .elem-card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-2, a.js-btn.btn-primary,
+button.js-btn.btn-primary, a.js-btn.btn-secondary,
+button.js-btn.btn-secondary {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-3 {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.elevate-4, a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
+button.js-btn.btn-primary:hover,
+button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
+button.js-btn.btn-secondary:hover,
+button.js-btn.btn-secondary:focus, .font-wrapper {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+
+.elevate-6 {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
+
+.elevate-8, a.js-btn.btn-primary:active,
+button.js-btn.btn-primary:active, a.js-btn.btn-secondary:active,
+button.js-btn.btn-secondary:active {
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
+
+.elevate-9 {
+  box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2); }
+
+.elevate-10 {
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
+
+.elevate-12 {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12); }
+
+.elevate-16 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.elevate-24 {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
 a.js-btn,
 button.js-btn {
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'EconSans Bold';
   text-align: center;
   display: inline-block;
   position: relative;
@@ -839,65 +885,8 @@ button.js-btn {
 .rippleEffect {
   animation: rippleDrop .3s linear; }
 
-/* Temporary CSS */
-.color-box {
-  height: 200px;
-  width: 100%;
-  border: 1px solid #EEEEEE; }
-
-.brand-red {
-  background-color: #E3120B; }
-
-.text-black {
-  background-color: #121212; }
-
-.white {
-  background-color: #FFFFFF; }
-
-.elevate-0, a.js-btn.btn-disabled,
-button.js-btn.btn-disabled {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
-
-.elevate-1, .elem-card {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-2, a.js-btn.btn-primary,
-button.js-btn.btn-primary, a.js-btn.btn-secondary,
-button.js-btn.btn-secondary {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-3 {
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2); }
-
-.elevate-4, a.js-btn.btn-primary:hover, a.js-btn.btn-primary:focus,
-button.js-btn.btn-primary:hover,
-button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
-button.js-btn.btn-secondary:hover,
-button.js-btn.btn-secondary:focus, .font-wrapper {
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
-
-.elevate-6 {
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
-
-.elevate-8, a.js-btn.btn-primary:active,
-button.js-btn.btn-primary:active, a.js-btn.btn-secondary:active,
-button.js-btn.btn-secondary:active {
-  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
-
-.elevate-9 {
-  box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2); }
-
-.elevate-10 {
-  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12); }
-
-.elevate-12 {
-  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12); }
-
-.elevate-16 {
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-
-.elevate-24 {
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+img {
+  max-width: 100%; }
 
 .elem-card {
   background: #FFFF; }
@@ -922,20 +911,27 @@ button.js-btn.btn-secondary:active {
         right: -2px;
         top: 3px; }
 
-img {
-  max-width: 100%; }
-
 /* Extra CSS to be removed*/
+.color-box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  margin: 25px; }
+
 .component-wrapper {
   padding: 20px; }
 
 .font-wrapper {
   padding: 10px;
   border: 1px solid #121212;
-  margin: 12px 0; }
+  margin: 12px 0;
+  margin-bottom: 25px; }
 
 label {
   display: block; }
 
-p {
-  margin-bottom: 10px; }
+.elem-space {
+  height: 20px;
+  width: 100%; }

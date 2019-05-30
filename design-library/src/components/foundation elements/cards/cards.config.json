@@ -1,5 +1,14 @@
 {
-	"context":{
-		
-	}
+    "title": "Buttons",
+    "default": "default",
+    "notes": "All the cards have been created as full width components and will take the width of the container in which they are placed",
+    "variants": [
+    {
+        "name": "default",
+        "label": "Default"
+    },
+    {
+        "name": "layouts",
+        "label": "With Layouts"
+    }]
 }

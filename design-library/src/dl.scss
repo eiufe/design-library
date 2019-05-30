@@ -8,8 +8,15 @@
 @import "./components/foundation elements/imagery/imagery";
 @import "./components/foundation elements/cards/cards";
 
-
 /* Extra CSS to be removed*/
+.color-box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    margin: 25px;
+}
 
 .component-wrapper {
     padding: 20px;
@@ -20,15 +27,20 @@
     border: 1px solid #121212;
     margin: 12px 0;
     @extend .elevate-4;
+
     p {
         @extend .type-theta-econ-regular
     }
+
     margin-bottom: 25px;
 }
-
-
 
 label {
     display: block;
     @extend .type-theta-econ-bold;
+}
+
+.elem-space {
+    height: 20px;
+    width: 100%;
 }

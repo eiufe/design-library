@@ -6,15 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/dl.css">
-    <title>Preview</title>
-    <script>
-    		<!-- TO ALLOW PREVIEW TO TAKE FULL HEIGHT -->
-    		localStorage.setItem("pen.previewHeight", window.outerHeight);
-	</script>
+    <title>Design System</title>
 </head>
 
 <body>
     <div class="component-wrapper">
+        <div class="component-wrapper">
     <label for="typeFontSelector">Select a font to view style</label>
     <select id="typeFontSelector">
         <option data-info="Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px" data-class="type-tera type-lf">Tera</option>
@@ -42,8 +39,8 @@
             <option data-info="Milo TE Bold • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-milo-bold">Eta: Milo Bold</option>
         </optgroup>
         <optgroup label="Theta">
-            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24 px" data-class="type-theta-econ-regular">Theta: Econ Regular (OS)</option>
-            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24 px" data-class="type-theta-econ-regular type-lf">Theta: Econ Regular</option>
+            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-regular">Theta: Econ Regular (OS)</option>
+            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-regular type-lf">Theta: Econ Regular</option>
             <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-bold">Theta: Econ Bold (OS)</option>
             <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-bold type-lf">Theta: Econ Bold</option>
             <option data-info="Milo TE Regular • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-milo-regular">Theta: Milo Regular</option>
@@ -57,40 +54,24 @@
             <option data-info="Milo TE Regular • Font Size: 16px / 1rem • Line-height: 20px" data-class="type-iota-milo-regular">Iota: Milo Regular</option>
             <option data-info="Milo TE Bold • Font Size:16 px / 1rem • Line-height: 20px" data-class="type-iota-milo-bold">Iota: Milo Bold</option>
         </optgroup>
-        <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption">Caption (OS)</option>
-        <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption type-lf">Caption</option>
-        <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline">Overline (OS)</option>
-        <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline type-lf">Overline</option>
+        <optgroup label="Caption">
+            <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption">Caption(OS)</option>
+            <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption type-lf">Caption</option>
+        </optgroup>
+        <optgroup label="Overline">
+            <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline">Overline(OS)</option>
+            <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline type-lf">Overline</option>
+        </optgroup>
     </select>
     <div class="font-wrapper">
-        <p id="typeFontId">type-tera</p>
-        <p id="typeFontInfo">Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px</p>
+        <p><strong class="type-theta-econ-bold">Class:</strong> <span id="typeFontId"> type-tera</span></p>
+        <p><strong class="type-theta-econ-bold">Font Style:</strong> <span id="typeFontInfo"> Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px</span></p>
     </div>
     <p id="typeFontSample" class="type-tera">The quick brown fox jumps over the lazy dog - 0 1 2 3 4 5 6 7 8 9</p>
 </div>
-<style type="text/css">
-    select {
-        height: 30px;
-    }
-
-    #typeFontSample {
-        padding: 10px 0;
-        margin-top: 10px;
-    }
-</style>
-<script type="text/javascript">
-window.onload = function() {
-    $('#typeFontSelector').on("change", function() {
-        var $self = $(this),
-            $selectedOption = $self.find("option:selected"),
-            dataSet = $selectedOption.data();
-        $('#typeFontId').text(dataSet.class);
-        $('#typeFontSample').attr("class", dataSet.class);
-        $('#typeFontInfo').text(dataSet.info);
-    });
-}
-</script>
+    </div>
     <script src="../../js/dl.js"></script>
+    <script src="../../js/custom-views.js"></script>
 </body>
 
 </html>

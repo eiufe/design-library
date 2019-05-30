@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ path '/css/dl.css' }}">
-    <title>Preview</title>
-    <script>
-    		<!-- TO ALLOW PREVIEW TO TAKE FULL HEIGHT -->
-    		localStorage.setItem("pen.previewHeight", window.outerHeight);
-	</script>
+    <title>Design System</title>
 </head>
 
 <body>
-    {{{ yield }}}
+    <div class="component-wrapper">
+        {{{ yield }}}
+    </div>
     <script src="{{ path '/js/dl.js' }}"></script>
+    <script src="{{ path '/js/custom-views.js' }}"></script>
 </body>
 
 </html>

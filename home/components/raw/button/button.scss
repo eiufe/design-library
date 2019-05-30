@@ -3,7 +3,9 @@ button.js-btn {
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    @extend .type-iota-econ-bold;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'EconSans Bold';
     text-align: center;
     display: inline-block;
     position: relative;
@@ -83,6 +85,7 @@ button.js-btn {
         }
     }
 }
+
 .ripple {
     &-primary {
         width: 0;
