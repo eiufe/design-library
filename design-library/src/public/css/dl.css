@@ -589,13 +589,11 @@ p {
   .type-iota-econ-regular.type-lf {
     font-family: 'EconSans Regular LF'; }
 
-.type-iota-econ-bold, a.js-btn,
-button.js-btn {
+.type-iota-econ-bold {
   font-family: 'EconSans Bold';
   font-size: 13px;
   line-height: 20px; }
-  .type-iota-econ-bold.type-lf, a.type-lf.js-btn,
-  button.type-lf.js-btn {
+  .type-iota-econ-bold.type-lf {
     font-family: 'EconSans Bold LF'; }
 
 .type-iota-milo-regular {
@@ -801,6 +799,9 @@ button.js-btn {
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'EconSans Bold';
   text-align: center;
   display: inline-block;
   position: relative;
