@@ -1,50 +1,17 @@
 <div class="component-wrapper">
     <label for="typeFontSelector">Select a font to view style</label>
     <select id="typeFontSelector">
-        <option data-info="Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px" data-class="type-tera type-lf">Tera</option>
-        <option data-info="Econ Sans Light, Font Size: 86px / 5.375rem, Line height: 108px" data-class="type-giga type-lf">Giga</option>
-        <option data-info="Econ Sans Light, Font Size: 67px / 4.1875rem, Line height: 84px" data-class="type-mega type-lf">Mega</option>
-        <option data-info="Econ Sans Regular, Font Size: 51px / 3.1875rem, Line height: 64px" data-class="type-alpha type-lf">Alpha</option>
-        <option data-info="Econ Sans Regular, Font Size: 45px / 2.8125rem, Line height: 56px" data-class="type-beta type-lf">Beta</option>
-        <option data-info="Econ Sans Medium, Font Size: 35px / 2.1875rem, Line height: 44px" data-class="type-gamma type-lf">Gamma</option>
-        <option data-info="Econ Sans Medium, Font Size: 29px / 1.8125rem, Line height: 36px" data-class="type-delta type-lf">Delta</option>
-        <option data-info="Econ Sans Bold, Font Size: 24px / 1.5rem, Line-height: 36px" data-class="type-epsilon type-lf">Epsilon</option>
-        <optgroup label="Zeta">
-            <option data-info="Econ Sans Regular • Font Size: 21px / 1.3125rem • Line height: 32px" data-class="type-zeta-econ-regular">Zeta: Econ Regular (OS)</option>
-            <option data-info="Econ Sans Regular • Font Size: 21px / 1.3125rem • Line height: 32px" data-class="type-zeta-econ-regular type-lf">Zeta: Econ Regular</option>
-            <option data-info="Econ Sans Bold • Font Size: 21px / 1.3125rem • Line height: 32px" data-class="type-zeta-econ-bold">Zeta: Econ Bold (OS)</option>
-            <option data-info="Econ Sans Bold • Font Size: 21px / 1.3125rem • Line height: 32px" data-class="type-zeta-econ-bold type-lf">Zeta: Econ Bold</option>
-            <option data-info="Milo TE Regular • Font Size: 21px / 1.3125rem • Line-height: 32px" data-class="type-zeta-milo-regular">Zeta: Milo Regular</option>
-            <option data-info="Milo TE Bold • Font Size: 21px / 1.3125rem • Line-height: 32px" data-class="type-zeta-milo-bold">Zeta: Milo Bold</option>
+        {{#each fonts}}
+        {{#if subTypes.exist}}
+        <optgroup label="{{label}}">
+            {{#each subTypes.types}}
+            <option data-info="{{info}}" data-class="{{class}}">{{label}}</option>
+            {{/each}}
         </optgroup>
-        <optgroup label="Eta">
-            <option data-info="Econ Sans Regular • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-econ-regular">Eta: Econ Regular (OS)</option>
-            <option data-info="Econ Sans Regular • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-econ-regular type-lf">Eta: Econ Regular</option>
-            <option data-info="Econ Sans Bold • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-econ-bold">Eta: Econ Bold (OS)</option>
-            <option data-info="Econ Sans Bold • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-econ-bold type-lf">Eta: Econ Bold</option>
-            <option data-info="Milo TE Regular • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-milo-regular">Eta: Milo Regular</option>
-            <option data-info="Milo TE Bold • Font Size: 18px / 1.125rem • Line-height: 28px" data-class="type-eta-milo-bold">Eta: Milo Bold</option>
-        </optgroup>
-        <optgroup label="Theta">
-            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24 px" data-class="type-theta-econ-regular">Theta: Econ Regular (OS)</option>
-            <option data-info="Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24 px" data-class="type-theta-econ-regular type-lf">Theta: Econ Regular</option>
-            <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-bold">Theta: Econ Bold (OS)</option>
-            <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-econ-bold type-lf">Theta: Econ Bold</option>
-            <option data-info="Milo TE Regular • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-milo-regular">Theta: Milo Regular</option>
-            <option data-info="Milo TE Bold • Font Size: 16px / 1rem • Line-height: 24px" data-class="type-theta-milo-bold">Theta: Milo Bold</option>
-        </optgroup>
-        <optgroup label="Iota">
-            <option data-info="Econ Sans Regular • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-iota-econ-regular">Iota: Econ Regular (OS)</option>
-            <option data-info="Econ Sans Regular • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-iota-econ-regular type-lf">Iota: Econ Regular</option>
-            <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 20px" data-class="type-iota-econ-bold">Iota: Econ Bold (OS)</option>
-            <option data-info="Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 20px" data-class="type-iota-econ-bold type-lf">Iota: Econ Bold</option>
-            <option data-info="Milo TE Regular • Font Size: 16px / 1rem • Line-height: 20px" data-class="type-iota-milo-regular">Iota: Milo Regular</option>
-            <option data-info="Milo TE Bold • Font Size:16 px / 1rem • Line-height: 20px" data-class="type-iota-milo-bold">Iota: Milo Bold</option>
-        </optgroup>
-        <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption">Caption (OS)</option>
-        <option data-info="Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-caption type-lf">Caption</option>
-        <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline">Overline (OS)</option>
-        <option data-info="Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px" data-class="type-overline type-lf">Overline</option>
+        {{else}}
+        <option data-info="{{info}}" data-class="{{class}}">{{label}}</option>
+        {{/if}}
+        {{/each}}
     </select>
     <div class="font-wrapper">
         <p><strong class="type-theta-econ-bold">Class:</strong> <span id="typeFontId"> type-tera</span></p>

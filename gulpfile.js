@@ -89,7 +89,7 @@ const logger = fractal.cli.console;
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
     "skin": "red",
-    "panels": ["html", "resources", "notes"]
+    "panels": ["view", "resources", "notes"]
 });
 
 fractal.set('project.title', 'EIU Elements');

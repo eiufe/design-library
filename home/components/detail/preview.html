@@ -109,8 +109,8 @@
     <ul class="Browser-tabs">
         
         
-        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-html">HTML</a>
+        <li class="Browser-tab Browser-tab--view is-active " data-role="tab">
+            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-view">View</a>
         </li>
         
         
@@ -131,29 +131,25 @@
 
 
     
-    
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-html">
-    <code class="Code Code--lang-html">
-        
-        <pre><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
-
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../css/dl.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/dl.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Design System<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"component-wrapper"</span>&gt;</span>
-
+        </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}</span><span class="xml">}
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../js/dl.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../js/custom-views.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/js/dl.js' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/js/custom-views.js' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
-        
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
     </code>
 </div>
 
