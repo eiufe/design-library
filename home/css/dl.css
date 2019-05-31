@@ -590,22 +590,22 @@ p {
   line-height: 28px;
   line-height: 1.75rem; }
 
-.type-theta-econ-regular, .font-wrapper p {
+.type-theta-econ-regular, .demo-font-wrapper p {
   font-family: 'EconSans Regular';
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem; }
-  .type-theta-econ-regular.type-lf, .font-wrapper p.type-lf {
+  .type-theta-econ-regular.type-lf, .demo-font-wrapper p.type-lf {
     font-family: 'EconSans Regular LF'; }
 
-.type-theta-econ-bold, label {
+.type-theta-econ-bold, .demo-label {
   font-family: 'EconSans Bold';
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem; }
-  .type-theta-econ-bold.type-lf, label.type-lf {
+  .type-theta-econ-bold.type-lf, .type-lf.demo-label {
     font-family: 'EconSans Bold LF'; }
 
 .type-theta-milo-regular {
@@ -820,7 +820,7 @@ button.js-btn.btn-secondary {
 button.js-btn.btn-primary:hover,
 button.js-btn.btn-primary:focus, a.js-btn.btn-secondary:hover, a.js-btn.btn-secondary:focus,
 button.js-btn.btn-secondary:hover,
-button.js-btn.btn-secondary:focus, .font-wrapper {
+button.js-btn.btn-secondary:focus, .demo-font-wrapper {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
 .elevate-6 {
@@ -966,7 +966,7 @@ img {
         top: 3px; }
 
 /* Extra CSS to be removed*/
-.color-box {
+.demo-color-box {
   height: 100px;
   width: 100px;
   display: inline-block;
@@ -974,18 +974,18 @@ img {
   padding: 10px;
   margin: 25px; }
 
-.component-wrapper {
+.demo-component-wrapper {
   padding: 20px; }
 
-.font-wrapper {
+.demo-font-wrapper {
   padding: 10px;
   border: 1px solid #121212;
   margin: 12px 0;
   margin-bottom: 25px; }
 
-label {
+.demo-label {
   display: block; }
 
-.elem-space {
+.demo-elem-space {
   height: 20px;
   width: 100%; }
