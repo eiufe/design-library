@@ -1,4 +1,5 @@
-@import "./reset";
+@import "./components/globals/reset";
+@import "./components/globals/mixins";
 @import "./components/foundation elements/typography/typography";
 @import "./components/foundation elements/grid/grid";
 @import "./components/foundation elements/elevation levels/elevation levels";

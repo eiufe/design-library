@@ -1,0 +1,13 @@
+$base-font: 16px;
+
+@function calculateRem($size) {
+    $remSize: $size / $base-font;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size, $height) {
+    font-size: $base-font;
+    font-size: calculateRem($size);
+    line-height: $height;
+    line-height: calculateRem($height);
+}

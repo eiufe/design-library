@@ -1,4 +1,15 @@
 {
+    "title": "Typography",
+    "default": "default",
+    "variants": [
+    {
+        "name": "default",
+        "label": "Default"
+    },
+    {
+        "name": "fluid",
+        "label": "Fluid"
+    }],
     "context":
     {
         "fonts": [

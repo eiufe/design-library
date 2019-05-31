@@ -63,8 +63,7 @@ p {
 .type {
     &-tera {
         font-family: 'EconSans Light';
-        font-size: 112px;
-        line-height: 140px;
+        @include font-size(112px, 140px);
 
         &.type-lf {
             font-family: 'EconSans Light LF';
@@ -73,8 +72,7 @@ p {
 
     &-giga {
         font-family: 'EconSans Light';
-        font-size: 86px;
-        line-height: 108px;
+        @include font-size(86px, 108px);
 
         &.type-lf {
             font-family: 'EconSans Light LF';
@@ -83,8 +81,7 @@ p {
 
     &-mega {
         font-family: 'EconSans Light';
-        font-size: 67px;
-        line-height: 84px;
+        @include font-size(67px, 84px);
 
         &.type-lf {
             font-family: 'EconSans Light LF';
@@ -93,8 +90,7 @@ p {
 
     &-alpha {
         font-family: 'EconSans Regular';
-        font-size: 51px;
-        line-height: 64px;
+        @include font-size(51px, 64px);
 
         &.type-lf {
             font-family: 'EconSans Regular LF';
@@ -103,8 +99,7 @@ p {
 
     &-beta {
         font-family: 'EconSans Regular';
-        font-size: 45px;
-        line-height: 56px;
+        @include font-size(45px, 56px);
 
         &.type-lf {
             font-family: 'EconSans Regular LF';
@@ -113,8 +108,7 @@ p {
 
     &-gamma {
         font-family: 'EconSans Medium';
-        font-size: 35px;
-        line-height: 44px;
+        @include font-size(35px, 44px);
 
         &.type-lf {
             font-family: 'EconSans Medium LF';
@@ -123,8 +117,7 @@ p {
 
     &-delta {
         font-family: 'EconSans Medium';
-        font-size: 29px;
-        line-height: 36px;
+        @include font-size(29px, 36px);
 
         &.type-lf {
             font-family: 'EconSans Medium LF';
@@ -133,8 +126,7 @@ p {
 
     &-epsilon {
         font-family: 'EconSans Bold';
-        font-size: 24px;
-        line-height: 36px;
+        @include font-size(24px, 36px);
 
         &.type-lf {
             font-family: 'EconSans Bold LF';
@@ -144,8 +136,7 @@ p {
     &-zeta {
         &-econ-regular {
             font-family: 'EconSans Regular';
-            font-size: 21px;
-            line-height: 32px;
+            @include font-size(21px, 32px);
 
             &.type-lf {
                 font-family: 'EconSans Regular LF';
@@ -154,8 +145,7 @@ p {
 
         &-econ-bold {
             font-family: 'EconSans Bold';
-            font-size: 21px;
-            line-height: 32px;
+            @include font-size(21px, 32px);
 
             &.type-lf {
                 font-family: 'EconSans Bold LF';
@@ -164,22 +154,19 @@ p {
 
         &-milo-regular {
             font-family: 'Milo Regular';
-            font-size: 21px;
-            line-height: 32px;
+            @include font-size(21px, 32px);
         }
 
         &-milo-bold {
             font-family: 'Milo Bold';
-            font-size: 21px;
-            line-height: 32px;
+            @include font-size(21px, 32px);
         }
     }
 
     &-eta {
         &-econ-regular {
             font-family: 'EconSans Regular';
-            font-size: 18px;
-            line-height: 28px;
+            @include font-size(18px, 28px);
 
             &.type-lf {
                 font-family: 'EconSans Regular LF';
@@ -188,8 +175,7 @@ p {
 
         &-econ-bold {
             font-family: 'EconSans Bold';
-            font-size: 18px;
-            line-height: 28px;
+            @include font-size(18px, 28px);
 
             &.type-lf {
                 font-family: 'EconSans Bold LF';
@@ -198,22 +184,19 @@ p {
 
         &-milo-regular {
             font-family: 'Milo Regular';
-            font-size: 18px;
-            line-height: 28px;
+            @include font-size(18px, 28px);
         }
 
         &-milo-bold {
             font-family: 'Milo Bold';
-            font-size: 18px;
-            line-height: 28px;
+            @include font-size(18px, 28px);
         }
     }
 
     &-theta {
         &-econ-regular {
             font-family: 'EconSans Regular';
-            font-size: 16px;
-            line-height: 24px;
+            @include font-size(16px, 24px);
 
             &.type-lf {
                 font-family: 'EconSans Regular LF';
@@ -222,8 +205,7 @@ p {
 
         &-econ-bold {
             font-family: 'EconSans Bold';
-            font-size: 16px;
-            line-height: 24px;
+            @include font-size(16px, 24px);
 
             &.type-lf {
                 font-family: 'EconSans Bold LF';
@@ -232,22 +214,19 @@ p {
 
         &-milo-regular {
             font-family: 'Milo Regular';
-            font-size: 16px;
-            line-height: 24px;
+            @include font-size(16px, 24px);
         }
 
         &-milo-bold {
             font-family: 'Milo Bold';
-            font-size: 16px;
-            line-height: 24px;
+            @include font-size(16px, 24px);
         }
     }
 
     &-iota {
         &-econ-regular {
             font-family: 'EconSans Regular';
-            font-size: 13px;
-            line-height: 20px;
+            @include font-size(13px, 20px);
 
             &.type-lf {
                 font-family: 'EconSans Regular LF';
@@ -256,8 +235,7 @@ p {
 
         &-econ-bold {
             font-family: 'EconSans Bold';
-            font-size: 13px;
-            line-height: 20px;
+            @include font-size(13px, 20px);
 
             &.type-lf {
                 font-family: 'EconSans Bold LF';
@@ -266,21 +244,18 @@ p {
 
         &-milo-regular {
             font-family: 'Milo Regular';
-            font-size: 13px;
-            line-height: 20px;
+            @include font-size(13px, 20px);
         }
 
         &-milo-bold {
             font-family: 'Milo Bold';
-            font-size: 13px;
-            line-height: 20px;
+            @include font-size(13px, 20px);
         }
     }
 
     &-caption {
         font-family: 'EconSans Regular';
-        font-size: 13px;
-        line-height: 20px;
+        @include font-size(13px, 20px);
         font-weight: 300;
 
         &.type-lf {
@@ -290,8 +265,7 @@ p {
 
     &-overline {
         font-family: 'EconSans Bold';
-        font-size: 13px;
-        line-height: 20px;
+        @include font-size(13px, 20px);
         color: red;
         text-transform: uppercase;
 
