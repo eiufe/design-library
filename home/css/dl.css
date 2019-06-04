@@ -924,7 +924,8 @@ button.js-btn.btn-secondary:active {
 a {
   color: #121212;
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  border: 1px solid transparent; }
   a:visted {
     color: #121212; }
   a:hover, a:focus {

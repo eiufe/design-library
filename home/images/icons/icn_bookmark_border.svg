@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icn_bookmark_border</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Foundation/UI-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-268.000000, -534.000000)">
+            <g id="icn_bookmark_border" transform="translate(263.000000, 531.000000)">
+                <g>
+                    <path d="M17,3 L7,3 C5.9,3 5.01,3.9 5.01,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

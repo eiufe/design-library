@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icn_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Foundation/UI-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-392.000000, -292.000000)" fill="#000000">
+            <g id="icn_facebook" transform="translate(392.000000, 292.000000)">
+                <g id="Path">
+                    <path d="M11.595,3.47 L8.404,3.47 C8.031,3.47 7.596,3.96 7.596,4.633 L7.596,6.918 L11.595,6.918 L11.595,10.184 L7.595,10.184 L7.595,20 L3.825,20 L3.825,10.184 L0.405,10.184 L0.405,6.918 L3.825,6.918 L3.825,5 C3.75124485,3.72501383 4.19630896,2.47440127 5.05894761,1.53265601 C5.92158626,0.590910763 7.12845099,0.0381075589 8.405,0 L11.595,0 L11.595,3.47" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
