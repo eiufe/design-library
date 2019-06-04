@@ -15,7 +15,7 @@
         "fonts": [
         {
             "info": "Econ Sans Light,Font Size: 112px / 7rem, Line height: 140px",
-            "class": "type-tera type-lf",
+            "class": "type-tera-lf",
             "label": "Tera",
             "subTypes":
             {
@@ -24,7 +24,7 @@
         },
         {
             "info": "Econ Sans Light, Font Size: 86px / 5.375rem, Line height: 108px",
-            "class": "type-giga type-lf",
+            "class": "type-giga-lf",
             "label": "Giga",
             "subTypes":
             {
@@ -33,7 +33,7 @@
         },
         {
             "info": "Econ Sans Light, Font Size: 67px / 4.1875rem, Line height: 84px",
-            "class": "type-mega type-lf",
+            "class": "type-mega-lf",
             "label": "Mega",
             "subTypes":
             {
@@ -42,7 +42,7 @@
         },
         {
             "info": "Econ Sans Regular, Font Size: 51px / 3.1875rem, Line height: 64px",
-            "class": "type-alpha type-lf",
+            "class": "type-alpha-lf",
             "label": "Alpha",
             "subTypes":
             {
@@ -51,7 +51,7 @@
         },
         {
             "info": "Econ Sans Regular, Font Size: 45px / 2.8125rem, Line height: 56px",
-            "class": "type-beta type-lf",
+            "class": "type-beta-lf",
             "label": "Beta",
             "subTypes":
             {
@@ -60,7 +60,7 @@
         },
         {
             "info": "Econ Sans Medium, Font Size: 35px / 2.1875rem, Line height: 44px",
-            "class": "type-gamma type-lf",
+            "class": "type-gamma-lf",
             "label": "Gamma",
             "subTypes":
             {
@@ -69,7 +69,7 @@
         },
         {
             "info": "Econ Sans Medium, Font Size: 29px / 1.8125rem, Line height: 36px",
-            "class": "type-delta type-lf",
+            "class": "type-delta-lf",
             "label": "Delta",
             "subTypes":
             {
@@ -78,7 +78,7 @@
         },
         {
             "info": "Econ Sans Bold, Font Size: 24px / 1.5rem, Line-height: 36px",
-            "class": "type-epsilon type-lf",
+            "class": "type-epsilon-lf",
             "label": "Epsilon",
             "subTypes":
             {
@@ -98,7 +98,7 @@
                 },
                 {
                     "info": "Econ Sans Regular • Font Size: 21px / 1.3125rem • Line height: 32px",
-                    "class": "type-zeta-econ-regular type-lf",
+                    "class": "type-zeta-econ-regular-lf",
                     "label": "Zeta: Econ Regular"
                 },
                 {
@@ -108,7 +108,7 @@
                 },
                 {
                     "info": "Econ Sans Bold • Font Size: 21px / 1.3125rem • Line height: 32px",
-                    "class": "type-zeta-econ-bold type-lf",
+                    "class": "type-zeta-econ-bold-lf",
                     "label": "Zeta: Econ Bold"
                 },
                 {
@@ -136,7 +136,7 @@
                 },
                 {
                     "info": "Econ Sans Regular • Font Size: 18px / 1.125rem • Line-height: 28px",
-                    "class": "type-eta-econ-regular type-lf",
+                    "class": "type-eta-econ-regular-lf",
                     "label": "Eta: Econ Regular"
                 },
                 {
@@ -146,7 +146,7 @@
                 },
                 {
                     "info": "Econ Sans Bold • Font Size: 18px / 1.125rem • Line-height: 28px",
-                    "class": "type-eta-econ-bold type-lf",
+                    "class": "type-eta-econ-bold-lf",
                     "label": "Eta: Econ Bold"
                 },
                 {
@@ -174,7 +174,7 @@
                 },
                 {
                     "info": "Econ Sans Regular • Font Size: 16px / 1rem • Line-height: 24px",
-                    "class": "type-theta-econ-regular type-lf",
+                    "class": "type-theta-econ-regular-lf",
                     "label": "Theta: Econ Regular"
                 },
                 {
@@ -184,7 +184,7 @@
                 },
                 {
                     "info": "Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 24px",
-                    "class": "type-theta-econ-bold type-lf",
+                    "class": "type-theta-econ-bold-lf",
                     "label": "Theta: Econ Bold"
                 },
                 {
@@ -212,7 +212,7 @@
                 },
                 {
                     "info": "Econ Sans Regular • Font Size: 13px / 0.8125rem • Line-height: 20px",
-                    "class": "type-iota-econ-regular type-lf",
+                    "class": "type-iota-econ-regular-lf",
                     "label": "Iota: Econ Regular"
                 },
                 {
@@ -222,7 +222,7 @@
                 },
                 {
                     "info": "Econ Sans Bold • Font Size: 16px / 1rem • Line-height: 20px",
-                    "class": "type-iota-econ-bold type-lf",
+                    "class": "type-iota-econ-bold-lf",
                     "label": "Iota: Econ Bold"
                 },
                 {
@@ -250,7 +250,7 @@
                 },
                 {
                     "info": "Econ Sans Light • Font Size: 13px / 0.8125rem • Line-height: 20px",
-                    "class": "type-caption type-lf",
+                    "class": "type-caption-lf",
                     "label": "Caption"
                 }]
             }
@@ -268,7 +268,7 @@
                 },
                 {
                     "info": "Econ Sans Bold • Font Size: 13px / 0.8125rem • Line-height: 20px",
-                    "class": "type-overline type-lf",
+                    "class": "type-overline-lf",
                     "label": "Overline"
                 }]
             }

@@ -460,7 +460,11 @@ p {
   font-size: 7rem;
   line-height: 140px;
   line-height: 8.75rem; }
-  .type-tera.type-lf {
+  .type-tera-lf {
+    font-size: 16px;
+    font-size: 7rem;
+    line-height: 140px;
+    line-height: 8.75rem;
     font-family: 'EconSans Light LF'; }
 
 .type-giga {
@@ -469,8 +473,12 @@ p {
   font-size: 5.375rem;
   line-height: 108px;
   line-height: 6.75rem; }
-  .type-giga.type-lf {
-    font-family: 'EconSans Light LF'; }
+  .type-giga-lf {
+    font-family: 'EconSans Light LF';
+    font-size: 16px;
+    font-size: 5.375rem;
+    line-height: 108px;
+    line-height: 6.75rem; }
 
 .type-mega {
   font-family: 'EconSans Light';
@@ -478,8 +486,12 @@ p {
   font-size: 4.1875rem;
   line-height: 84px;
   line-height: 5.25rem; }
-  .type-mega.type-lf {
-    font-family: 'EconSans Light LF'; }
+  .type-mega-lf {
+    font-family: 'EconSans Light LF';
+    font-size: 16px;
+    font-size: 4.1875rem;
+    line-height: 84px;
+    line-height: 5.25rem; }
 
 .type-alpha {
   font-family: 'EconSans Regular';
@@ -487,8 +499,12 @@ p {
   font-size: 3.1875rem;
   line-height: 64px;
   line-height: 4rem; }
-  .type-alpha.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-alpha-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 3.1875rem;
+    line-height: 64px;
+    line-height: 4rem; }
 
 .type-beta {
   font-family: 'EconSans Regular';
@@ -496,8 +512,12 @@ p {
   font-size: 2.8125rem;
   line-height: 56px;
   line-height: 3.5rem; }
-  .type-beta.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-beta-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 2.8125rem;
+    line-height: 56px;
+    line-height: 3.5rem; }
 
 .type-gamma {
   font-family: 'EconSans Medium';
@@ -505,8 +525,12 @@ p {
   font-size: 2.1875rem;
   line-height: 44px;
   line-height: 2.75rem; }
-  .type-gamma.type-lf {
-    font-family: 'EconSans Medium LF'; }
+  .type-gamma-lf {
+    font-family: 'EconSans Medium LF';
+    font-size: 16px;
+    font-size: 2.1875rem;
+    line-height: 44px;
+    line-height: 2.75rem; }
 
 .type-delta {
   font-family: 'EconSans Medium';
@@ -514,8 +538,12 @@ p {
   font-size: 1.8125rem;
   line-height: 36px;
   line-height: 2.25rem; }
-  .type-delta.type-lf {
-    font-family: 'EconSans Medium LF'; }
+  .type-delta-lf {
+    font-family: 'EconSans Medium LF';
+    font-size: 16px;
+    font-size: 1.8125rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
 
 .type-epsilon {
   font-family: 'EconSans Bold';
@@ -523,8 +551,12 @@ p {
   font-size: 1.5rem;
   line-height: 36px;
   line-height: 2.25rem; }
-  .type-epsilon.type-lf {
-    font-family: 'EconSans Bold LF'; }
+  .type-epsilon-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 1.5rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
 
 .type-zeta-econ-regular {
   font-family: 'EconSans Regular';
@@ -532,8 +564,12 @@ p {
   font-size: 1.3125rem;
   line-height: 32px;
   line-height: 2rem; }
-  .type-zeta-econ-regular.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-zeta-econ-regular-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 1.3125rem;
+    line-height: 32px;
+    line-height: 2rem; }
 
 .type-zeta-econ-bold {
   font-family: 'EconSans Bold';
@@ -541,8 +577,12 @@ p {
   font-size: 1.3125rem;
   line-height: 32px;
   line-height: 2rem; }
-  .type-zeta-econ-bold.type-lf {
-    font-family: 'EconSans Bold LF'; }
+  .type-zeta-econ-bold-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 1.3125rem;
+    line-height: 32px;
+    line-height: 2rem; }
 
 .type-zeta-milo-regular {
   font-family: 'Milo Regular';
@@ -564,8 +604,12 @@ p {
   font-size: 1.125rem;
   line-height: 28px;
   line-height: 1.75rem; }
-  .type-eta-econ-regular.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-eta-econ-regular-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    line-height: 1.75rem; }
 
 .type-eta-econ-bold {
   font-family: 'EconSans Bold';
@@ -573,8 +617,12 @@ p {
   font-size: 1.125rem;
   line-height: 28px;
   line-height: 1.75rem; }
-  .type-eta-econ-bold.type-lf {
-    font-family: 'EconSans Bold LF'; }
+  .type-eta-econ-bold-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    line-height: 1.75rem; }
 
 .type-eta-milo-regular {
   font-family: 'Milo Regular';
@@ -590,23 +638,31 @@ p {
   line-height: 28px;
   line-height: 1.75rem; }
 
-.type-theta-econ-regular, .demo-font-wrapper p {
+.type-theta-econ-regular, .elem-breadcrumbs li a, .demo-font-wrapper p {
   font-family: 'EconSans Regular';
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem; }
-  .type-theta-econ-regular.type-lf, .demo-font-wrapper p.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-theta-econ-regular-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
 
-.type-theta-econ-bold, .demo-label {
+.type-theta-econ-bold, a, .elem-breadcrumbs li:after, .elem-breadcrumbs li.active a, .elem-breadcrumbs-mobile li:last-child:before, .demo-label {
   font-family: 'EconSans Bold';
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem; }
-  .type-theta-econ-bold.type-lf, .type-lf.demo-label {
-    font-family: 'EconSans Bold LF'; }
+  .type-theta-econ-bold-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
 
 .type-theta-milo-regular {
   font-family: 'Milo Regular';
@@ -628,8 +684,12 @@ p {
   font-size: 0.8125rem;
   line-height: 20px;
   line-height: 1.25rem; }
-  .type-iota-econ-regular.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-iota-econ-regular-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 0.8125rem;
+    line-height: 20px;
+    line-height: 1.25rem; }
 
 .type-iota-econ-bold {
   font-family: 'EconSans Bold';
@@ -637,8 +697,12 @@ p {
   font-size: 0.8125rem;
   line-height: 20px;
   line-height: 1.25rem; }
-  .type-iota-econ-bold.type-lf {
-    font-family: 'EconSans Bold LF'; }
+  .type-iota-econ-bold-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 0.8125rem;
+    line-height: 20px;
+    line-height: 1.25rem; }
 
 .type-iota-milo-regular {
   font-family: 'Milo Regular';
@@ -661,8 +725,13 @@ p {
   line-height: 20px;
   line-height: 1.25rem;
   font-weight: 300; }
-  .type-caption.type-lf {
-    font-family: 'EconSans Regular LF'; }
+  .type-caption-lf {
+    font-family: 'EconSans Regular LF';
+    font-size: 16px;
+    font-size: 0.8125rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    font-weight: 300; }
 
 .type-overline {
   font-family: 'EconSans Bold';
@@ -672,8 +741,14 @@ p {
   line-height: 1.25rem;
   color: red;
   text-transform: uppercase; }
-  .type-overline.type-lf {
-    font-family: 'EconSans Bold LF'; }
+  .type-overline-lf {
+    font-family: 'EconSans Bold LF';
+    font-size: 16px;
+    font-size: 0.8125rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    color: red;
+    text-transform: uppercase; }
 
 /* mobile first grids: 4 column layout by default -xs */
 html {
@@ -845,6 +920,52 @@ button.js-btn.btn-secondary:active {
 
 .elevate-24 {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
+a {
+  color: #121212;
+  text-decoration: none;
+  display: inline-block; }
+  a:visted {
+    color: #121212; }
+  a:hover, a:focus {
+    color: #3E51B5;
+    border-bottom: 1px solid #3E51B5; }
+    a:hover *, a:focus * {
+      color: #3E51B5; }
+
+.elem-breadcrumbs li {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative; }
+  .elem-breadcrumbs li:after {
+    content: ">";
+    position: absolute;
+    color: #666666;
+    right: -6px;
+    top: 0; }
+  .elem-breadcrumbs li:last-child:after {
+    content: ""; }
+  .elem-breadcrumbs li a {
+    color: #666666;
+    text-decoration: none; }
+    .elem-breadcrumbs li a:visted {
+      color: #121212; }
+    .elem-breadcrumbs li a:hover, .elem-breadcrumbs li a:focus {
+      color: #3E51B5;
+      border-bottom: 1px solid #3E51B5; }
+  .elem-breadcrumbs li.active a {
+    color: #121212; }
+    .elem-breadcrumbs li.active a:hover, .elem-breadcrumbs li.active a:focus {
+      color: #3E51B5; }
+
+.elem-breadcrumbs-mobile li:last-child:before {
+  content: "<";
+  position: absolute;
+  left: -6px;
+  top: 0; }
+
+.elem-breadcrumbs-mobile li:last-child:after {
+  content: ""; }
 
 a.js-btn,
 button.js-btn {

@@ -65,7 +65,8 @@ p {
         font-family: 'EconSans Light';
         @include font-size(112px, 140px);
 
-        &.type-lf {
+        &-lf {
+            @include font-size(112px, 140px);
             font-family: 'EconSans Light LF';
         }
     }
@@ -74,8 +75,9 @@ p {
         font-family: 'EconSans Light';
         @include font-size(86px, 108px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Light LF';
+            @include font-size(86px, 108px);
         }
     }
 
@@ -83,8 +85,9 @@ p {
         font-family: 'EconSans Light';
         @include font-size(67px, 84px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Light LF';
+            @include font-size(67px, 84px);
         }
     }
 
@@ -92,8 +95,9 @@ p {
         font-family: 'EconSans Regular';
         @include font-size(51px, 64px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Regular LF';
+            @include font-size(51px, 64px);
         }
     }
 
@@ -101,8 +105,9 @@ p {
         font-family: 'EconSans Regular';
         @include font-size(45px, 56px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Regular LF';
+            @include font-size(45px, 56px);
         }
     }
 
@@ -110,8 +115,9 @@ p {
         font-family: 'EconSans Medium';
         @include font-size(35px, 44px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Medium LF';
+            @include font-size(35px, 44px);
         }
     }
 
@@ -119,8 +125,9 @@ p {
         font-family: 'EconSans Medium';
         @include font-size(29px, 36px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Medium LF';
+            @include font-size(29px, 36px);
         }
     }
 
@@ -128,8 +135,9 @@ p {
         font-family: 'EconSans Bold';
         @include font-size(24px, 36px);
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Bold LF';
+            @include font-size(24px, 36px);
         }
     }
 
@@ -138,8 +146,9 @@ p {
             font-family: 'EconSans Regular';
             @include font-size(21px, 32px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Regular LF';
+                @include font-size(21px, 32px);
             }
         }
 
@@ -147,8 +156,9 @@ p {
             font-family: 'EconSans Bold';
             @include font-size(21px, 32px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Bold LF';
+                @include font-size(21px, 32px);
             }
         }
 
@@ -168,8 +178,9 @@ p {
             font-family: 'EconSans Regular';
             @include font-size(18px, 28px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Regular LF';
+                @include font-size(18px, 28px);
             }
         }
 
@@ -177,8 +188,10 @@ p {
             font-family: 'EconSans Bold';
             @include font-size(18px, 28px);
 
-            &.type-lf {
+
+            &-lf {
                 font-family: 'EconSans Bold LF';
+                @include font-size(18px, 28px);
             }
         }
 
@@ -198,8 +211,9 @@ p {
             font-family: 'EconSans Regular';
             @include font-size(16px, 24px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Regular LF';
+                @include font-size(16px, 24px);
             }
         }
 
@@ -207,8 +221,9 @@ p {
             font-family: 'EconSans Bold';
             @include font-size(16px, 24px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Bold LF';
+                @include font-size(16px, 24px);
             }
         }
 
@@ -228,8 +243,9 @@ p {
             font-family: 'EconSans Regular';
             @include font-size(13px, 20px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Regular LF';
+                @include font-size(13px, 20px);
             }
         }
 
@@ -237,8 +253,9 @@ p {
             font-family: 'EconSans Bold';
             @include font-size(13px, 20px);
 
-            &.type-lf {
+            &-lf {
                 font-family: 'EconSans Bold LF';
+                @include font-size(13px, 20px);
             }
         }
 
@@ -258,8 +275,10 @@ p {
         @include font-size(13px, 20px);
         font-weight: 300;
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Regular LF';
+            @include font-size(13px, 20px);
+            font-weight: 300;
         }
     }
 
@@ -269,8 +288,11 @@ p {
         color: red;
         text-transform: uppercase;
 
-        &.type-lf {
+        &-lf {
             font-family: 'EconSans Bold LF';
+            @include font-size(13px, 20px);
+            color: red;
+            text-transform: uppercase;
         }
     }
 }
