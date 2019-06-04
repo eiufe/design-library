@@ -1,4 +1,5 @@
-@import "./reset";
+@import "./components/globals/reset";
+@import "./components/globals/mixins";
 @import "./components/foundation elements/typography/typography";
 @import "./components/foundation elements/grid/grid";
 @import "./components/foundation elements/elevation levels/elevation levels";
@@ -9,7 +10,7 @@
 @import "./components/foundation elements/cards/cards";
 
 /* Extra CSS to be removed*/
-.color-box {
+.demo-color-box {
     height: 100px;
     width: 100px;
     display: inline-block;
@@ -18,11 +19,11 @@
     margin: 25px;
 }
 
-.component-wrapper {
+.demo-component-wrapper {
     padding: 20px;
 }
 
-.font-wrapper {
+.demo-font-wrapper {
     padding: 10px;
     border: 1px solid #121212;
     margin: 12px 0;
@@ -35,12 +36,12 @@
     margin-bottom: 25px;
 }
 
-label {
+.demo-label {
     display: block;
     @extend .type-theta-econ-bold;
 }
 
-.elem-space {
+.demo-elem-space {
     height: 20px;
     width: 100%;
 }

@@ -1,0 +1,61 @@
+$base-font: 16px;
+
+@function calculateRem($size) {
+    $remSize: $size / $base-font;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size, $height) {
+    font-size: $base-font;
+    font-size: calculateRem($size);
+    line-height: $height;
+    line-height: calculateRem($height);
+}
+
+@mixin bp-mobile {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin bp-mobile-potrait {
+    @media only screen and (min-width: 320px) and (max-width: 539px) {
+        @content;
+    }
+}
+
+@mixin bp-mobile-landscape {
+    @media only screen and (min-width: 540px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-potrait {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet-landscape {
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-desktop {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-desktop-lg {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
