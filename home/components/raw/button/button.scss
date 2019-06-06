@@ -3,14 +3,14 @@ button.js-btn {
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    @include font-size(16px, 20px)
+    @include font-size(16px, 20px);
     font-family: 'EconSans Bold';
     text-align: center;
     display: inline-block;
     position: relative;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     overflow: hidden;
-    color: #FFFFFF;
+    color: $color-ui-white;
 
     &.btn {
         &-sm {
@@ -26,40 +26,40 @@ button.js-btn {
         }
 
         &-primary {
-            background-color: #3E51B5;
-            color: #FFFFFF;
+            background-color: $color-ui-action;
+            color: $color-ui-white;
             border-radius: 4px;
             @extend .elevate-2;
 
             &:hover,
             &:focus {
-                background-color: #4C60EB;
+                background-color: $color-ui-action-hover;
                 @extend .elevate-4;
             }
 
             &:active {
-                background-color: #6075EA;
+                background-color: $color-ui-action-focus;
                 @extend .elevate-8;
             }
         }
 
         &-secondary {
-            background-color: #FFFFFF;
+            background-color: $color-ui-white;
             border-radius: 4px;
-            border: 1px solid #3E51B5;
-            color: #3E51B5;
+            border: 1px solid $color-ui-action;
+            color: $color-ui-action;
             @extend .elevate-2;
 
             &:hover,
             &:focus {
-                border: 1px solid #4C60EB;
-                color: #4C60EB;
+                border: 1px solid $color-ui-action-hover;
+                color: $color-ui-action-hover;
                 @extend .elevate-4;
             }
 
             &:active {
-                border: 1px solid #002984;
-                color: #002984;
+                border: 1px solid $color-ui-action-focus;
+                color: $color-ui-action-focus;
                 @extend .elevate-8;
             }
         }
@@ -78,7 +78,7 @@ button.js-btn {
         }
 
         &-disabled {
-            background-color: #CFCFCF;
+            background-color: $color-ui-grey-2;
             pointer-events: none;
             @extend .elevate-0;
         }
@@ -115,5 +115,5 @@ button.js-btn {
 }
 
 .rippleEffect {
-    animation: rippleDrop .3s linear;
+    animation: rippleDrop .2s linear;
 }

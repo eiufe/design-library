@@ -1,0 +1,13 @@
+{
+    "title": "Buttons",
+    "default": "default",
+    "variants": [
+    {
+        "name": "default",
+        "label": "Default"
+    },
+    {
+        "name": "breadcrumbs",
+        "label": "Breadcrumbs"
+    }]
+}
