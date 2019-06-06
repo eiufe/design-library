@@ -63,10 +63,10 @@ p {
 .type {
     &-tera {
         font-family: 'EconSans Light';
-        @include font-size(112px, 140px);
+        @include font-size($font-size-tera, 140px);
 
         &-lf {
-            @include font-size(112px, 140px);
+            @include font-size($font-size-tera, 140px);
             font-family: 'EconSans Light LF';
         }
     }

@@ -24,7 +24,12 @@ a {
     @extend .type-theta-econ-regular;
     border-bottom: 2px solid $color-ui-action;
 
-    &:hover {
+    &:visted {
+        color: $color-text-default;
+    }
+
+    &:hover,
+    &:focus {
         color: #ffffff;
         background: $color-ui-action;
     }

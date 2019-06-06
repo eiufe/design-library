@@ -8,8 +8,7 @@ $base-font: 16px;
 @mixin font-size($size, $height) {
     font-size: $base-font;
     font-size: calculateRem($size);
-    line-height: $height;
-    line-height: calculateRem($height);
+    line-height: $height / $size;
 }
 
 
