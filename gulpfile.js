@@ -88,12 +88,13 @@ const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console;
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
-    "skin": "red"
+    skin: "red",
+    styles: ['default', '/css/dl.css']
 });
 
+fractal.components.set('default.status', null);
 fractal.set('project.title', 'EIU Elements');
 fractal.components.set('path', pathConfig.designLibrarySrc + 'components');
-fractal.components.set('default.status', 'wip');
 fractal.components.set('default.preview', '@preview');
 fractal.docs.set('path', pathConfig.designLibrarySrc + 'docs');
 fractal.web.set('static.path', pathConfig.designLibrarySrc + '/public');
