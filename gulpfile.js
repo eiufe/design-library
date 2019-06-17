@@ -93,7 +93,7 @@ const myCustomisedTheme = mandelbrot({
 });
 
 fractal.components.set('default.status', null);
-fractal.set('project.title', 'EIU Elements');
+fractal.set('project.title', 'Elements');
 fractal.components.set('path', pathConfig.designLibrarySrc + 'components');
 fractal.components.set('default.preview', '@preview');
 fractal.docs.set('path', pathConfig.designLibrarySrc + 'docs');
