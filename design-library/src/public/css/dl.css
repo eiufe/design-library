@@ -531,7 +531,7 @@ textarea {
     font-size: 1.8125rem;
     line-height: 1.24138; }
 
-.type-epsilon, #frame .Header-title {
+.type-epsilon {
   font-family: 'EconSans Bold';
   font-size: 24px;
   font-size: 1.5rem;
@@ -542,7 +542,7 @@ textarea {
     font-size: 1.5rem;
     line-height: 1.5; }
 
-.type-zeta-econ-regular, #frame .Tree-title {
+.type-zeta-econ-regular {
   font-family: 'EconSans Regular';
   font-size: 21px;
   font-size: 1.3125rem;
@@ -610,8 +610,7 @@ textarea {
   font-size: 1.125rem;
   line-height: 1.55556; }
 
-.type-theta-econ-regular, .elem-text-link, .elem-breadcrumbs li:after, .elem-breadcrumbs li a, .elem-breadcrumbs-mobile li:last-child:before, #frame .Browser span,
-#frame .Browser *, .demo-font-wrapper p {
+.type-theta-econ-regular, .elem-text-link, .elem-breadcrumbs li:after, .elem-breadcrumbs li a, .elem-breadcrumbs-mobile li:last-child:before, .demo-font-wrapper p {
   font-family: 'EconSans Regular';
   font-size: 16px;
   font-size: 1rem;
@@ -1050,36 +1049,6 @@ img {
         position: absolute;
         right: -2px;
         top: 3px; }
-
-#frame .Header {
-  background-color: #eee;
-  color: #2d2d2d; }
-  #frame .Header svg {
-    fill: #2d2d2d; }
-
-#frame .Header-title {
-  padding-left: 160px;
-  position: relative; }
-  #frame .Header-title:before {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    top: 10px;
-    background: url("../images/logos/eiu_logo_horizontal.svg");
-    width: 150px;
-    height: 40px;
-    background-repeat: no-repeat; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    #frame .Header-title {
-      padding-left: 0; }
-      #frame .Header-title:before {
-        display: none; } }
-
-#frame .Frame-panel--sidebar {
-  background-color: #eee; }
-
-.Meta-value a:hover span {
-  text-decoration: none; }
 
 /* Extra CSS to be removed*/
 .demo-color-box {

@@ -89,8 +89,9 @@ const logger = fractal.cli.console;
 const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
     skin: "red",
-    styles: ['default', '/css/dl.css']
+    styles: ['default', '/css/fractal.css']
 });
+myCustomisedTheme.addLoadPath(pathConfig.designLibrarySrc + 'public/theme-overrides');
 
 fractal.components.set('default.status', null);
 fractal.set('project.title', 'Elements');
