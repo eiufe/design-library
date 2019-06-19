@@ -454,17 +454,6 @@ textarea {
   font-family: 'EconSans Bold LF';
   src: url("../fonts/TTF/ecosabol-webfont.ttf") format("truetype"); }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p {
-  font-family: 'EconSans Regular';
-  color: #121212; }
-
 .type-tera {
   font-family: 'EconSans Light';
   font-size: 112px;
