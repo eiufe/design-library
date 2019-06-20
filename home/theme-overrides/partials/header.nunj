@@ -3,5 +3,5 @@
         {% include 'icons/close-nav.svg' %}
         {% include 'icons/open-nav.svg' %}
     </button>
-    <a href="{{ path('/') }}" class="Header-title type-epsilon" data-pjax><img src="{{ path('/images/logos/eiu_logo_horizontal.svg') }}" title=logo /> Elements</a>
+    <a href="{{ path('/') }}" class="Header-title type-epsilon" data-pjax><img src="{{ path('/images/logos/eiu_elements_logo.svg') }}" title=logo /></a>
 </div>
