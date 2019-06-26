@@ -780,6 +780,23 @@ html {
 .col-xs-4 {
   width: 98.4%; }
 
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .flex-grid {
+    margin: 0 8px; }
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4 {
+    margin: 5px 8px; }
+  .col-xs-1 {
+    width: 19.2%; }
+  .col-xs-2 {
+    width: 44.2%; }
+  .col-xs-3 {
+    width: 69.3%; }
+  .col-xs-4 {
+    width: 98.4%; } }
+
 /* 6 column layout -sm */
 @media only screen and (min-width: 540px) and (max-width: 991px) {
   .col-sm-1 {
