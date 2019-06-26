@@ -358,13 +358,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-5a6681a0a4e7a317d29b66afc3448bad">grid.scss</option>
+                <option value="file-4f5d785089ade2bd3a1bc0bce550237e">grid.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-5a6681a0a4e7a317d29b66afc3448bad" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-4f5d785089ade2bd3a1bc0bce550237e" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -444,7 +444,33 @@
     <span class="hljs-attribute">width</span>: <span class="hljs-number">98.4%</span>;
 }
 
+@<span class="hljs-keyword">media</span> only screen and (min-width: 320px) and (max-width: 359px) {
+    <span class="hljs-selector-class">.flex-grid</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">8px</span>; 
+    }
+    <span class="hljs-selector-class">.col-xs-1</span>,
+    <span class="hljs-selector-class">.col-xs-2</span>,
+    <span class="hljs-selector-class">.col-xs-3</span>,
+    <span class="hljs-selector-class">.col-xs-4</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">8px</span>;
+    }
 
+    <span class="hljs-selector-class">.col-xs-1</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">19.2%</span>;
+    }
+
+    <span class="hljs-selector-class">.col-xs-2</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">44.2%</span>;
+    }
+
+    <span class="hljs-selector-class">.col-xs-3</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">69.3%</span>;
+    }
+
+    <span class="hljs-selector-class">.col-xs-4</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">98.4%</span>;
+    }
+}
 <span class="hljs-comment">/* 6 column layout -sm */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: 540px) and (max-width: 991px) {
     <span class="hljs-selector-class">.col-sm-1</span> {
@@ -577,7 +603,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.5 KB</span>
+                    <span class="Meta-value">2.9 KB</span>
                 </li>
             </ul>
         </div>
