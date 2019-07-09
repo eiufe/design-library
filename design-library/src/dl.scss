@@ -20,9 +20,7 @@
     margin: 25px;
 }
 
-.demo-component-wrapper {
-    padding: 20px;
-}
+
 
 .demo-font-wrapper {
     padding: 10px;
@@ -40,9 +38,4 @@
 .demo-label {
     display: block;
     @extend .type-theta-econ-bold;
-}
-
-.demo-elem-space {
-    height: 20px;
-    width: 100%;
 }

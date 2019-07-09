@@ -1,109 +1,77 @@
-a.js-btn,
-button.js-btn {
+button,
+.btn {
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    @include font-size(16px, 20px);
-    font-family: 'EconSans Bold';
-    text-align: center;
-    display: inline-block;
     position: relative;
-    transition: box-shadow 0.2s ease-in-out;
+    padding: 9px 32px;
+    border: 0;
+    @extend .type-theta-econ-regular;
+    border-radius: 4px;
     overflow: hidden;
-    color: $color-ui-white;
 
-    &.btn {        
-        &-sm {
-            padding: 8px 16px;
+    @include bp-mobile {
+        padding: 9px 24px;
+    }
+
+    &.btn-primary {
+        background: $color-brand-sec-chicago;
+        color: $color-brand-thimpu;
+
+        &:hover,
+        &:active
+         {
+            background: $color-brand-sec-athens;
         }
 
-        &-md {
-            padding: 16px 48px;
+    }
+
+    &.btn-secondary {
+        color: $color-brand-sec-chicago;
+        border: 2px solid $color-brand-sec-chicago;
+
+        &:hover {
+            border: 2px solid $color-brand-sec-athens;
         }
+    }
 
-        &-lg {
-            padding: 24px 64px;
+    &.btn-disabled {
+        background: $color-brand-sec-berlin;
+        color: $color-brand-bejing;
+        pointer-events: none;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            background: $color-brand-sec-berlin;
         }
+    }
 
-        &-primary {
-            background-color: $color-ui-action;
-            color: $color-ui-white;
-            border-radius: 4px;
-            @extend .elevate-2;
+    &.btn-icon {
+        padding: 11px;
+        fill: #fff;
+    }
 
-            &:hover,
-            &:focus {
-                background-color: $color-ui-action-hover;
-                @extend .elevate-4;
-            }
-
-            &:active {
-                background-color: $color-ui-action-focus;
-                @extend .elevate-8;
-            }
-        }
-
-        &-secondary {
-            background-color: $color-ui-white;
-            border-radius: 4px;
-            border: 1px solid $color-ui-action;
-            color: $color-ui-action;
-            @extend .elevate-2;
-
-            &:hover,
-            &:focus {
-                border: 1px solid $color-ui-action-hover;
-                color: $color-ui-action-hover;
-                @extend .elevate-4;
-            }
-
-            &:active {
-                border: 1px solid $color-ui-action-focus;
-                color: $color-ui-action-focus;
-                @extend .elevate-8;
-            }
-        }
-
-        &-pill {
-            border-radius: 22px;
-        }
-
-        &-circle {
-            padding: 25px;
-            border-radius: 50%;
-        }
-
-        &-fluid {
-            display: block;
-        }
-
-        &-disabled {
-            background-color: $color-ui-grey-2;
-            pointer-events: none;
-            @extend .elevate-0;
-        }
+    &.btn-fluid {
+        display: block;
     }
 }
 
 .ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+
     &-primary {
-        width: 0;
-        height: 0;
-        border-radius: 50%;
         background: rgba(255, 255, 255, 0.4);
-        transform: scale(0);
-        position: absolute;
-        opacity: 1;
     }
 
     &-secondary {
-        width: 0;
-        height: 0;
-        border-radius: 50%;
         background: rgba(96, 117, 234, 0.2);
-        transform: scale(0);
-        position: absolute;
-        opacity: 1;
     }
 }
 

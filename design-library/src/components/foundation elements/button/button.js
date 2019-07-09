@@ -1,6 +1,6 @@
 export default function buttonUI() {
 
-    $(document).on('click', '.js-btn', function(e) {
+    $(document).on('click', '.btn', function(e) {
         e.preventDefault();
         var $self = $(this);
         $self.find(".ripple").remove();
