@@ -1,109 +1,126 @@
-a.js-btn,
-button.js-btn {
+button,
+.btn {
+    display: inline-block;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    @include font-size(16px, 20px);
-    font-family: 'EconSans Bold';
-    text-align: center;
-    display: inline-block;
     position: relative;
-    transition: box-shadow 0.2s ease-in-out;
+    @extend .type-theta-econ-regular;
+    padding: 9px 32px;
+    border: 0;
+    border-radius: 4px;
     overflow: hidden;
-    color: $color-ui-white;
+    border: $border-width-thick solid transparent;
 
-    &.btn {        
-        &-sm {
-            padding: 8px 16px;
+    &:focus {
+        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+    }
+
+    @include bp-mobile {
+        padding: 9px 24px;
+    }
+
+    &.btn-slim {
+        padding: 7px 16px;
+
+        @include bp-mobile {
+            padding: 7px 12px;
+        }
+    }
+
+    &.btn-primary {
+        background: $color-brand-sec-chicago;
+        color: $color-brand-thimpu;
+
+        &:hover,
+        &:active {
+            background: $color-brand-sec-athens;
         }
 
-        &-md {
-            padding: 16px 48px;
+    }
+
+    &.btn-secondary {
+        color: $color-brand-sec-chicago;
+        border: $border-width-thick solid $color-brand-sec-chicago;
+
+        &:hover,
+        &:active {
+            color: $color-brand-sec-athens;
+            border: $border-width-thick solid $color-brand-sec-athens;
+        }
+    }
+
+    &.btn-disabled {
+        background: $color-brand-sec-berlin;
+        color: rgba(18, 18, 18, 0.5);
+        pointer-events: none;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            background: $color-brand-sec-berlin;
+        }
+    }
+
+    &.btn-icon {
+        padding: 11px;
+    }
+
+    &.btn-fluid {
+        display: block;
+    }
+
+    &.btn-inverse {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        color: #121212;
+
+        &:hover,
+        &:active {
+            opacity: 0.85;
         }
 
-        &-lg {
-            padding: 24px 64px;
-        }
+        &.btn-secondary {
+            background: transparent;
+            color: #FFFFFF;
+            border: $border-width-thick solid #FFFFFF;
 
-        &-primary {
-            background-color: $color-ui-action;
-            color: $color-ui-white;
-            border-radius: 4px;
-            @extend .elevate-2;
-
-            &:hover,
-            &:focus {
-                background-color: $color-ui-action-hover;
-                @extend .elevate-4;
+            &:hover {
+                border: $border-width-thick solid rgba(255, 255, 255, 0.75);
+                color: #FFFFFF;
+                opacity: 1;
             }
 
-            &:active {
-                background-color: $color-ui-action-focus;
-                @extend .elevate-8;
+            &.btn-disabled {
+                background: transparent;
+                border: $border-width-thick solid rgba(255, 255, 255, 0.25);
             }
         }
 
-        &-secondary {
-            background-color: $color-ui-white;
-            border-radius: 4px;
-            border: 1px solid $color-ui-action;
-            color: $color-ui-action;
-            @extend .elevate-2;
 
-            &:hover,
-            &:focus {
-                border: 1px solid $color-ui-action-hover;
-                color: $color-ui-action-hover;
-                @extend .elevate-4;
-            }
 
-            &:active {
-                border: 1px solid $color-ui-action-focus;
-                color: $color-ui-action-focus;
-                @extend .elevate-8;
-            }
-        }
-
-        &-pill {
-            border-radius: 22px;
-        }
-
-        &-circle {
-            padding: 25px;
-            border-radius: 50%;
-        }
-
-        &-fluid {
-            display: block;
-        }
-
-        &-disabled {
-            background-color: $color-ui-grey-2;
-            pointer-events: none;
-            @extend .elevate-0;
+        &.btn-disabled {
+            background-color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.5);
         }
     }
 }
 
 .ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+
     &-primary {
-        width: 0;
-        height: 0;
-        border-radius: 50%;
         background: rgba(255, 255, 255, 0.4);
-        transform: scale(0);
-        position: absolute;
-        opacity: 1;
     }
 
     &-secondary {
-        width: 0;
-        height: 0;
-        border-radius: 50%;
         background: rgba(96, 117, 234, 0.2);
-        transform: scale(0);
-        position: absolute;
-        opacity: 1;
     }
 }
 
@@ -115,5 +132,5 @@ button.js-btn {
 }
 
 .rippleEffect {
-    animation: rippleDrop .2s linear;
+    animation: rippleDrop $duration-200 linear;
 }

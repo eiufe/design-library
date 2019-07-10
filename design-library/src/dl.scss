@@ -4,10 +4,8 @@
 @import "./components/foundation elements/typography/typography";
 @import "./components/foundation elements/grid/grid";
 @import "./components/foundation elements/elevation levels/elevation levels";
-@import "./components/foundation elements/navigation-links/navigation-links";
 @import "./components/foundation elements/button/button";
 @import "./components/foundation elements/imagery/imagery";
-@import "./components/foundation elements/cards/cards";
 
 /* Extra CSS to be removed*/
 .demo-color-box {
@@ -39,9 +37,4 @@
 .demo-label {
     display: block;
     @extend .type-theta-econ-bold;
-}
-
-.demo-elem-space {
-    height: 20px;
-    width: 100%;
 }
