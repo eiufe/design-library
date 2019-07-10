@@ -1,17 +1,31 @@
 button,
 .btn {
+    display: inline-block;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
+    @extend .type-theta-econ-regular;
     padding: 9px 32px;
     border: 0;
-    @extend .type-theta-econ-regular;
     border-radius: 4px;
     overflow: hidden;
+    border: $border-width-thick solid transparent;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+    }
 
     @include bp-mobile {
         padding: 9px 24px;
+    }
+
+    &.btn-slim {
+        padding: 7px 16px;
+
+        @include bp-mobile {
+            padding: 7px 12px;
+        }
     }
 
     &.btn-primary {
@@ -19,8 +33,7 @@ button,
         color: $color-brand-thimpu;
 
         &:hover,
-        &:active
-         {
+        &:active {
             background: $color-brand-sec-athens;
         }
 
@@ -28,16 +41,18 @@ button,
 
     &.btn-secondary {
         color: $color-brand-sec-chicago;
-        border: 2px solid $color-brand-sec-chicago;
+        border: $border-width-thick solid $color-brand-sec-chicago;
 
-        &:hover {
-            border: 2px solid $color-brand-sec-athens;
+        &:hover,
+        &:active {
+            color: $color-brand-sec-athens;
+            border: $border-width-thick solid $color-brand-sec-athens;
         }
     }
 
     &.btn-disabled {
         background: $color-brand-sec-berlin;
-        color: $color-brand-bejing;
+        color: rgba(18, 18, 18, 0.5);
         pointer-events: none;
 
         &:hover,
@@ -50,11 +65,45 @@ button,
 
     &.btn-icon {
         padding: 11px;
-        fill: #fff;
     }
 
     &.btn-fluid {
         display: block;
+    }
+
+    &.btn-inverse {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        color: #121212;
+
+        &:hover,
+        &:active {
+            opacity: 0.85;
+        }
+
+        &.btn-secondary {
+            background: transparent;
+            color: #FFFFFF;
+            border: $border-width-thick solid #FFFFFF;
+
+            &:hover {
+                border: $border-width-thick solid rgba(255, 255, 255, 0.75);
+                color: #FFFFFF;
+                opacity: 1;
+            }
+
+            &.btn-disabled {
+                background: transparent;
+                border: $border-width-thick solid rgba(255, 255, 255, 0.25);
+            }
+        }
+
+
+
+        &.btn-disabled {
+            background-color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 
@@ -83,5 +132,5 @@ button,
 }
 
 .rippleEffect {
-    animation: rippleDrop .2s linear;
+    animation: rippleDrop $duration-200 linear;
 }

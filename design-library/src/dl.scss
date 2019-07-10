@@ -4,11 +4,8 @@
 @import "./components/foundation elements/typography/typography";
 @import "./components/foundation elements/grid/grid";
 @import "./components/foundation elements/elevation levels/elevation levels";
-@import "./components/foundation elements/navigation-links/navigation-links";
 @import "./components/foundation elements/button/button";
 @import "./components/foundation elements/imagery/imagery";
-@import "./components/foundation elements/cards/cards";
-@import "./components/foundation elements/form-inputs/checkbox/checkbox";
 
 /* Extra CSS to be removed*/
 .demo-color-box {
@@ -20,7 +17,9 @@
     margin: 25px;
 }
 
-
+.demo-component-wrapper {
+    padding: 20px;
+}
 
 .demo-font-wrapper {
     padding: 10px;
