@@ -403,17 +403,6 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-.demo-fluid-fonts {
-  line-height: 1.25; }
-  .demo-fluid-fonts {
-    font-size: 45px; }
-    @media screen and (min-width: 320px) {
-      .demo-fluid-fonts {
-        font-size: calc(45px + 67 * ((100vw - 320px) / 1120)); } }
-    @media screen and (min-width: 1440px) {
-      .demo-fluid-fonts {
-        font-size: 112px; } }
-
 @font-face {
   font-family: 'EconSans Light';
   src: url("../fonts/EOT/econsans-lt-os.eot") format("eot"), url("../fonts/WOFF/econsans-lt-os.woff") format("woff"), url("../fonts/TTF/econsans-lt-os.ttf") format("truetype"); }
@@ -492,7 +481,7 @@ textarea {
   font-size: 51px;
   font-size: 3.1875rem;
   line-height: 1.2549; }
-  .type-alpha-lf {
+  .type-alpha-lf, h1 {
     font-family: 'EconSans Regular LF';
     font-size: 51px;
     font-size: 3.1875rem;
@@ -503,7 +492,7 @@ textarea {
   font-size: 45px;
   font-size: 2.8125rem;
   line-height: 1.24444; }
-  .type-beta-lf {
+  .type-beta-lf, h2 {
     font-family: 'EconSans Regular LF';
     font-size: 45px;
     font-size: 2.8125rem;
@@ -514,7 +503,7 @@ textarea {
   font-size: 35px;
   font-size: 2.1875rem;
   line-height: 1.25714; }
-  .type-gamma-lf {
+  .type-gamma-lf, h3 {
     font-family: 'EconSans Medium LF';
     font-size: 35px;
     font-size: 2.1875rem;
@@ -525,7 +514,7 @@ textarea {
   font-size: 29px;
   font-size: 1.8125rem;
   line-height: 1.24138; }
-  .type-delta-lf {
+  .type-delta-lf, h4, h6 {
     font-family: 'EconSans Medium LF';
     font-size: 29px;
     font-size: 1.8125rem;
@@ -536,7 +525,7 @@ textarea {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.5; }
-  .type-epsilon-lf {
+  .type-epsilon-lf, h5 {
     font-family: 'EconSans Bold LF';
     font-size: 24px;
     font-size: 1.5rem;
@@ -706,6 +695,72 @@ textarea {
     line-height: 1.53846;
     color: red;
     text-transform: uppercase; }
+
+h1 {
+  line-height: 1.25; }
+  h1 {
+    font-size: 29px; }
+    @media screen and (min-width: 320px) {
+      h1 {
+        font-size: calc(29px + 22 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h1 {
+        font-size: 51px; } }
+
+h2 {
+  line-height: 1.25; }
+  h2 {
+    font-size: 24px; }
+    @media screen and (min-width: 320px) {
+      h2 {
+        font-size: calc(24px + 21 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h2 {
+        font-size: 45px; } }
+
+h3 {
+  line-height: 1.25; }
+  h3 {
+    font-size: 21px; }
+    @media screen and (min-width: 320px) {
+      h3 {
+        font-size: calc(21px + 14 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h3 {
+        font-size: 35px; } }
+
+h4 {
+  line-height: 1.25; }
+  h4 {
+    font-size: 18px; }
+    @media screen and (min-width: 320px) {
+      h4 {
+        font-size: calc(18px + 11 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h4 {
+        font-size: 29px; } }
+
+h5 {
+  line-height: 1.25; }
+  h5 {
+    font-size: 16px; }
+    @media screen and (min-width: 320px) {
+      h5 {
+        font-size: calc(16px + 8 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h5 {
+        font-size: 24px; } }
+
+h6 {
+  line-height: 1.25; }
+  h6 {
+    font-size: 14px; }
+    @media screen and (min-width: 320px) {
+      h6 {
+        font-size: calc(14px + 7 * ((100vw - 320px) / 1120)); } }
+    @media screen and (min-width: 1440px) {
+      h6 {
+        font-size: 21px; } }
 
 /* mobile first grids: 4 column layout by default -xs */
 html {
@@ -886,6 +941,60 @@ html {
 .elevate-24 {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
 
+.bg-brand-red {
+  background: #E3120B; }
+
+.bg-bejing {
+  background-color: #121212; }
+
+.bg-thimpu {
+  background-color: #FFFFFF; }
+
+.bg-sec-kiev {
+  background-color: #383E42; }
+
+.bg-sec-moscow {
+  background-color: #595959; }
+
+.bg-sec-london {
+  background-color: #B6B6B6; }
+
+.bg-sec-cardiff {
+  background-color: #D7D7D7; }
+
+.bg-sec-berlin {
+  background-color: #F2F2F2; }
+
+.bg-sec-chicago {
+  background-color: #3C4FAF; }
+
+.bg-sec-athens {
+  background-color: #142680; }
+
+.bg-sec-melbourne {
+  background-color: #FDDC21; }
+
+.bg-sec-honolulu {
+  background-color: #19D2B9; }
+
+.bg-sec-miami {
+  background-color: #D21982; }
+
+.bg-ext-amsterdam {
+  background-color: #E75A36; }
+
+.bg-ext-nairobi {
+  background-color: #0A1757; }
+
+.bg-ext-tokyo {
+  background-color: #E7365E; }
+
+.bg-ext-cairo {
+  background-color: #EBE9E0; }
+
+.bg-ext-delhi {
+  background-color: #E0EBEB; }
+
 button,
 .btn {
   display: inline-block;
@@ -893,7 +1002,7 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   position: relative;
-  padding: 9px 32px;
+  padding: 8px 32px;
   border: 0;
   border-radius: 4px;
   overflow: hidden;
@@ -904,14 +1013,14 @@ button,
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     button,
     .btn {
-      padding: 9px 24px; } }
+      padding: 8px 24px; } }
   button.btn-slim,
   .btn.btn-slim {
-    padding: 7px 16px; }
+    padding: 4px 16px; }
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       button.btn-slim,
       .btn.btn-slim {
-        padding: 7px 12px; } }
+        padding: 4px 12px; } }
   button.btn-primary,
   .btn.btn-primary {
     background: #3C4FAF;

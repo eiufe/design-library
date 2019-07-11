@@ -84,14 +84,3 @@ $base-font: 16px;
         }
     }
 }
-
-$demo-min-width: 320px;
-$demo-max-width: 1440px;
-$demo-min-font: 45px;
-$demo-max-font: 112px;
-
-
-.demo-fluid-fonts {
-    @include fluid-type($demo-min-width, $demo-max-width, $demo-min-font, $demo-max-font);
-    line-height: 1.25;
-}

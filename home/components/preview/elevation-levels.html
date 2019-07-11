@@ -8,61 +8,43 @@
     <link rel="stylesheet" href="../../css/dl.css">
     <title>Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: 1px solid #EEEEEE;
+        padding: 10px;
+        margin: 25px;
+        position: relative;
+    }
+
+    div::before {
+        content: attr(class);
+        position: absolute;
+        font-family: 'EconSans Light LF';
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="demo-component-wrapper">
-        
-<div class="demo-color-box elevate-0">
-    <span class="type-theta-econ-regular">Level 0</span>
-</div>
-
-<div class="demo-color-box elevate-1">
-    <span class="type-theta-econ-regular">Level 1</span>
-</div>
-
-<div class="demo-color-box elevate-2">
-    <span class="type-theta-econ-regular">Level 2</span>
-</div>
-
-<div class="demo-color-box elevate-3">
-    <span class="type-theta-econ-regular">Level 3</span>
-</div>
-
-<div class="demo-color-box elevate-4">
-    <span class="type-theta-econ-regular">Level 4</span>
-</div>
-
-<div class="demo-color-box elevate-6">
-    <span class="type-theta-econ-regular">Level 6</span>
-</div>
-
-<div class="demo-color-box elevate-8">
-    <span class="type-theta-econ-regular">Level 8</span>
-</div>
-
-<div class="demo-color-box elevate-9">
-    <span class="type-theta-econ-regular">Level 9</span>
-</div>
-
-<div class="demo-color-box elevate-10">
-    <span class="type-theta-econ-regular">Level 10</span>
-</div>
-
-<div class="demo-color-box elevate-12">
-    <span class="type-theta-econ-regular">Level 12</span>
-</div>
-
-<div class="demo-color-box elevate-16">
-    <span class="type-theta-econ-regular">Level 16</span>
-</div>
-
-<div class="demo-color-box elevate-24">
-    <span class="type-theta-econ-regular">Level 24</span>
-</div>
-    </div>
-    <script src="../../js/dl.js"></script>
-    <script src="../../js/custom-views.js"></script>
+    <section class="demo-component-wrapper">
+        <div class="elevate-0"></div>
+<div class="elevate-1"></div>
+<div class="elevate-2"></div>
+<div class="elevate-3"></div>
+<div class="elevate-4"></div>
+<div class="elevate-6"></div>
+<div class="elevate-8"></div>
+<div class="elevate-9"></div>
+<div class="elevate-10"></div>
+<div class="elevate-12"></div>
+<div class="elevate-16"></div>
+<div class="elevate-24"></div>
+    </section>
 </body>
 
 </html>

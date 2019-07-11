@@ -8,12 +8,50 @@
     <link rel="stylesheet" href="../../css/dl.css">
     <title>Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: 1px solid #EEEEEE;
+        padding: 10px;
+        margin: 25px;
+        vertical-align: top;
+        position: relative;
+        font-family: 'EconSans Regular';
+    }
+
+    div::before {
+        content: attr(class);
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+        width: 100%;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="demo-component-wrapper">
-        
-    </div>
+    <section class="demo-component-wrapper">
+        <div class="bg-brand-red"></div>
+<div class="bg-bejing"></div>
+<div class="bg-thimpu"></div>
+<div class="bg-sec-kiev"></div>
+<div class="bg-sec-moscow"></div>
+<div class="bg-sec-london"></div>
+<div class="bg-sec-cardiff"></div>
+<div class="bg-sec-berlin"></div>
+<div class="bg-sec-chicago"></div>
+<div class="bg-sec-athens"></div>
+<div class="bg-sec-melbourne"></div>
+<div class="bg-sec-honolulu"></div>
+<div class="bg-sec-miami"></div>
+<div class="bg-ext-amsterdam"></div>
+<div class="bg-ext-nairobi"></div>
+<div class="bg-ext-tokyo"></div>
+<div class="bg-ext-cairo"></div>
+<div class="bg-ext-delhi"></div>
+    </section>
     <script src="../../js/dl.js"></script>
     <script src="../../js/custom-views.js"></script>
 </body>

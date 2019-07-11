@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ path '/css/dl.css' }}">
+    <title>Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: 1px solid #EEEEEE;
+        padding: 10px;
+        margin: 25px;
+        position: relative;
+    }
+
+    div::before {
+        content: attr(class);
+        position: absolute;
+        font-family: 'EconSans Light LF';
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="demo-component-wrapper">
+        {{{ yield }}}
+    </section>
+</body>
+
+</html>

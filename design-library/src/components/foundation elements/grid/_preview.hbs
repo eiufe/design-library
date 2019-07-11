@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="{{ path '/css/dl.css' }}">
     <title>Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .flex-grid div {
+        min-height: 100px;
+        border: 1px solid #EEEEEE;
+        background: #D7D7D7;
+        vertical-align: top;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="demo-component-wrapper" style="background-color: #383E42;">
+    <section class="demo-component-wrapper">
         {{{ yield }}}
-    </div>
-    <script src="{{ path '/js/dl.js' }}"></script>
+    </section>
 </body>
 
 </html>

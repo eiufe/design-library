@@ -6,13 +6,19 @@
     <link rel="stylesheet" href="{{ path '/css/dl.css' }}">
     <title>Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    img {
+        width: 200px;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="demo-component-wrapper" style="background-color: #383E42;">
+    <div class="demo-component-wrapper">
         {{{ yield }}}
     </div>
     <script src="{{ path '/js/dl.js' }}"></script>
+    <script src="{{ path '/js/custom-views.js' }}"></script>
 </body>
 
 </html>
