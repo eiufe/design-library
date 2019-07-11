@@ -284,3 +284,54 @@
         }
     }
 }
+
+$fluid-min-width: 320px;
+$fluid-max-width: 1440px;
+$h1-min-font: 29px;
+$h1-max-font: 51px;
+$h2-min-font: 24px;
+$h2-max-font: 45px;
+$h3-min-font: 21px;
+$h3-max-font: 35px;
+$h4-min-font: 18px;
+$h4-max-font: 29px;
+$h5-min-font: 16px;
+$h5-max-font: 24px;
+$h6-min-font: 14px;
+$h6-max-font: 21px;
+
+h1 {
+    @extend .type-alpha-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h1-min-font, $h1-max-font);
+    line-height: 1.25;
+}
+
+h2 {
+    @extend .type-beta-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h2-min-font, $h2-max-font);
+    line-height: 1.25;
+}
+
+h3 {
+    @extend .type-gamma-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h3-min-font, $h3-max-font);
+    line-height: 1.25;
+}
+
+h4 {
+    @extend .type-delta-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h4-min-font, $h4-max-font);
+    line-height: 1.25;
+}
+
+h5 {
+    @extend .type-epsilon-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h5-min-font, $h5-max-font);
+    line-height: 1.25;
+}
+
+h6 {
+    @extend .type-delta-lf;
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h6-min-font, $h6-max-font);
+    line-height: 1.25;
+}
