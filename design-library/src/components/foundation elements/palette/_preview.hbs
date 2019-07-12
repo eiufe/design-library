@@ -8,31 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
     div {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
         display: inline-block;
         border: 1px solid #EEEEEE;
-        padding: 10px;
-        margin: 25px;
-        vertical-align: top;
+        margin: 45px 40px;
         position: relative;
-        font-family: 'EconSans Regular';
+        font-family: 'EconSans Light LF';
     }
 
-    div::before {
-        content: attr(class);
+    span:first-child {
+        width: 200px;
         position: absolute;
-        bottom: -35px;
+        top: -40px;
+        left: 0;
+    }
+
+    span:last-child {
+        position: absolute;
+        top: -20px;
         left: 0;
         width: 100%;
+        font-family: 'EconSans Bold LF';
     }
     </style>
 </head>
 
 <body>
     <section class="demo-component-wrapper">
-        {{{ yield }}}
-    </section>
+        {{{ yield }}} </section>
     <script src="{{ path '/js/dl.js' }}"></script>
     <script src="{{ path '/js/custom-views.js' }}"></script>
 </body>
