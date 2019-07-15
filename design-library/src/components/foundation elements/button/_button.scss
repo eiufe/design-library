@@ -13,7 +13,8 @@ button,
     border: $border-width-thick solid transparent;
 
     &:focus {
-        outline: $border-width-thick solid $color-brand-sec-honolulu;
+        border: 2px solid $color-brand-sec-honolulu !important;
+        outline: none;
     }
 
     @include bp-mobile {
