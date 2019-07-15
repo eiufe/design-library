@@ -13,7 +13,7 @@ button,
     border: $border-width-thick solid transparent;
 
     &:focus {
-        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+        outline: $border-width-thick solid $color-brand-sec-honolulu;
     }
 
     @include bp-mobile {
@@ -64,7 +64,11 @@ button,
     }
 
     &.btn-icon {
-        padding: 11px;
+        padding: 8px;
+
+        img {
+            width: 22px;
+        }
     }
 
     &.btn-fluid {
