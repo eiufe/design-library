@@ -258,13 +258,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-5a6681a0a4e7a317d29b66afc3448bad">grid.scss</option>
+                <option value="file-4f5d785089ade2bd3a1bc0bce550237e">grid.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-5a6681a0a4e7a317d29b66afc3448bad" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-4f5d785089ade2bd3a1bc0bce550237e" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -320,7 +320,13 @@
 <span class="hljs-selector-class">.col-lg-10</span>,
 <span class="hljs-selector-class">.col-lg-11</span>,
 <span class="hljs-selector-class">.col-lg-12</span> {
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">0.8%</span>;
+    @<span class="hljs-keyword">media</span> only screen and (max-width: 540px) {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">12px</span>;
+    }
+
+    @<span class="hljs-keyword">media</span> only screen and (min-width: 540px) {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">16px</span>;
+    }
 }
 
 <span class="hljs-selector-class">.color-view</span> {
@@ -329,72 +335,55 @@
 }
 
 <span class="hljs-selector-class">.col-xs-1</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">23.4%</span>;
+    <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">4</span>);
+    <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">4</span>);
 }
 
 <span class="hljs-selector-class">.col-xs-2</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">48.4%</span>;
+    <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">2</span>);
+    <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">2</span>);
 }
 
 <span class="hljs-selector-class">.col-xs-3</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">73.4%</span>;
+    <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>)/<span class="hljs-number">1.334</span>);
+    <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>)/<span class="hljs-number">1.334</span>);
 }
 
 <span class="hljs-selector-class">.col-xs-4</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">98.4%</span>;
+    <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">24px</span>);
+    <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">24px</span>);
 }
 
-@<span class="hljs-keyword">media</span> only screen and (min-width: 320px) and (max-width: 359px) {
-    <span class="hljs-selector-class">.flex-grid</span> {
-        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">8px</span>; 
-    }
-    <span class="hljs-selector-class">.col-xs-1</span>,
-    <span class="hljs-selector-class">.col-xs-2</span>,
-    <span class="hljs-selector-class">.col-xs-3</span>,
-    <span class="hljs-selector-class">.col-xs-4</span> {
-        <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> <span class="hljs-number">8px</span>;
-    }
-
-    <span class="hljs-selector-class">.col-xs-1</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">19.2%</span>;
-    }
-
-    <span class="hljs-selector-class">.col-xs-2</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">44.2%</span>;
-    }
-
-    <span class="hljs-selector-class">.col-xs-3</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">69.3%</span>;
-    }
-
-    <span class="hljs-selector-class">.col-xs-4</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">98.4%</span>;
-    }
-}
 <span class="hljs-comment">/* 6 column layout -sm */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: 540px) and (max-width: 991px) {
     <span class="hljs-selector-class">.col-sm-1</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">15.066%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">192px</span>)/<span class="hljs-number">6</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">192px</span>)/<span class="hljs-number">6</span>);
     }
 
     <span class="hljs-selector-class">.col-sm-2</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">31.732%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">3</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">3</span>);
     }
 
     <span class="hljs-selector-class">.col-sm-3</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">48.398%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
     }
 
     <span class="hljs-selector-class">.col-sm-4</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">65.064%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">1.5</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">1.5</span>);
     }
 
     <span class="hljs-selector-class">.col-sm-5</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">81.73%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">38.4px</span>)/<span class="hljs-number">1.2</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">38.4px</span>)/<span class="hljs-number">1.2</span>);
     }
 
     <span class="hljs-selector-class">.col-sm-6</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">98.396%</span>;
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
     }
 }
 
@@ -402,90 +391,111 @@
 <span class="hljs-comment">/* 8 column layout -md */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: 992px) and (max-width: 1023px) {
     <span class="hljs-selector-class">.col-md-1</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">10.9%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">256px</span>)/<span class="hljs-number">8</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">256px</span>)/<span class="hljs-number">8</span>);
     }
 
     <span class="hljs-selector-class">.col-md-2</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">23.4%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">126px</span>)/<span class="hljs-number">4</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">128px</span>)/<span class="hljs-number">4</span>);
     }
 
     <span class="hljs-selector-class">.col-md-3</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">35.9%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">85.34px</span>)/<span class="hljs-number">2.667</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">85.34px</span>)/<span class="hljs-number">2.667</span>);
     }
 
     <span class="hljs-selector-class">.col-md-4</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">48.4%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
     }
 
     <span class="hljs-selector-class">.col-md-5</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">60.9%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">51.2px</span>)/<span class="hljs-number">1.6</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">51.2px</span>)/<span class="hljs-number">1.6</span>);
     }
 
     <span class="hljs-selector-class">.col-md-6</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">73.4%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">42.67px</span>)/<span class="hljs-number">1.334</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">42.67px</span>)/<span class="hljs-number">1.334</span>);
     }
 
     <span class="hljs-selector-class">.col-md-7</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">85.9%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">36.572px</span>)/<span class="hljs-number">1.143</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">36.572px</span>)/<span class="hljs-number">1.143</span>);
     }
 
     <span class="hljs-selector-class">.col-md-8</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">98.4%</span>;
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
     }
 }
 
 <span class="hljs-comment">/* 12 column layout - lg */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: 1024px) {
+
     <span class="hljs-selector-class">.flex-grid</span> {
         <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1440px</span>;
     }
 
     <span class="hljs-selector-class">.col-lg-1</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">6.73%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">384px</span>)/<span class="hljs-number">12</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">384px</span>)/<span class="hljs-number">12</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-2</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">15.06%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">192px</span>)/<span class="hljs-number">6</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">192px</span>)/<span class="hljs-number">6</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-3</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">23.39%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">128px</span>)/<span class="hljs-number">4</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">128px</span>)/<span class="hljs-number">4</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-4</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">31.72%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">3</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">96px</span>)/<span class="hljs-number">3</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-5</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">40.05%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">76.8px</span>)/<span class="hljs-number">2.4</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">76.8px</span>)/<span class="hljs-number">2.4</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-6</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">48.38%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">64px</span>)/<span class="hljs-number">2</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-7</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">56.71%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">54.7px</span>)/<span class="hljs-number">1.715</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">54.7px</span>)/<span class="hljs-number">1.715</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-8</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">65.04%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">1.5</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">48px</span>)/<span class="hljs-number">1.5</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-9</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">73.37%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">42.5px</span>)/<span class="hljs-number">1.334</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">42.5px</span>)/<span class="hljs-number">1.334</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-10</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">74.97%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">38.4px</span>)/<span class="hljs-number">1.2</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">38.4px</span>)/<span class="hljs-number">1.2</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-11</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">90.03%</span>;
+        <span class="hljs-attribute">width</span>: calc((<span class="hljs-number">100%</span> - <span class="hljs-number">34.9px</span>)/<span class="hljs-number">1.091</span>);
+        <span class="hljs-attribute">width</span>: calc(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">34.9px</span>)/<span class="hljs-number">1.091</span>);
     }
 
     <span class="hljs-selector-class">.col-lg-12</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">98.36%</span>;
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
+        <span class="hljs-attribute">width</span>: calc(<span class="hljs-number">100%</span> - <span class="hljs-number">32px</span>);
     }
 }</pre>
                             </code>
@@ -503,7 +513,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">4.5 KB</span>
                 </li>
             </ul>
         </div>
