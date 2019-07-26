@@ -14,7 +14,7 @@
         padding: 24px 32px;
 
         .card-head {
-            @extend .type-zeta-econ-bold-lf;
+/*            @extend .type-zeta-econ-bold-lf;*/
             margin-bottom: $spacing-x-sm;
         }
 
@@ -60,7 +60,7 @@
 
         .card-content {
             .card-head {
-                @extend .type-delta-lf;
+                /*@extend .type-delta-lf;*/
             }
         }
     }
