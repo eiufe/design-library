@@ -1,289 +1,118 @@
-@font-face {
-    font-family: 'EconSans Light';
-    src: url('../fonts/EOT/econsans-lt-os.eot') format('eot'), url('../fonts/WOFF/econsans-lt-os.woff') format('woff'), url('../fonts/TTF/econsans-lt-os.ttf') format('truetype');
-}
+@import "./fontface";
 
-@font-face {
-    font-family: 'EconSans Regular';
-    src: url('../fonts/EOT/econsans-rg-os.eot') format('eot'), url('../fonts/WOFF/econsans-rg-os.woff') format('woff'), url('../fonts/TTF/econsans-rg-os.ttf') format('truetype');
-}
+.eiu-type-style {
+    &-regular {
+        font-style: normal;
+        font-weight: 400;
 
-@font-face {
-    font-family: 'EconSans Medium';
-    src: url('../fonts/EOT/econsans-md-os.eot') format('eot'), url('../fonts/WOFF/econsans-md-os.woff') format('woff'), url('../fonts/TTF/econsans-md-os.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EconSans Bold';
-    src: url('../fonts/EOT/econsans-bd-os.eot') format('eot'), url('../fonts/WOFF/econsans-bd-os.woff') format('woff'), url('../fonts/TTF/econsans-bd-os.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Milo Regular';
-    src: url('../fonts/EOT/milo-rg.eot') format('eot'), url('../fonts/WOFF/milo-rg.woff') format('woff'), url('../fonts/TTF/milo-rg.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Milo Bold';
-    src: url('../fonts/EOT/milo-bd.eot') format('eot'), url('../fonts/WOFF/milo-bd.woff') format('woff'), url('../fonts/TTF/milo-bd.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EconSans Light LF';
-    src: url('../fonts/TTF/ecosalig-webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EconSans Regular LF';
-    src: url('../fonts/TTF/ecosareg-webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EconSans Medium LF';
-    src: url('../fonts/TTF/ecosamed-webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'EconSans Bold LF';
-    src: url('../fonts/TTF/ecosabol-webfont.ttf') format('truetype');
-}
-
-.type {
-    &-tera {
-        font-family: 'EconSans Light';
-        @include font-size(112px, 140px);
-
-        &-lf {
-            @include font-size(112px, 140px);
-            font-family: 'EconSans Light LF';
+        &-italic {
+            font-style: italic;
+            font-weight: 400;
         }
     }
 
-    &-giga {
-        font-family: 'EconSans Light';
-        @include font-size(86px, 108px);
+    &-medium {
+        font-style: normal;
+        font-weight: 500;
 
-        &-lf {
-            font-family: 'EconSans Light LF';
-            @include font-size(86px, 108px);
+        &-italic {
+            font-style: italic;
+            font-weight: 500;
         }
     }
 
-    &-mega {
-        font-family: 'EconSans Light';
-        @include font-size(67px, 84px);
-
-        &-lf {
-            font-family: 'EconSans Light LF';
-            @include font-size(67px, 84px);
-        }
-    }
-
-    &-alpha {
-        font-family: 'EconSans Regular';
-        @include font-size(51px, 64px);
-
-        &-lf {
-            font-family: 'EconSans Regular LF';
-            @include font-size(51px, 64px);
-        }
-    }
-
-    &-beta {
-        font-family: 'EconSans Regular';
-        @include font-size(45px, 56px);
-
-        &-lf {
-            font-family: 'EconSans Regular LF';
-            @include font-size(45px, 56px);
-        }
-    }
-
-    &-gamma {
-        font-family: 'EconSans Medium';
-        @include font-size(35px, 44px);
-
-        &-lf {
-            font-family: 'EconSans Medium LF';
-            @include font-size(35px, 44px);
-        }
-    }
-
-    &-delta {
-        font-family: 'EconSans Medium';
-        @include font-size(29px, 36px);
-
-        &-lf {
-            font-family: 'EconSans Medium LF';
-            @include font-size(29px, 36px);
-        }
-    }
-
-    &-epsilon {
-        font-family: 'EconSans Bold';
-        @include font-size(24px, 36px);
-
-        &-lf {
-            font-family: 'EconSans Bold LF';
-            @include font-size(24px, 36px);
-        }
-    }
-
-    &-zeta {
-        &-econ-regular {
-            font-family: 'EconSans Regular';
-            @include font-size(21px, 32px);
-
-            &-lf {
-                font-family: 'EconSans Regular LF';
-                @include font-size(21px, 32px);
-            }
-        }
-
-        &-econ-bold {
-            font-family: 'EconSans Bold';
-            @include font-size(21px, 32px);
-
-            &-lf {
-                font-family: 'EconSans Bold LF';
-                @include font-size(21px, 32px);
-            }
-        }
-
-        &-milo-regular {
-            font-family: 'Milo Regular';
-            @include font-size(21px, 32px);
-        }
-
-        &-milo-bold {
-            font-family: 'Milo Bold';
-            @include font-size(21px, 32px);
-        }
-    }
-
-    &-eta {
-        &-econ-regular {
-            font-family: 'EconSans Regular';
-            @include font-size(18px, 28px);
-
-            &-lf {
-                font-family: 'EconSans Regular LF';
-                @include font-size(18px, 28px);
-            }
-        }
-
-        &-econ-bold {
-            font-family: 'EconSans Bold';
-            @include font-size(18px, 28px);
-
-
-            &-lf {
-                font-family: 'EconSans Bold LF';
-                @include font-size(18px, 28px);
-            }
-        }
-
-        &-milo-regular {
-            font-family: 'Milo Regular';
-            @include font-size(18px, 28px);
-        }
-
-        &-milo-bold {
-            font-family: 'Milo Bold';
-            @include font-size(18px, 28px);
-        }
-    }
-
-    &-theta {
-        &-econ-regular {
-            font-family: 'EconSans Regular';
-            @include font-size(16px, 24px);
-
-            &-lf {
-                font-family: 'EconSans Regular LF';
-                @include font-size(16px, 24px);
-            }
-        }
-
-        &-econ-bold {
-            font-family: 'EconSans Bold';
-            @include font-size(16px, 24px);
-
-            &-lf {
-                font-family: 'EconSans Bold LF';
-                @include font-size(16px, 24px);
-            }
-        }
-
-        &-milo-regular {
-            font-family: 'Milo Regular';
-            @include font-size(16px, 24px);
-        }
-
-        &-milo-bold {
-            font-family: 'Milo Bold';
-            @include font-size(16px, 24px);
-        }
-    }
-
-    &-iota {
-        &-econ-regular {
-            font-family: 'EconSans Regular';
-            @include font-size(13px, 20px);
-
-            &-lf {
-                font-family: 'EconSans Regular LF';
-                @include font-size(13px, 20px);
-            }
-        }
-
-        &-econ-bold {
-            font-family: 'EconSans Bold';
-            @include font-size(13px, 20px);
-
-            &-lf {
-                font-family: 'EconSans Bold LF';
-                @include font-size(13px, 20px);
-            }
-        }
-
-        &-milo-regular {
-            font-family: 'Milo Regular';
-            @include font-size(13px, 20px);
-        }
-
-        &-milo-bold {
-            font-family: 'Milo Bold';
-            @include font-size(13px, 20px);
-        }
-    }
-
-    &-caption {
-        font-family: 'EconSans Regular';
-        @include font-size(13px, 20px);
+    &-light {
+        font-style: normal;
         font-weight: 300;
 
-        &-lf {
-            font-family: 'EconSans Regular LF';
-            @include font-size(13px, 20px);
+        &-italic {
+            font-style: italic;
             font-weight: 300;
         }
     }
 
-    &-overline {
-        font-family: 'EconSans Bold';
-        @include font-size(13px, 20px);
-        color: red;
-        text-transform: uppercase;
+    &-bold {
+        font-style: normal;
+        font-weight: 700;
 
-        &-lf {
-            font-family: 'EconSans Bold LF';
-            @include font-size(13px, 20px);
-            color: red;
-            text-transform: uppercase;
+        &-italic {
+            font-style: italic;
+            font-weight: 700;
         }
     }
 }
+
+.eiu-type-size {
+    &-tera {
+        @include font-size(112px, 140px);
+    }
+
+    &-giga {
+        @include font-size(86px, 108px);
+    }
+
+    &-mega {
+        @include font-size(67px, 84px);
+    }
+
+    &-alpha {
+        @include font-size(51px, 64px);
+    }
+
+    &-beta {
+        @include font-size(45px, 56px);
+    }
+
+    &-gamma {
+        @include font-size(35px, 44px);
+    }
+
+    &-delta {
+        @include font-size(29px, 36px);
+    }
+
+    &-epsilon {
+        @include font-size(24px, 36px);
+    }
+
+    &-zeta {
+        @include font-size(21px, 32px);
+    }
+
+    &-eta {
+        @include font-size(18px, 28px);
+    }
+
+    &-theta {
+        @include font-size(16px, 24px);
+    }
+
+    &-iota {
+        @include font-size(13px, 20px);
+    }
+
+    &-caption {
+        @include font-size(13px, 20px);
+        @extend .eiu-type-style-light;
+    }
+
+    &-overline {
+        @include font-size(13px, 20px);
+        @extend .eiu-type-style-bold;
+        color: $color-brand-economist-red;
+        text-transform: uppercase;
+    }
+}
+
+/*
+    Default Sizes
+*/
+div,a, p, button, span{
+    @extend .eiu-type-size-theta;
+    font-family: EconSansOS;
+    @extend .eiu-type-style-regular;
+}
+
 
 $fluid-min-width: 320px;
 $fluid-max-width: 1440px;
@@ -300,38 +129,39 @@ $h5-max-font: 24px;
 $h6-min-font: 14px;
 $h6-max-font: 21px;
 
-h1 {
-    @extend .type-alpha-lf;
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h1-min-font, $h1-max-font);
+.eiu-headings {
+    font-family: EconSansOS;
+    @extend .eiu-type-style-bold;
     line-height: 1.25;
+}
+
+h1 {
+    @include fluid-type($fluid-min-width, $fluid-max-width, $h1-min-font, $h1-max-font);
+    @extend .eiu-headings;
 }
 
 h2 {
-    @extend .type-beta-lf;
     @include fluid-type($fluid-min-width, $fluid-max-width, $h2-min-font, $h2-max-font);
-    line-height: 1.25;
+    @extend .eiu-headings;
 }
 
 h3 {
-    @extend .type-gamma-lf;
     @include fluid-type($fluid-min-width, $fluid-max-width, $h3-min-font, $h3-max-font);
-    line-height: 1.25;
+    @extend .eiu-headings;
 }
 
 h4 {
-    @extend .type-delta-lf;
     @include fluid-type($fluid-min-width, $fluid-max-width, $h4-min-font, $h4-max-font);
-    line-height: 1.25;
+    @extend .eiu-headings;
 }
 
 h5 {
-    @extend .type-epsilon-lf;
     @include fluid-type($fluid-min-width, $fluid-max-width, $h5-min-font, $h5-max-font);
-    line-height: 1.25;
+    @extend .eiu-headings;
 }
 
 h6 {
-    @extend .type-delta-lf;
     @include fluid-type($fluid-min-width, $fluid-max-width, $h6-min-font, $h6-max-font);
-    line-height: 1.25;
+    @extend .eiu-headings;
 }
+

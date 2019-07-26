@@ -1,0 +1,543 @@
+/* EconSansOS */
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-li.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-li.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-li-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-li-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansOS;
+    src: url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansOS/econsans-primary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+/*EconSansCndPrimary*/
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-li.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-li.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-li-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-li-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndPrimary;
+    src: url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndPrimary/econsans-condensed-primary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* EconSansCndSecondary */
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-li.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-li.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-li-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-li-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansCndSecondary;
+    src: url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansCndSecondary/econsans-condensed-secondary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* EconSansLining */
+
+
+
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-li.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-li.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-li-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-li-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSansLining;
+    src: url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSansLining/econsans-lining-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* EconSans */
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-li.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-li.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-li-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-li-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: EconSans;
+    src: url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/EconSans/econsans-secondary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* MiloTEOS */
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTEOS;
+    src: url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTEOS/milo-primary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* MiloTE */
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloTE;
+    src: url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloTE/milo-secondary-subset-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* MiloSMCP */
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-rg.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-rg.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-md.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-md.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-md-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-md-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-bd.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-bd.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: MiloSMCP;
+    src: url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-bd-it.woff2") format("woff2"),
+        url("../fonts/teg-fonts/MiloSMCP/milo-smallcaps-bd-it.woff") format("woff");
+    font-style: italic;
+    font-weight: 700;
+}
