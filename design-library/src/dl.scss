@@ -10,7 +10,8 @@
 @import "./components/foundation elements/cards/cards";
 @import "./components/foundation elements/form-inputs/dropdown/dropdown";
 
-/* Extra CSS to be removed*/
+
+
 .demo-color-box {
     height: 100px;
     width: 100px;
@@ -28,16 +29,9 @@
     padding: 10px;
     border: 1px solid #121212;
     margin: 12px 0;
-    /*@extend .elevate-4;*/
-
-    p {
-        /*@extend .type-theta-econ-regular*/
-    }
-
     margin-bottom: 25px;
 }
 
 .demo-label {
     display: block;
-    /*@extend .type-theta-econ-bold;*/
 }

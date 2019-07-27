@@ -1,12 +1,14 @@
 button,
-.btn {
+.eiu-btn {
     display: inline-block;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    @extend .eiu-type-size-theta;
+    @extend .eiu-type-style-regular;
+    font-family: EconSansOS;
     position: relative;
-/*    @extend .type-theta-econ-regular;*/
-    padding: 8px 32px;
+    padding: $spacing-x-sm $spacing-lg;
     border: 0;
     border-radius: 4px;
     overflow: hidden;
@@ -18,18 +20,18 @@ button,
     }
 
     @include bp-mobile {
-        padding: 8px 24px;
+        padding: $spacing-x-sm $spacing-md;
     }
 
-    &.btn-slim {
-        padding: 4px 16px;
+    &.eiu-btn-slim {
+        padding: $spacing-xx-sm $spacing-sm;
 
         @include bp-mobile {
-            padding: 4px 12px;
+            padding: $spacing-xx-sm 12px;
         }
     }
 
-    &.btn-primary {
+    &.eiu-btn-primary {
         background: $color-brand-sec-chicago;
         color: $color-brand-thimpu;
 
@@ -40,7 +42,7 @@ button,
 
     }
 
-    &.btn-secondary {
+    &.eiu-btn-secondary {
         color: $color-brand-sec-chicago;
         border: $border-width-thick solid $color-brand-sec-chicago;
 
@@ -51,7 +53,7 @@ button,
         }
     }
 
-    &.btn-disabled {
+    &.eiu-btn-disabled {
         background: $color-brand-sec-berlin;
         color: rgba(18, 18, 18, 0.5);
         pointer-events: none;
@@ -64,40 +66,40 @@ button,
         }
     }
 
-    &.btn-icon {
-        padding: 8px;
+    &.eiu-btn-icon {
+        padding: $spacing-x-sm;
 
         img {
             width: 22px;
         }
     }
 
-    &.btn-fluid {
+    &.eiu-btn-fluid {
         display: block;
     }
 
-    &.btn-inverse {
-        background-color: #FFFFFF;
+    &.eiu-btn-inverse {
+        background-color: $color-brand-thimpu;
         border-radius: 4px;
-        color: #121212;
+        color: $color-brand-bejing;
 
         &:hover,
         &:active {
             opacity: 0.85;
         }
 
-        &.btn-secondary {
+        &.eiu-btn-secondary {
             background: transparent;
-            color: #FFFFFF;
-            border: $border-width-thick solid #FFFFFF;
+            color: $color-brand-thimpu;
+            border: $border-width-thick solid $color-brand-thimpu;
 
             &:hover {
                 border: $border-width-thick solid rgba(255, 255, 255, 0.75);
-                color: #FFFFFF;
+                color: $color-brand-thimpu;
                 opacity: 1;
             }
 
-            &.btn-disabled {
+            &.eiu-btn-disabled {
                 background: transparent;
                 border: $border-width-thick solid rgba(255, 255, 255, 0.25);
             }
@@ -105,7 +107,7 @@ button,
 
 
 
-        &.btn-disabled {
+        &.eiu-btn-disabled {
             background-color: rgba(255, 255, 255, 0.25);
             color: rgba(255, 255, 255, 0.5);
         }
@@ -139,4 +141,3 @@ button,
 .rippleEffect {
     animation: rippleDrop $duration-200 linear;
 }
-

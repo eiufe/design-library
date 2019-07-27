@@ -1,6 +1,6 @@
 export default function buttonUI() {
 
-    $(document).on('click', '.btn-ripple', function(e) {
+    $(document).on('click', '.eiu-btn-ripple', function(e) {
         var $self = $(this);
         $self.find(".ripple").remove();
 
@@ -9,7 +9,7 @@ export default function buttonUI() {
             buttonWidth = $self.width(),
             buttonHeight = $self.height();
 
-        if ($self.hasClass('btn-primary')) {
+        if ($self.hasClass('eiu-btn-primary')) {
             $self.prepend("<span class='ripple ripple-primary'></span>");
         } else {
             $self.prepend("<span class='ripple ripple-secondary'></span>");

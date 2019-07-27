@@ -3,96 +3,96 @@
 .eiu-type-style {
     &-regular {
         font-style: normal;
-        font-weight: 400;
+        font-weight: $font-regular;
 
         &-italic {
             font-style: italic;
-            font-weight: 400;
+            font-weight: $font-regular;
         }
     }
 
     &-medium {
         font-style: normal;
-        font-weight: 500;
+        font-weight: $font-medium;
 
         &-italic {
             font-style: italic;
-            font-weight: 500;
+            font-weight: $font-medium;
         }
     }
 
     &-light {
         font-style: normal;
-        font-weight: 300;
+        font-weight: $font-light;
 
         &-italic {
             font-style: italic;
-            font-weight: 300;
+            font-weight: $font-light;
         }
     }
 
     &-bold {
         font-style: normal;
-        font-weight: 700;
+        font-weight: $font-bold;
 
         &-italic {
             font-style: italic;
-            font-weight: 700;
+            font-weight: $font-bold;
         }
     }
 }
 
 .eiu-type-size {
     &-tera {
-        @include font-size(112px, 140px);
+        @include font-size($font-size-tera, 140px);
     }
 
     &-giga {
-        @include font-size(86px, 108px);
+        @include font-size($font-size-giga, 108px);
     }
 
     &-mega {
-        @include font-size(67px, 84px);
+        @include font-size($font-size-mega, 84px);
     }
 
     &-alpha {
-        @include font-size(51px, 64px);
+        @include font-size($font-size-alpha, 64px);
     }
 
     &-beta {
-        @include font-size(45px, 56px);
+        @include font-size($font-size-beta, 56px);
     }
 
     &-gamma {
-        @include font-size(35px, 44px);
+        @include font-size($font-size-gamma, 44px);
     }
 
     &-delta {
-        @include font-size(29px, 36px);
+        @include font-size($font-size-delta, 36px);
     }
 
     &-epsilon {
-        @include font-size(24px, 36px);
+        @include font-size($font-size-epsilon, 36px);
     }
 
     &-zeta {
-        @include font-size(21px, 32px);
+        @include font-size($font-size-zeta, 32px);
     }
 
     &-eta {
-        @include font-size(18px, 28px);
+        @include font-size($font-size-eta, 28px);
     }
 
     &-theta {
-        @include font-size(16px, 24px);
+        @include font-size($font-size-theta, 24px);
     }
 
     &-iota {
-        @include font-size(13px, 20px);
+        @include font-size($font-size-iota, 20px);
     }
 
     &-caption {
-        @include font-size(13px, 20px);
+        @include font-size($font-size-iota, 20px);
         @extend .eiu-type-style-light;
     }
 
@@ -107,27 +107,18 @@
 /*
     Default Sizes
 */
-div,a, p, button, span{
+div,
+a,
+p,
+button,
+span {
     @extend .eiu-type-size-theta;
     font-family: EconSansOS;
     @extend .eiu-type-style-regular;
 }
 
 
-$fluid-min-width: 320px;
-$fluid-max-width: 1440px;
-$h1-min-font: 29px;
-$h1-max-font: 51px;
-$h2-min-font: 24px;
-$h2-max-font: 45px;
-$h3-min-font: 21px;
-$h3-max-font: 35px;
-$h4-min-font: 18px;
-$h4-max-font: 29px;
-$h5-min-font: 16px;
-$h5-max-font: 24px;
-$h6-min-font: 14px;
-$h6-max-font: 21px;
+
 
 .eiu-headings {
     font-family: EconSansOS;
@@ -136,32 +127,31 @@ $h6-max-font: 21px;
 }
 
 h1 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h1-min-font, $h1-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h1-min-font, $fluid-h1-max-font);
     @extend .eiu-headings;
 }
 
 h2 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h2-min-font, $h2-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h2-min-font, $fluid-h2-max-font);
     @extend .eiu-headings;
 }
 
 h3 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h3-min-font, $h3-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h3-min-font, $fluid-h3-max-font);
     @extend .eiu-headings;
 }
 
 h4 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h4-min-font, $h4-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h4-min-font, $fluid-h4-max-font);
     @extend .eiu-headings;
 }
 
 h5 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h5-min-font, $h5-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h5-min-font, $fluid-h5-max-font);
     @extend .eiu-headings;
 }
 
 h6 {
-    @include fluid-type($fluid-min-width, $fluid-max-width, $h6-min-font, $h6-max-font);
+    @include fluid-type($fluid-min-width, $fluid-max-width, $fluid-h6-min-font, $fluid-h6-max-font);
     @extend .eiu-headings;
 }
-

@@ -1,24 +1,22 @@
-$color-brand-economist-red	: #E3120B;
-$color-brand-bejing			: #121212;
-$color-brand-thimpu			: #FFFFFF;
-$color-brand-sec-kiev		: #383E42;
-$color-brand-sec-moscow		: #595959;
-$color-brand-sec-london		: #B6B6B6;
-$color-brand-sec-cardiff	: #D7D7D7;
-$color-brand-sec-berlin		: #F2F2F2;
-$color-brand-sec-chicago	: #3C4FAF;
-$color-brand-sec-athens		: #142680;
-$color-brand-sec-melbourne	: #FDDC21;
-$color-brand-sec-honolulu	: #19D2B9;
-$color-brand-sec-miami		: #D21982;
+$color-brand-economist-red	: 	#E3120B;
+$color-brand-bejing			: 	#121212;
+$color-brand-thimpu			: 	#FFFFFF;
+$color-brand-sec-kiev		: 	#383E42;
+$color-brand-sec-moscow		: 	#595959;
+$color-brand-sec-london		: 	#B6B6B6;
+$color-brand-sec-cardiff	: 	#D7D7D7;
+$color-brand-sec-berlin		: 	#F2F2F2;
+$color-brand-sec-chicago	: 	#3C4FAF;
+$color-brand-sec-athens		: 	#142680;
+$color-brand-sec-melbourne	: 	#FDDC21;
+$color-brand-sec-honolulu	: 	#19D2B9;
+$color-brand-sec-miami		: 	#D21982;
 
-$color-ext-amsterdam		: #E75A36;
-$color-ext-nairobi			: #0A1757;
-$color-ext-tokyo			: #E7365E;
-$color-ext-cairo			: #EBE9E0;
-$color-ext-delhi			: #E0EBEB;
-
-// Font Variables
+$color-ext-amsterdam		: 	#E75A36;
+$color-ext-nairobi			: 	#0A1757;
+$color-ext-tokyo			: 	#E7365E;
+$color-ext-cairo			: 	#EBE9E0;
+$color-ext-delhi			: 	#E0EBEB;
 
 $font-size-tera				:	112px;
 $font-size-giga				:	86px;
@@ -35,8 +33,6 @@ $font-size-iota				:	13px;
 
 $line-height-heading		:	1.25;
 $line-height-text			:	1.5;
-
-// Spacing
 
 $layout-xx-sm				:	16px;
 $layout-x-sm				:	24px;
@@ -69,3 +65,25 @@ $duration-350				:	0.35s;
 $duration-400				:	0.4s;
 $duration-450				:	0.45s;
 $duration-500				:	0.5s;
+
+$font-light					:	300;
+$font-regular				:	400;
+$font-medium				:	500;
+$font-bold					:	700;
+
+$fluid-min-width			: 	320px;
+$fluid-max-width			: 	1440px;
+
+$fluid-h1-min-font			: 	29px;
+$fluid-h1-max-font			: 	51px;
+$fluid-h2-min-font			: 	24px;
+$fluid-h2-max-font			: 	45px;
+$fluid-h3-min-font			: 	21px;
+$fluid-h3-max-font			: 	35px;
+$fluid-h4-min-font			: 	18px;
+$fluid-h4-max-font			: 	29px;
+$fluid-h5-min-font			: 	16px;
+$fluid-h5-max-font			: 	24px;
+$fluid-h6-min-font			: 	14px;
+$fluid-h6-max-font			: 	21px;
+
