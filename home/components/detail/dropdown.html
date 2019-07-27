@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/red.css?cachebust=1.2.1" type="text/css">
+
+<link rel="stylesheet" href="../../css/fractal.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Dropdown | Elements</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title type-epsilon" data-pjax><img src="../../images/logos/eiu_elements_logo.svg" title=logo /></a>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-374189afe29eded28971a6e4c223c06b">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/dropdown.html" title="Component preview">
+            Dropdown
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-374189afe29eded28971a6e4c223c06b">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/dropdown.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-374189afe29eded28971a6e4c223c06b">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-374189afe29eded28971a6e4c223c06b-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">data-placeholder</span>&gt;</span>Sort By:<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">disabled</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">data-placeholder</span>&gt;</span>Sort By:<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"eiu-dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">disabled</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Latest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Oldest<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-2053cc93ee58ec310f35bf5ec2c94203">dropdown.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-2053cc93ee58ec310f35bf5ec2c94203" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.eiu-dropdown</span> {
+    <span class="hljs-attribute">visibility</span>: hidden;
+    &amp;<span class="hljs-selector-class">.ready</span>{
+        <span class="hljs-attribute">visibility</span>: visible;
+    }
+    <span class="hljs-selector-class">.edd-root</span>,
+    <span class="hljs-selector-class">.edd-root</span> *,
+    <span class="hljs-selector-class">.edd-root</span> *::before,
+    <span class="hljs-selector-class">.edd-root</span> *::after {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">box-sizing</span>: border-box;
+        -webkit-<span class="hljs-attribute">font</span>-smoothing: antialiased;
+        -moz-osx-<span class="hljs-attribute">font</span>-smoothing: grayscale;
+
+    }
+
+    <span class="hljs-selector-class">.edd-root</span> {
+        <span class="hljs-attribute">display</span>: inline-block;
+        <span class="hljs-attribute">position</span>: relative;
+        user-<span class="hljs-selector-tag">select</span>: none;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-disabled</span> {
+        <span class="hljs-attribute">cursor</span>: not-allowed;
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$color-brand-sec-berlin</span>;
+
+        <span class="hljs-selector-class">.edd-head</span> {
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+        }
+    }
+
+    <span class="hljs-selector-class">.edd-root</span><span class="hljs-selector-class">.edd-root-focused</span> {
+        <span class="hljs-selector-class">.edd-head</span> {
+            <span class="hljs-attribute">outline</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-brand-sec-honolulu</span> <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">outline</span>: none;
+        }
+
+    }
+
+    <span class="hljs-selector-class">.edd-root</span><span class="hljs-selector-class">.edd-root-focused</span>::after,
+    <span class="hljs-selector-class">.edd-root</span><span class="hljs-selector-class">.edd-root-invalid</span>::after {
+        <span class="hljs-attribute">transform</span>: scaleX(<span class="hljs-number">1</span>);
+    }
+
+    <span class="hljs-selector-class">.edd-root</span><span class="hljs-selector-class">.edd-root-invalid</span>::after {
+        <span class="hljs-attribute">background</span>: rgb(<span class="hljs-number">255</span>, <span class="hljs-number">105</span>, <span class="hljs-number">105</span>);
+    }
+
+    <span class="hljs-selector-class">.edd-head</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">overflow</span>: hidden;
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$color-brand-bejing</span>;
+        <span class="hljs-attribute">transition</span>: border-color <span class="hljs-number">200ms</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root</span>:not(<span class="hljs-selector-class">.edd-root-disabled</span>) <span class="hljs-selector-class">.edd-head</span>:hover {
+        <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-number">#aaa</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-value</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">display</span>: inline-block;
+        <span class="hljs-attribute">vertical-align</span>: middle;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">25px</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-arrow</span> {
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">14px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">50%</span> - <span class="hljs-number">5px</span>);
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">150ms</span>;
+        <span class="hljs-attribute">pointer-events</span>: none;
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#666</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-disabled</span> <span class="hljs-selector-class">.edd-arrow</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#ccc</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-arrow</span>::before {
+        <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">8px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">8px</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-brand-bejing</span>;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-brand-bejing</span>;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">45deg</span>);
+        <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">50%</span> <span class="hljs-number">25%</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-open</span> <span class="hljs-selector-class">.edd-arrow</span> {
+        <span class="hljs-attribute">transform</span>: rotateX(<span class="hljs-number">180deg</span>);
+    }
+
+    <span class="hljs-selector-class">.edd-value</span>,
+    <span class="hljs-selector-class">.edd-option</span>,
+    <span class="hljs-selector-class">.edd-group-label</span> {
+        <span class="hljs-attribute">white-space</span>: nowrap;
+        <span class="hljs-attribute">text-overflow</span>: ellipsis;
+        <span class="hljs-attribute">overflow</span>: hidden;
+    }
+
+    <span class="hljs-selector-class">.edd-root</span>:not(<span class="hljs-selector-class">.edd-root-disabled</span>) <span class="hljs-selector-class">.edd-value</span>,
+    <span class="hljs-selector-class">.edd-option</span> {
+        <span class="hljs-attribute">cursor</span>: pointer;
+    }
+
+    <span class="hljs-selector-class">.edd-option</span> {
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$color-brand-sec-berlin</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-select</span> {
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">left</span>: -<span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-native</span> <span class="hljs-selector-class">.edd-select</span> {
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-body</span> {
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">pointer-events</span>: none;
+        <span class="hljs-attribute">overflow</span>: hidden;
+        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">999</span>;
+        <span class="hljs-attribute">background</span>: white;
+        <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.08</span>);
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#eee</span>;
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-open</span> <span class="hljs-selector-class">.edd-body</span> {
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">pointer-events</span>: all;
+        <span class="hljs-attribute">transform</span>: scale(<span class="hljs-number">1</span>);
+        <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">100ms</span>, transform <span class="hljs-number">100ms</span> cubic-bezier(<span class="hljs-number">0.25</span>, <span class="hljs-number">0.46</span>, <span class="hljs-number">0.45</span>, <span class="hljs-number">0.94</span>);
+    }
+
+    <span class="hljs-selector-class">.edd-root-open-above</span> <span class="hljs-selector-class">.edd-body</span> {
+        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">100%</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-root-open-below</span> <span class="hljs-selector-class">.edd-body</span> {
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">top</span>: calc(<span class="hljs-number">100%</span> + <span class="hljs-number">2px</span>);
+    }
+
+    <span class="hljs-selector-class">.edd-items-list</span> {
+        <span class="hljs-attribute">overflow</span>: auto;
+        <span class="hljs-attribute">max-height</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">transition</span>: max-height <span class="hljs-number">100ms</span> cubic-bezier(<span class="hljs-number">0.25</span>, <span class="hljs-number">0.46</span>, <span class="hljs-number">0.45</span>, <span class="hljs-number">0.94</span>);
+        -webkit-<span class="hljs-attribute">overflow</span>-scrolling: touch;
+    }
+
+    <span class="hljs-selector-class">.edd-items-list</span>::-webkit-scrollbar {
+        width: <span class="hljs-number">12px</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-items-list</span>::-webkit-scrollbar-track {
+        background: <span class="hljs-number">#efefef</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-items-list</span>::-webkit-scrollbar-thumb {
+        background: <span class="hljs-number">#ccc</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-group-label</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span> <span class="hljs-number">8px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#555</span>;
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-group-has-label</span> {
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">22px</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-option</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">9px</span> <span class="hljs-number">12px</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-option-selected</span> {
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-option-focused</span>:not(<span class="hljs-selector-class">.edd-option-disabled</span>) {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-bejing</span>;
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$color-brand-sec-berlin</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-option-disabled</span>,
+    <span class="hljs-selector-class">.edd-group-disabled</span> <span class="hljs-selector-class">.edd-option</span> {
+        <span class="hljs-attribute">cursor</span>: default;
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#ccc</span>;
+    }
+
+<span class="hljs-comment">/*    .edd-gradient-top,
+    .edd-gradient-bottom {
+        content: '';
+        position: absolute;
+        left: 2px;
+        right: 12px;
+        height: 32px;
+        background-image:
+            linear-gradient(0deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 40%,
+            rgba(255, 255, 255, 1) 60%,
+            rgba(255, 255, 255, 0) 100%);
+        background-repeat: repeat-x;
+        background-size: 100% 200%;
+        pointer-events: none;
+        transition: opacity 100ms;
+        opacity: 0;
+    }*/</span>
+
+    <span class="hljs-selector-class">.edd-gradient-top</span> {
+        <span class="hljs-attribute">background-position</span>: bottom;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-gradient-bottom</span> {
+        <span class="hljs-attribute">background-position</span>: top;
+        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-body-scrollable</span> <span class="hljs-selector-class">.edd-gradient-top</span>,
+    <span class="hljs-selector-class">.edd-body-scrollable</span> <span class="hljs-selector-class">.edd-gradient-bottom</span> {
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-selector-class">.edd-body-scrollable</span><span class="hljs-selector-class">.edd-body-at-top</span> <span class="hljs-selector-class">.edd-gradient-top</span>,
+    <span class="hljs-selector-class">.edd-body-scrollable</span><span class="hljs-selector-class">.edd-body-at-bottom</span> <span class="hljs-selector-class">.edd-gradient-bottom</span> {
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    }
+}</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/dropdown/dropdown.scss"><span>/components/raw/dropdown/dropdown.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">design-library/src/components/foundation elements/form-inputs/dropdown/dropdown.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">5.4 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@dropdown</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/dropdown.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/dropdown.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">design-library/src/components/foundation elements/form-inputs/dropdown/dropdown.hbs</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-374189afe29eded28971a6e4c223c06b-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-foundation-elements">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Foundation Elements</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Button</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="inverse.html" data-pjax>
+                <span>Inverse</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="standard.html" data-pjax>
+                <span>Standard</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards.html" data-pjax>
+                <span>Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="elevation-levels.html" data-pjax>
+                <span>Elevation Levels</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-form-inputs">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Form Inputs</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Dropdown</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid.html" data-pjax>
+                <span>Grid</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="imagery.html" data-pjax>
+                <span>Imagery</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="logos.html" data-pjax>
+                <span>Logos</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="palette.html" data-pjax>
+                <span>Palette</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-typography">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Typography</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="fluid.html" data-pjax>
+                <span>Fluid</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="font-selector.html" data-pjax>
+                <span>Font Selector</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="font-sizes.html" data-pjax>
+                <span>Font Sizes</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/button.html" data-pjax>
+                <span>Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/elevation-levels.html" data-pjax>
+                <span>Elevation Levels</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/grid.html" data-pjax>
+                <span>Grid</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/typography.html" data-pjax>
+                <span>Typography</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>
