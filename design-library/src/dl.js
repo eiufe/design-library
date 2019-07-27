@@ -1,6 +1,7 @@
 var $ = require("jquery");
 window.$ = $;
 import easydropdown from 'easydropdown';
+window.easydropdown = easydropdown;
 import buttonUI from './components/foundation elements/button/button';
 buttonUI();
 

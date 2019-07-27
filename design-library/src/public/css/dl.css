@@ -1184,7 +1184,7 @@ html {
 .elevate-0 {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12); }
 
-.elevate-1, .card {
+.elevate-1, .eiu-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
 
 .elevate-2 {
@@ -1217,58 +1217,58 @@ html {
 .elevate-24 {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
 
-.bg-brand-red {
+.eiu-bg-brand-red {
   background: #E3120B; }
 
-.bg-bejing {
+.eiu-bg-bejing {
   background-color: #121212; }
 
-.bg-thimpu {
+.eiu-bg-thimpu {
   background-color: #FFFFFF; }
 
-.bg-sec-kiev {
+.eiu-bg-sec-kiev {
   background-color: #383E42; }
 
-.bg-sec-moscow {
+.eiu-bg-sec-moscow {
   background-color: #595959; }
 
-.bg-sec-london {
+.eiu-bg-sec-london {
   background-color: #B6B6B6; }
 
-.bg-sec-cardiff {
+.eiu-bg-sec-cardiff {
   background-color: #D7D7D7; }
 
-.bg-sec-berlin {
+.eiu-bg-sec-berlin {
   background-color: #F2F2F2; }
 
-.bg-sec-chicago {
+.eiu-bg-sec-chicago {
   background-color: #3C4FAF; }
 
-.bg-sec-athens {
+.eiu-bg-sec-athens {
   background-color: #142680; }
 
-.bg-sec-melbourne {
+.eiu-bg-sec-melbourne {
   background-color: #FDDC21; }
 
-.bg-sec-honolulu {
+.eiu-bg-sec-honolulu {
   background-color: #19D2B9; }
 
-.bg-sec-miami {
+.eiu-bg-sec-miami {
   background-color: #D21982; }
 
-.bg-ext-amsterdam {
+.eiu-bg-ext-amsterdam {
   background-color: #E75A36; }
 
-.bg-ext-nairobi {
+.eiu-bg-ext-nairobi {
   background-color: #0A1757; }
 
-.bg-ext-tokyo {
+.eiu-bg-ext-tokyo {
   background-color: #E7365E; }
 
-.bg-ext-cairo {
+.eiu-bg-ext-cairo {
   background-color: #EBE9E0; }
 
-.bg-ext-delhi {
+.eiu-bg-ext-delhi {
   background-color: #E0EBEB; }
 
 button,
@@ -1387,39 +1387,36 @@ button,
 img {
   max-width: 100%; }
 
-.card {
+.eiu-card {
   background: #FFFFFF;
   margin-bottom: 8px; }
-  .card .card-media img {
+  .eiu-card .eiu-card-media img {
     width: 100%; }
-  .card .card-content {
+  .eiu-card .eiu-card-content {
     padding: 24px 32px; }
-    .card .card-content .card-head {
-      /*            @extend .type-zeta-econ-bold-lf;*/
+    .eiu-card .eiu-card-content .eiu-card-head {
       margin-bottom: 8px; }
-    .card .card-content .card-tags {
+    .eiu-card .eiu-card-content .eiu-card-tags {
       margin-top: 8px;
       margin-bottom: 8px; }
-      .card .card-content .card-tags span {
+      .eiu-card .eiu-card-content .eiu-card-tags span {
         display: inline-block;
         padding: 0 8px;
         position: relative; }
-        .card .card-content .card-tags span:after {
+        .eiu-card .eiu-card-content .eiu-card-tags span:after {
           content: "|";
           position: absolute;
           width: 1px;
           right: 0; }
-        .card .card-content .card-tags span:first-child {
+        .eiu-card .eiu-card-content .eiu-card-tags span:first-child {
           padding-left: 0; }
-        .card .card-content .card-tags span:last-child:after {
+        .eiu-card .eiu-card-content .eiu-card-tags span:last-child:after {
           display: none; }
-  .card.card-inverse {
+  .eiu-card.eiu-card-inverse {
     background: #383E42;
     color: #FFFFFF; }
-    .card.card-inverse p {
+    .eiu-card.eiu-card-inverse p {
       margin: 16px 0; }
-    .card.card-inverse .card-content .card-head {
-      /*@extend .type-delta-lf;*/ }
 
 .eiu-dropdown {
   visibility: hidden; }

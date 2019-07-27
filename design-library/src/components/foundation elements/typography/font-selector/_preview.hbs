@@ -6,17 +6,12 @@
     <link rel="stylesheet" href="{{ path '/css/dl.css' }}">
     <title>Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    select {
-        margin-bottom: 20px;
-    }
-    </style>
 </head>
 
 <body>
     <div class="demo-component-wrapper">
         <label for="typeFontSelector" class="demo-label">Select a font to view style</label>
-        <select class="fontFamilySelector" id="fontFamilySelector">
+        <select class="fontFamilySelector" id="fontFamilySelector" style="margin-bottom: 20px">
             <option value="EconSansOS">Econ Sans OS (primary)</option>
             <option value="EconSans">Econ Sans (secondary)</option>
             <option value="EconSansCndPrimary">Econ Sans Condensed OS (primary)</option>
@@ -30,7 +25,7 @@
             {{{ yield }}}
         </div>
     </div>
-    <script src="{{ path '/js/dl.js' }}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="{{ path '/js/custom-views.js' }}"></script>
 </body>
 

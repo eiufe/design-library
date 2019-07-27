@@ -1,8 +1,10 @@
 .eiu-dropdown {
     visibility: hidden;
-    &.ready{
+
+    &.ready {
         visibility: visible;
     }
+
     .edd-root,
     .edd-root *,
     .edd-root *::before,
@@ -12,7 +14,6 @@
         box-sizing: border-box;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
     }
 
     .edd-root {
@@ -56,10 +57,6 @@
         transition: border-color 200ms;
     }
 
-    .edd-root:not(.edd-root-disabled) .edd-head:hover {
-        border-bottom-color: #aaa;
-    }
-
     .edd-value {
         width: 100%;
         display: inline-block;
@@ -75,7 +72,8 @@
         right: 10px;
         transition: transform 150ms;
         pointer-events: none;
-        color: #666;
+        color: $color-brand-bejing;
+
     }
 
     .edd-root-disabled .edd-arrow {
@@ -93,10 +91,24 @@
         right: 10px;
         transform: rotate(45deg);
         transform-origin: 50% 25%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        -ms-transition: -ms-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
     }
 
     .edd-root-open .edd-arrow {
         transform: rotateX(180deg);
+    }
+
+    .edd-root-open {
+        .edd-head {
+            border-bottom: 1px solid #F2F2F2;
+        }
+
+        .edd-body {
+            border: 1px solid #121212;
+            border-top: 0;
+        }
     }
 
     .edd-value,
@@ -113,7 +125,7 @@
     }
 
     .edd-option {
-        border-bottom: 1px solid $color-brand-sec-berlin;
+        border-bottom: 1px solid $color-brand-sec-london;
     }
 
     .edd-select {
@@ -211,26 +223,6 @@
         cursor: default;
         color: #ccc;
     }
-
-/*    .edd-gradient-top,
-    .edd-gradient-bottom {
-        content: '';
-        position: absolute;
-        left: 2px;
-        right: 12px;
-        height: 32px;
-        background-image:
-            linear-gradient(0deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 40%,
-            rgba(255, 255, 255, 1) 60%,
-            rgba(255, 255, 255, 0) 100%);
-        background-repeat: repeat-x;
-        background-size: 100% 200%;
-        pointer-events: none;
-        transition: opacity 100ms;
-        opacity: 0;
-    }*/
 
     .edd-gradient-top {
         background-position: bottom;

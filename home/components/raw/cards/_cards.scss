@@ -1,24 +1,22 @@
-.card {
+.eiu-card {
     background: $color-brand-thimpu;
-
     @extend .elevate-1;
     margin-bottom: $spacing-x-sm;
 
-    .card-media {
+    .eiu-card-media {
         img {
             width: 100%;
         }
     }
 
-    .card-content {
-        padding: 24px 32px;
+    .eiu-card-content {
+        padding: $spacing-md $spacing-lg;
 
-        .card-head {
-/*            @extend .type-zeta-econ-bold-lf;*/
+        .eiu-card-head {
             margin-bottom: $spacing-x-sm;
         }
 
-        .card-tags {
+        .eiu-card-tags {
             margin-top: $spacing-x-sm;
             margin-bottom: $spacing-x-sm;
 
@@ -48,20 +46,12 @@
         }
     }
 
-
-
-    &.card-inverse {
+    &.eiu-card-inverse {
         background: $color-brand-sec-kiev;
         color: $color-brand-thimpu;
 
         p {
             margin: $spacing-sm 0;
-        }
-
-        .card-content {
-            .card-head {
-                /*@extend .type-delta-lf;*/
-            }
         }
     }
 }
