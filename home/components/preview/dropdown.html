@@ -13,13 +13,13 @@
 <body>
     <div class="demo-component-wrapper">
         <div class="eiu-dropdown">
-    <select>
+    <select id="eiuSortListOptions">
         <option value="1">Latest</option>
         <option value="2">Oldest</option>
     </select>
 </div>
 <div class="eiu-dropdown">
-    <select>
+    <select id="eiuCountryList">
         <option value="" data-placeholder>Country</option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
@@ -273,7 +273,8 @@
     </select>
 </div>
 <div class="eiu-dropdown">
-    <select disabled>
+    <select disabled id="eiuDisabledDropdown">
+        <option value="">Selct a value</option>
         <option value="1">Latest</option>
         <option value="2">Oldest</option>
     </select>

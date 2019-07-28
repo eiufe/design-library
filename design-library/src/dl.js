@@ -1,13 +1,9 @@
 var $ = require("jquery");
 window.$ = $;
-import easydropdown from 'easydropdown';
-window.easydropdown = easydropdown;
 import buttonUI from './components/foundation elements/button/button';
-buttonUI();
+import dropdowns from './components/foundation elements/form-inputs/dropdown/dropdown';
 
 $(document).ready(function() {
-    $('.eiu-dropdown').on('DOMSubtreeModified', function(e) {
-        $(e.target).addClass("ready");
-    });
-    easydropdown.all();
+    buttonUI();
+    dropdowns();
 });
