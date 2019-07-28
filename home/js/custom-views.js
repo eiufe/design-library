@@ -11,4 +11,5 @@ var handleTypographyDropdown = function() {
 }
 window.onload = function() {
     handleTypographyDropdown();
+
 }
