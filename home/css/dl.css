@@ -813,6 +813,23 @@ textarea {
   font-style: italic;
   font-weight: 700; }
 
+/* Backup Files*/
+@font-face {
+  font-family: EconSansBUReg;
+  src: url("../fonts/teg-fonts/EconSansSecBU/ecosareg-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: EconSansBUBold;
+  src: url("../fonts/teg-fonts/EconSansSecBU/ecosabol-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: EconSansBULight;
+  src: url("../fonts/teg-fonts/EconSansSecBU/ecosalig-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: EconSansBUMedium;
+  src: url("../fonts/teg-fonts/EconSansSecBU/ecosamed-webfont.ttf") format("truetype"); }
+
 .eiu-type-style-regular, div,
 a,
 p,
@@ -931,7 +948,7 @@ a,
 p,
 button,
 span {
-  font-family: EconSansOS; }
+  font-family: EconSansBUReg; }
 
 .eiu-headings, h1, h2, h3, h4, h5, h6 {
   font-family: EconSansOS;
@@ -1579,6 +1596,22 @@ img {
   .eiu-dropdown .edd-body-scrollable.edd-body-at-top .edd-gradient-top,
   .eiu-dropdown .edd-body-scrollable.edd-body-at-bottom .edd-gradient-bottom {
     opacity: 0; }
+
+a {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid #3C4FAF;
+  display: inline-block;
+  transition: all 0.1s ease-in; }
+  a:hover {
+    background: #3C4FAF;
+    color: #FFFFFF; }
+  a.eiu-headings-link {
+    border-bottom: 2px solid transparent; }
+    a.eiu-headings-link:hover {
+      color: #3C4FAF;
+      background: #FFFFFF;
+      border-bottom: 2px solid #3C4FAF; }
 
 .demo-color-box {
   height: 100px;
