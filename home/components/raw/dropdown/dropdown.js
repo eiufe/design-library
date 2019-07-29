@@ -1,6 +1,9 @@
 import easydropdown from 'easydropdown';
 
 var enableEIUDropdowns = function() {
+    if($('.eiu-dropdown').length == 0){
+        return false;
+    }
     $('.eiu-dropdown').on('DOMSubtreeModified', function(e) {
         $(e.target).addClass("ready");
     });
