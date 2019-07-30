@@ -9,9 +9,7 @@
     	</li>
 	    \{{#each this.pagelist}}
 			<li class='page-number'> 
-				<a href=" #">
-					\{{this}}
-				</a>
+					\{{{checkcurrentpage this}}}
 			</li>
 		\{{/each}}
 		<li class=page-number> 

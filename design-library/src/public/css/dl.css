@@ -948,7 +948,7 @@ a,
 p,
 button,
 span {
-  font-family: EconSansBUReg; }
+  font-family: EconSansOS; }
 
 .eiu-headings, h1, h2, h3, h4, h5, h6 {
   font-family: EconSansOS;
@@ -1634,11 +1634,17 @@ a {
   display: block; }
 
 .page-number {
-  display: inline-block;
-  padding: 15px;
-  height: 25px; }
+  display: inline-block; }
   .page-number a {
-    border-bottom: none; }
+    border-bottom: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px; }
+    .page-number a.current-page {
+      border: 1px solid #121212;
+      border-radius: 50%; }
     .page-number a:hover {
       background: transparent;
       color: #121212; }
