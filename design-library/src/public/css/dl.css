@@ -1632,3 +1632,13 @@ a {
 
 .demo-label {
   display: block; }
+
+.page-number {
+  display: inline-block;
+  padding: 15px;
+  height: 25px; }
+  .page-number a {
+    border-bottom: none; }
+    .page-number a:hover {
+      background: transparent;
+      color: #121212; }
