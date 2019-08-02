@@ -1,0 +1,92 @@
+.eiu-visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.eiu-checkbox {
+    margin-bottom: 15px;
+    label {
+        padding-left: 28px;
+        position: relative;
+
+        &:before {
+            height: 20px;
+            width: 20px;
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            border-radius: 4px;
+            border: 1px solid $color-brand-bejing;
+        }
+    }
+
+    input:checked, .eiu-cb-checked, .eiu-cb-indeterminate {
+        & + label:before {
+            background-color: $color-brand-sec-kiev;
+        }
+
+        & + label:after {
+            background: url(/images/icons/icn_checked.svg) no-repeat;
+            height: 14px;
+            width: 14px;
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 3px;
+        }
+    }
+
+    input:focus, .eiu-cb-focus {
+        & + label:before {
+            box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+        }
+    }
+
+    input:disabled {
+        & + label {
+            color: $color-brand-sec-cardiff;
+
+            &:before {
+                border-color: $color-brand-sec-cardiff;
+                background-color: transparent;
+            }
+        }
+    }
+
+    input:checked:disabled, .eiu-cb-checked:disabled {
+        & + label:after {
+            background: url(/images/icons/icn_checked_black.svg) no-repeat;
+            height: 14px;
+            width: 14px;
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 3px;
+        }
+    }
+
+    .eiu-cb-blue-checked:checked {
+        & + label:before {
+            background-color: $color-brand-sec-chicago;
+        }
+    }
+
+    .eiu-cb-indeterminate {
+        & + label:after {
+            background: url(/images/icons/icn_hyphen.svg) no-repeat;
+            content: "";
+            height: 14px;
+            width: 12px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+    }
+}
