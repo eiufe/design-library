@@ -1597,6 +1597,101 @@ img {
   .eiu-dropdown .edd-body-scrollable.edd-body-at-bottom .edd-gradient-bottom {
     opacity: 0; }
 
+.eiu-visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.eiu-checkbox {
+  margin-bottom: 15px; }
+  .eiu-checkbox label {
+    padding-left: 28px;
+    position: relative; }
+    .eiu-checkbox label:before {
+      height: 20px;
+      width: 20px;
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      border-radius: 4px;
+      border: 1px solid #121212; }
+  .eiu-checkbox input:checked + label:before, .eiu-checkbox .eiu-cb-checked + label:before, .eiu-checkbox .eiu-cb-indeterminate + label:before {
+    background-color: #383E42; }
+  .eiu-checkbox input:checked + label:after, .eiu-checkbox .eiu-cb-checked + label:after, .eiu-checkbox .eiu-cb-indeterminate + label:after {
+    background: url(/images/icons/icn_checked.svg) no-repeat;
+    height: 14px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 3px; }
+  .eiu-checkbox input:focus + label:before, .eiu-checkbox .eiu-cb-focus + label:before {
+    box-shadow: 0 0 0 2px #19D2B9; }
+  .eiu-checkbox input:disabled + label {
+    color: #D7D7D7; }
+    .eiu-checkbox input:disabled + label:before {
+      border-color: #D7D7D7;
+      background-color: transparent; }
+  .eiu-checkbox input:checked:disabled + label:after, .eiu-checkbox .eiu-cb-checked:disabled + label:after {
+    background: url(/images/icons/icn_checked_black.svg) no-repeat;
+    height: 14px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 3px; }
+  .eiu-checkbox .eiu-cb-blue:checked + label:before {
+    background-color: #3C4FAF; }
+  .eiu-checkbox .eiu-cb-indeterminate + label:after {
+    background: url(/images/icons/icn_hyphen.svg) no-repeat;
+    content: "";
+    height: 14px;
+    width: 12px;
+    position: absolute;
+    left: 5px;
+    top: 5px; }
+
+.eiu-radio-btn {
+  margin-bottom: 15px; }
+  .eiu-radio-btn label {
+    padding-left: 28px;
+    position: relative; }
+    .eiu-radio-btn label:before {
+      height: 20px;
+      width: 20px;
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      border-radius: 50%;
+      border: 1px solid #595959; }
+  .eiu-radio-btn input:checked + label:after, .eiu-radio-btn .eiu-rb-checked + label:after {
+    background-color: #383E42;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px; }
+  .eiu-radio-btn input:focus + label:before, .eiu-radio-btn .eiu-rb-focus + label:before {
+    box-shadow: 0 0 0 2px #19D2B9; }
+  .eiu-radio-btn input:disabled + label {
+    color: #D7D7D7; }
+    .eiu-radio-btn input:disabled + label:before {
+      border-color: #D7D7D7;
+      background-color: transparent; }
+  .eiu-radio-btn input:checked:disabled + label:after, .eiu-radio-btn .eiu-rb-checked:disabled + label:after {
+    background-color: #D7D7D7; }
+  .eiu-radio-btn .eiu-rb-blue:checked + label:after {
+    background-color: #3C4FAF; }
+
 a {
   text-decoration: none;
   color: #121212;
