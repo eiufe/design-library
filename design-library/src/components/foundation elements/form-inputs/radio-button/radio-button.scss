@@ -1,0 +1,61 @@
+.eiu-radio-btn {
+    margin-bottom: 15px;
+
+    label {
+        padding-left: 28px;
+        position: relative;
+
+        &:before {
+            height: 20px;
+            width: 20px;
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            border-radius: 50%;
+            border: 1px solid $color-brand-sec-moscow;
+        }
+    }
+
+    input:checked, .eiu-rb-checked {
+        & + label:after {
+            background-color: $color-brand-sec-kiev;
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+    }
+
+    input:focus, .eiu-rb-focus {
+        & + label:before {
+            box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+        }
+    }
+
+    input:disabled {
+        & + label {
+            color: $color-brand-sec-cardiff;
+
+            &:before {
+                border-color: $color-brand-sec-cardiff;
+                background-color: transparent;
+            }
+        }
+    }
+
+    input:checked:disabled, .eiu-rb-checked:disabled {
+        & + label:after {
+            background-color: $color-brand-sec-cardiff;
+        }
+    }
+
+    .eiu-rb-blue:checked {
+        & + label:after {
+            background-color: $color-brand-sec-chicago;
+        }
+    }
+}

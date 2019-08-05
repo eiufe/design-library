@@ -1646,7 +1646,7 @@ img {
     position: absolute;
     left: 4px;
     top: 3px; }
-  .eiu-checkbox .eiu-cb-blue-checked:checked + label:before {
+  .eiu-checkbox .eiu-cb-blue:checked + label:before {
     background-color: #3C4FAF; }
   .eiu-checkbox .eiu-cb-indeterminate + label:after {
     background: url(/images/icons/icn_hyphen.svg) no-repeat;
@@ -1656,6 +1656,41 @@ img {
     position: absolute;
     left: 5px;
     top: 5px; }
+
+.eiu-radio-btn {
+  margin-bottom: 15px; }
+  .eiu-radio-btn label {
+    padding-left: 28px;
+    position: relative; }
+    .eiu-radio-btn label:before {
+      height: 20px;
+      width: 20px;
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      border-radius: 50%;
+      border: 1px solid #595959; }
+  .eiu-radio-btn input:checked + label:after, .eiu-radio-btn .eiu-rb-checked + label:after {
+    background-color: #383E42;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px; }
+  .eiu-radio-btn input:focus + label:before, .eiu-radio-btn .eiu-rb-focus + label:before {
+    box-shadow: 0 0 0 2px #19D2B9; }
+  .eiu-radio-btn input:disabled + label {
+    color: #D7D7D7; }
+    .eiu-radio-btn input:disabled + label:before {
+      border-color: #D7D7D7;
+      background-color: transparent; }
+  .eiu-radio-btn input:checked:disabled + label:after, .eiu-radio-btn .eiu-rb-checked:disabled + label:after {
+    background-color: #D7D7D7; }
+  .eiu-radio-btn .eiu-rb-blue:checked + label:after {
+    background-color: #3C4FAF; }
 
 a {
   text-decoration: none;
