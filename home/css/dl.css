@@ -1624,7 +1624,7 @@ img {
   .eiu-checkbox input:checked + label:before, .eiu-checkbox .eiu-cb-checked + label:before, .eiu-checkbox .eiu-cb-indeterminate + label:before {
     background-color: #383E42; }
   .eiu-checkbox input:checked + label:after, .eiu-checkbox .eiu-cb-checked + label:after, .eiu-checkbox .eiu-cb-indeterminate + label:after {
-    background: url(/images/icons/icn_checked.svg) no-repeat;
+    background: url(../images/icons/icn_checked.svg) no-repeat;
     height: 14px;
     width: 14px;
     content: "";
@@ -1639,7 +1639,7 @@ img {
       border-color: #D7D7D7;
       background-color: transparent; }
   .eiu-checkbox input:checked:disabled + label:after, .eiu-checkbox .eiu-cb-checked:disabled + label:after {
-    background: url(/images/icons/icn_checked_black.svg) no-repeat;
+    background: url(../images/icons/icn_checked_black.svg) no-repeat;
     height: 14px;
     width: 14px;
     content: "";
@@ -1649,7 +1649,7 @@ img {
   .eiu-checkbox .eiu-cb-blue:checked + label:before {
     background-color: #3C4FAF; }
   .eiu-checkbox .eiu-cb-indeterminate + label:after {
-    background: url(/images/icons/icn_hyphen.svg) no-repeat;
+    background: url(../images/icons/icn_hyphen.svg) no-repeat;
     content: "";
     height: 14px;
     width: 12px;
