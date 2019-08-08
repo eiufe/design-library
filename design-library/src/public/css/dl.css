@@ -1611,7 +1611,9 @@ img {
   margin-bottom: 15px; }
   .eiu-checkbox label {
     padding-left: 28px;
-    position: relative; }
+    padding-top: 5px;
+    position: relative;
+    font-family: EconSansOS; }
     .eiu-checkbox label:before {
       height: 20px;
       width: 20px;
@@ -1625,12 +1627,12 @@ img {
     background-color: #383E42; }
   .eiu-checkbox input:checked + label:after, .eiu-checkbox .eiu-cb-checked + label:after, .eiu-checkbox .eiu-cb-indeterminate + label:after {
     background: url(../images/icons/icn_checked.svg) no-repeat;
-    height: 14px;
-    width: 14px;
+    height: 11px;
+    width: 12px;
     content: "";
     position: absolute;
-    left: 4px;
-    top: 3px; }
+    left: 5px;
+    top: 5px; }
   .eiu-checkbox input:focus + label:before, .eiu-checkbox .eiu-cb-focus + label:before {
     box-shadow: 0 0 0 2px #19D2B9; }
   .eiu-checkbox input:disabled + label {

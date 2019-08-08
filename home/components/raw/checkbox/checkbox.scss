@@ -14,7 +14,9 @@
 
     label {
         padding-left: 28px;
+        padding-top: 5px;
         position: relative;
+        font-family: EconSansOS;
 
         &:before {
             height: 20px;
@@ -35,12 +37,12 @@
 
         & + label:after {
             background: url(../images/icons/icn_checked.svg) no-repeat;
-            height: 14px;
-            width: 14px;
+            height: 11px;
+            width: 12px;
             content: "";
             position: absolute;
-            left: 4px;
-            top: 3px;
+            left: 5px;
+            top: 5px;
         }
     }
 
