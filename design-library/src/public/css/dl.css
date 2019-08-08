@@ -1612,8 +1612,7 @@ img {
   .eiu-checkbox label {
     padding-left: 28px;
     padding-top: 5px;
-    position: relative;
-    font-family: EconSansOS; }
+    position: relative; }
     .eiu-checkbox label:before {
       height: 20px;
       width: 20px;
