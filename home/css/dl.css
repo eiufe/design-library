@@ -1631,7 +1631,7 @@ img {
     content: "";
     position: absolute;
     left: 5px;
-    top: 5px; }
+    top: 6px; }
   .eiu-checkbox input:focus + label:before, .eiu-checkbox .eiu-cb-focus + label:before {
     box-shadow: 0 0 0 2px #19D2B9; }
   .eiu-checkbox input:disabled + label {
