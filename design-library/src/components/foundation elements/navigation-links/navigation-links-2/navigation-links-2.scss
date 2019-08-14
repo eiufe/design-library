@@ -1,0 +1,63 @@
+.eiu-links {
+    margin-left: 20px;
+    position: relative;
+    border-bottom-color: transparent;
+    line-height: 1.2;
+    @extend .eiu-type-style-medium;
+    @extend .eiu-type-size-eta;
+
+    &:before {
+        height: 13px;
+        width: 13px;
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -20px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $color-brand-sec-athens;
+        border-bottom: 2px solid $color-brand-sec-athens;
+    }
+
+    &:focus, &.eiu-link-focus {
+        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+    }
+
+    &:active, &.eiu-link-active {
+        border-bottom-color: $color-brand-sec-honolulu;
+    }
+
+    &.eiu-minor {
+        border-bottom-width: 1px;
+        @extend .eiu-type-style-regular;
+        @extend .eiu-type-size-theta;
+
+        &:before {
+            height: 11.6px;
+            width: 11.4px;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $color-brand-sec-athens;
+            border-bottom-width: 1px;
+        }
+
+        &:focus, &.eiu-link-focus {
+            box-shadow: 0 0 0 1px $color-brand-sec-honolulu;
+        }
+
+        &:active, &.eiu-link-active {
+            border-bottom: 1px solid $color-brand-sec-honolulu;
+        }
+    }
+}
+
+.eiu-icn-arrow-forward {
+    @extend .eiu-links;
+    &:before {
+        background: url(../images/icons/icn_arrow_forward.svg) no-repeat;
+    }
+}
