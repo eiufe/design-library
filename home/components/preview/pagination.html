@@ -12,7 +12,28 @@
 
 <body>
     <div class="demo-component-wrapper">
-        
+        <ul class="eiu-pagination-container"></ul>
+<script id="entry-template" type="text/x-handlebars-template">
+    <div>
+    	<li class=page-number>
+    		<a href="#" aria-label="jump to the first page" class="jump-to-first"> << </a>
+    	</li>
+    	<li class=page-number> 
+    		<a href="#" class="go-to-previous"> < </a>
+    	</li>
+	    {{#each this.pagelist}}
+			<li class='page-number'> 
+					{{{checkcurrentpage this}}}
+			</li>
+		{{/each}}
+		<li class=page-number> 
+			<a href="#" class="go-to-next"> > </a>
+		</li>
+		<li class=page-number> 
+			<a href="#" aria-label="jump to the last page" class="jump-to-last"> >> </a>
+		</li>
+	</div>
+</script>
     </div>
     <script src="../../js/dl.js"></script>
     <script src="../../js/custom-views.js"></script>
