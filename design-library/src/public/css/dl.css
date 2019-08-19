@@ -835,14 +835,14 @@ a,
 p,
 button,
 span,
-.eiu-btn, .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow-forward {
+.eiu-btn, .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow, .eiu-minor.eiu-icn-arrow-white {
   font-style: normal;
   font-weight: 400; }
   .eiu-type-style-regular-italic {
     font-style: italic;
     font-weight: 400; }
 
-.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow-forward {
+.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white {
   font-style: normal;
   font-weight: 500; }
   .eiu-type-style-medium-italic {
@@ -908,7 +908,7 @@ span,
   font-size: 1.3125rem;
   line-height: 1.52381; }
 
-.eiu-type-size-eta, .eiu-links, .eiu-icn-arrow-forward {
+.eiu-type-size-eta, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556; }
@@ -918,7 +918,7 @@ a,
 p,
 button,
 span,
-.eiu-btn, .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow-forward {
+.eiu-btn, .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow, .eiu-minor.eiu-icn-arrow-white {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -1700,7 +1700,7 @@ a {
   display: inline-block;
   transition: all 0.1s ease-in; }
   a:hover {
-    background: #3C4FAF;
+    background-color: #3C4FAF;
     color: #FFFFFF; }
   a.eiu-headings-link {
     border-bottom: 2px solid transparent; }
@@ -1709,42 +1709,188 @@ a {
       background: #FFFFFF;
       border-bottom: 2px solid #3C4FAF; }
 
-.eiu-links, .eiu-icn-arrow-forward {
+.eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white {
   margin-left: 20px;
   position: relative;
   border-bottom-color: transparent;
-  line-height: 1.2; }
-  .eiu-links:before, .eiu-icn-arrow-forward:before {
+  line-height: 1.39; }
+  .eiu-links:before, .eiu-icn-arrow:before, .eiu-icn-arrow-white:before {
     height: 13px;
     width: 13px;
     content: "";
     position: absolute;
     top: 4px;
-    left: -20px; }
-  .eiu-links:hover, .eiu-icn-arrow-forward:hover {
+    left: -20px;
+    z-index: 10; }
+  .eiu-links:hover, .eiu-icn-arrow:hover, .eiu-icn-arrow-white:hover {
     background-color: transparent;
     color: #142680;
     border-bottom: 2px solid #142680; }
-  .eiu-links:focus, .eiu-icn-arrow-forward:focus, .eiu-links.eiu-link-focus, .eiu-link-focus.eiu-icn-arrow-forward {
-    box-shadow: 0 0 0 2px #19D2B9; }
-  .eiu-links:active, .eiu-icn-arrow-forward:active, .eiu-links.eiu-link-active, .eiu-link-active.eiu-icn-arrow-forward {
+  .eiu-links:focus, .eiu-icn-arrow:focus, .eiu-icn-arrow-white:focus, .eiu-links.eiu-link-focus, .eiu-link-focus.eiu-icn-arrow, .eiu-link-focus.eiu-icn-arrow-white {
+    outline: 2px #19D2B9 solid; }
+  .eiu-links:active, .eiu-icn-arrow:active, .eiu-icn-arrow-white:active, .eiu-links.eiu-link-active, .eiu-link-active.eiu-icn-arrow, .eiu-link-active.eiu-icn-arrow-white {
+    outline-color: transparent;
     border-bottom-color: #19D2B9; }
-  .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow-forward {
+  .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow, .eiu-minor.eiu-icn-arrow-white {
     border-bottom-width: 1px; }
-    .eiu-links.eiu-minor:before, .eiu-minor.eiu-icn-arrow-forward:before {
+    .eiu-links.eiu-minor:before, .eiu-minor.eiu-icn-arrow:before, .eiu-minor.eiu-icn-arrow-white:before {
       height: 11.6px;
       width: 11.4px; }
-    .eiu-links.eiu-minor:hover, .eiu-minor.eiu-icn-arrow-forward:hover {
+    .eiu-links.eiu-minor:hover, .eiu-minor.eiu-icn-arrow:hover, .eiu-minor.eiu-icn-arrow-white:hover {
       background-color: transparent;
       color: #142680;
       border-bottom-width: 1px; }
-    .eiu-links.eiu-minor:focus, .eiu-minor.eiu-icn-arrow-forward:focus, .eiu-links.eiu-minor.eiu-link-focus, .eiu-minor.eiu-link-focus.eiu-icn-arrow-forward {
-      box-shadow: 0 0 0 1px #19D2B9; }
-    .eiu-links.eiu-minor:active, .eiu-minor.eiu-icn-arrow-forward:active, .eiu-links.eiu-minor.eiu-link-active, .eiu-minor.eiu-link-active.eiu-icn-arrow-forward {
+    .eiu-links.eiu-minor:focus, .eiu-minor.eiu-icn-arrow:focus, .eiu-minor.eiu-icn-arrow-white:focus, .eiu-links.eiu-minor.eiu-link-focus, .eiu-minor.eiu-link-focus.eiu-icn-arrow, .eiu-minor.eiu-link-focus.eiu-icn-arrow-white {
+      outline-width: 1px; }
+    .eiu-links.eiu-minor:active, .eiu-minor.eiu-icn-arrow:active, .eiu-minor.eiu-icn-arrow-white:active, .eiu-links.eiu-minor.eiu-link-active, .eiu-minor.eiu-link-active.eiu-icn-arrow, .eiu-minor.eiu-link-active.eiu-icn-arrow-white {
+      outline-color: transparent;
       border-bottom: 1px solid #19D2B9; }
 
-.eiu-icn-arrow-forward:before {
+.eiu-icn-arrow:before {
   background: url(../images/icons/icn_arrow_forward.svg) no-repeat; }
+
+.eiu-icn-arrow-white:before {
+  background: url(../images/icons/icn_arrow_forward_white.svg) no-repeat; }
+
+.eiu-icn-arrow-white:after {
+  height: 22px;
+  width: 22px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-color: #3C4FAF;
+  border-radius: 50%; }
+
+.eiu-icn-arrow-white:hover:after {
+  background-color: #142680; }
+
+.eiu-icn-arrow-white:focus:after {
+  background-color: #142680; }
+
+.eiu-icn-arrow-white:active:after {
+  background-color: #19D2B9; }
+
+.eiu-icn-arrow-white.eiu-minor:after {
+  height: 20px;
+  width: 20px; }
+
+.eiu-icon-links, .eiu-icn-twitter, .eiu-icn-facebook, .eiu-icn-instagram, .eiu-icn-youtube, .eiu-icn-linkedin, .eiu-icn-mail, .eiu-icn-print, .eiu-icn-rssfeed, .eiu-icn-twitter-sec, .eiu-icn-facebook-sec, .eiu-icn-instagram-sec, .eiu-icn-youtube-sec, .eiu-icn-linkedin-sec, .eiu-icn-mail-sec, .eiu-icn-print-sec, .eiu-icn-rssfeed-sec {
+  height: 36px;
+  width: 36px;
+  background-color: #383E42;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border-bottom: none;
+  border: 2px solid #FFFFFF; }
+  .eiu-icon-links:hover, .eiu-icn-twitter:hover, .eiu-icn-facebook:hover, .eiu-icn-instagram:hover, .eiu-icn-youtube:hover, .eiu-icn-linkedin:hover, .eiu-icn-mail:hover, .eiu-icn-print:hover, .eiu-icn-rssfeed:hover, .eiu-icn-twitter-sec:hover, .eiu-icn-facebook-sec:hover, .eiu-icn-instagram-sec:hover, .eiu-icn-youtube-sec:hover, .eiu-icn-linkedin-sec:hover, .eiu-icn-mail-sec:hover, .eiu-icn-print-sec:hover, .eiu-icn-rssfeed-sec:hover, .eiu-icon-links:active, .eiu-icn-twitter:active, .eiu-icn-facebook:active, .eiu-icn-instagram:active, .eiu-icn-youtube:active, .eiu-icn-linkedin:active, .eiu-icn-mail:active, .eiu-icn-print:active, .eiu-icn-rssfeed:active, .eiu-icn-twitter-sec:active, .eiu-icn-facebook-sec:active, .eiu-icn-instagram-sec:active, .eiu-icn-youtube-sec:active, .eiu-icn-linkedin-sec:active, .eiu-icn-mail-sec:active, .eiu-icn-print-sec:active, .eiu-icn-rssfeed-sec:active {
+    background-color: #121212; }
+  .eiu-icon-links:focus, .eiu-icn-twitter:focus, .eiu-icn-facebook:focus, .eiu-icn-instagram:focus, .eiu-icn-youtube:focus, .eiu-icn-linkedin:focus, .eiu-icn-mail:focus, .eiu-icn-print:focus, .eiu-icn-rssfeed:focus, .eiu-icn-twitter-sec:focus, .eiu-icn-facebook-sec:focus, .eiu-icn-instagram-sec:focus, .eiu-icn-youtube-sec:focus, .eiu-icn-linkedin-sec:focus, .eiu-icn-mail-sec:focus, .eiu-icn-print-sec:focus, .eiu-icn-rssfeed-sec:focus {
+    border-color: #19D2B9;
+    outline: none; }
+  .eiu-icon-links.eiu-icn-disabled, .eiu-icn-disabled.eiu-icn-twitter, .eiu-icn-disabled.eiu-icn-facebook, .eiu-icn-disabled.eiu-icn-instagram, .eiu-icn-disabled.eiu-icn-youtube, .eiu-icn-disabled.eiu-icn-linkedin, .eiu-icn-disabled.eiu-icn-mail, .eiu-icn-disabled.eiu-icn-print, .eiu-icn-disabled.eiu-icn-rssfeed, .eiu-icn-disabled.eiu-icn-twitter-sec, .eiu-icn-disabled.eiu-icn-facebook-sec, .eiu-icn-disabled.eiu-icn-instagram-sec, .eiu-icn-disabled.eiu-icn-youtube-sec, .eiu-icn-disabled.eiu-icn-linkedin-sec, .eiu-icn-disabled.eiu-icn-mail-sec, .eiu-icn-disabled.eiu-icn-print-sec, .eiu-icn-disabled.eiu-icn-rssfeed-sec {
+    background-color: #F2F2F2;
+    cursor: not-allowed; }
+
+.eiu-icn-twitter {
+  background-image: url(../images/icons/icn_twitter_white.svg);
+  background-position: 6px; }
+  .eiu-icn-twitter.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_twitter_london.svg); }
+
+.eiu-icn-facebook {
+  background-image: url(../images/icons/icn_facebook_white.svg);
+  background-position: 11px 6px; }
+  .eiu-icn-facebook.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_facebook_london.svg); }
+
+.eiu-icn-instagram {
+  background-image: url(../images/icons/icn_instagram_white.svg);
+  background-position: 6px; }
+  .eiu-icn-instagram.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_instagram_london.svg); }
+
+.eiu-icn-youtube {
+  background-image: url(../images/icons/icn_youtube_white.svg);
+  background-position: 6px; }
+  .eiu-icn-youtube.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_youtube_london.svg); }
+
+.eiu-icn-linkedin {
+  background-image: url(../images/icons/icn_linkedin_white.svg);
+  background-position: 7px; }
+  .eiu-icn-linkedin.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_linkedin_london.svg); }
+
+.eiu-icn-mail {
+  background-image: url(../images/icons/icn_mail_white.svg);
+  background-position: 7px; }
+  .eiu-icn-mail.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_mail_london.svg); }
+
+.eiu-icn-print {
+  background-image: url(../images/icons/icn_print_white.svg);
+  background-position: 7px; }
+  .eiu-icn-print.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_print_london.svg); }
+
+.eiu-icn-rssfeed {
+  background-image: url(../images/icons/icn_rssfeed_white.svg);
+  background-position: 9px 5px; }
+  .eiu-icn-rssfeed.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_rssfeed_london.svg); }
+
+.eiu-icon-links-sec, .eiu-icn-twitter-sec, .eiu-icn-facebook-sec, .eiu-icn-instagram-sec, .eiu-icn-youtube-sec, .eiu-icn-linkedin-sec, .eiu-icn-mail-sec, .eiu-icn-print-sec, .eiu-icn-rssfeed-sec {
+  background-color: #FFFFFF;
+  border-color: #383E42; }
+
+.eiu-icn-twitter-sec {
+  background-image: url(../images/icons/icn_twitter_kiev.svg);
+  background-position: 6px; }
+  .eiu-icn-twitter-sec.eiu-icn-disabled-sec {
+    background-image: url(../images/icons/icn_twitter_london.svg); }
+
+.eiu-icn-facebook-sec {
+  background-image: url(../images/icons/icn_facebook_kiev.svg);
+  background-position: 11px 6px; }
+  .eiu-icn-facebook-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_facebook_london.svg); }
+
+.eiu-icn-instagram-sec {
+  background-image: url(../images/icons/icn_instagram_kiev.svg);
+  background-position: 6px; }
+  .eiu-icn-instagram-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_instagram_london.svg); }
+
+.eiu-icn-youtube-sec {
+  background-image: url(../images/icons/icn_youtube_kiev.svg);
+  background-position: 6px; }
+  .eiu-icn-youtube-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_youtube_london.svg); }
+
+.eiu-icn-linkedin-sec {
+  background-image: url(../images/icons/icn_linkedin_kiev.svg);
+  background-position: 7px; }
+  .eiu-icn-linkedin-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_linkedin_london.svg); }
+
+.eiu-icn-mail-sec {
+  background-image: url(../images/icons/icn_mail_kiev.svg);
+  background-position: 7px; }
+  .eiu-icn-mail-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_mail_london.svg); }
+
+.eiu-icn-print-sec {
+  background-image: url(../images/icons/icn_print_kiev.svg);
+  background-position: 7px; }
+  .eiu-icn-print-sec.eiu-icn-disabled {
+    background-image: url(../images/icons/icn_print_london.svg); }
+
+.eiu-icn-rssfeed-sec {
+  background-image: url(../images/icons/icn_rssfeed_kiev.svg);
+  background-position: 9px 5px; }
+  .eiu-icn-rssfeed-sec.eiu-icn-disabled-sec {
+    background-image: url(../images/icons/icn_rssfeed_london.svg); }
 
 .demo-color-box {
   height: 100px;
