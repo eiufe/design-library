@@ -2,7 +2,7 @@
     margin-left: 20px;
     position: relative;
     border-bottom-color: transparent;
-    line-height: 1.2;
+    line-height: 1.39;
     @extend .eiu-type-style-medium;
     @extend .eiu-type-size-eta;
 
@@ -13,6 +13,7 @@
         position: absolute;
         top: 4px;
         left: -20px;
+        z-index: 10;
     }
 
     &:hover {
@@ -22,10 +23,11 @@
     }
 
     &:focus, &.eiu-link-focus {
-        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+        outline: 2px $color-brand-sec-honolulu solid;
     }
 
     &:active, &.eiu-link-active {
+        outline-color: transparent;
         border-bottom-color: $color-brand-sec-honolulu;
     }
 
@@ -46,18 +48,253 @@
         }
 
         &:focus, &.eiu-link-focus {
-            box-shadow: 0 0 0 1px $color-brand-sec-honolulu;
+            outline-width: 1px;
         }
 
         &:active, &.eiu-link-active {
+            outline-color: transparent;
             border-bottom: 1px solid $color-brand-sec-honolulu;
         }
     }
 }
 
-.eiu-icn-arrow-forward {
+.eiu-icn-arrow {
     @extend .eiu-links;
+
     &:before {
         background: url(../images/icons/icn_arrow_forward.svg) no-repeat;
+    }
+}
+
+.eiu-icn-arrow-white {
+    @extend .eiu-links;
+
+    &:before {
+        background: url(../images/icons/icn_arrow_forward_white.svg) no-repeat;
+    }
+
+    &:after {
+        height: 22px;
+        width: 22px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -25px;
+        background-color: $color-brand-sec-chicago;
+        border-radius: 50%;
+    }
+
+    &:hover:after {
+        background-color: $color-brand-sec-athens;
+    }
+
+    &:focus:after {
+        background-color: $color-brand-sec-athens;
+    }
+
+    &:active:after {
+        background-color: $color-brand-sec-honolulu;
+    }
+
+    &.eiu-minor:after {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.eiu-icon-links {
+    height: 36px;
+    width: 36px;
+    background-color: $color-brand-sec-kiev;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border-bottom: none;
+    border: 2px solid $color-brand-thimpu;
+
+    &:hover, &:active {
+        background-color: $color-brand-bejing;
+    }
+
+    &:focus {
+        border-color: $color-brand-sec-honolulu;
+        outline: none;
+    }
+
+    &.eiu-icn-disabled {
+        background-color: $color-brand-sec-berlin;
+        cursor: not-allowed;
+    }
+}
+
+.eiu-icn-twitter {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_twitter_white.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_twitter_london.svg);
+    }
+}
+
+.eiu-icn-facebook {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_facebook_white.svg);
+    background-position: 11px 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_facebook_london.svg);
+    }
+}
+
+.eiu-icn-instagram {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_instagram_white.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_instagram_london.svg);
+    }
+}
+
+.eiu-icn-youtube {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_youtube_white.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_youtube_london.svg);
+    }
+}
+
+.eiu-icn-linkedin {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_linkedin_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_linkedin_london.svg);
+    }
+}
+
+.eiu-icn-mail {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_mail_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_mail_london.svg);
+    }
+}
+
+.eiu-icn-print {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_print_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_print_london.svg);
+    }
+}
+
+.eiu-icn-rssfeed {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_rssfeed_white.svg);
+    background-position: 9px 5px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_rssfeed_london.svg);
+    }
+}
+
+.eiu-icon-links-sec {
+    background-color: $color-brand-thimpu;
+    border-color: $color-brand-sec-kiev;
+}
+
+.eiu-icn-twitter-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_twitter_kiev.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled-sec {
+        background-image: url(../images/icons/icn_twitter_london.svg);
+    }
+}
+
+.eiu-icn-facebook-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_facebook_kiev.svg);
+    background-position: 11px 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_facebook_london.svg);
+    }
+}
+
+.eiu-icn-instagram-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_instagram_kiev.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_instagram_london.svg);
+    }
+}
+
+.eiu-icn-youtube-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_youtube_kiev.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_youtube_london.svg);
+    }
+}
+
+.eiu-icn-linkedin-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_linkedin_kiev.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_linkedin_london.svg);
+    }
+}
+
+.eiu-icn-mail-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_mail_kiev.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_mail_london.svg);
+    }
+}
+
+.eiu-icn-print-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_print_kiev.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_print_london.svg);
+    }
+}
+
+.eiu-icn-rssfeed-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_rssfeed_kiev.svg);
+    background-position: 9px 5px;
+
+    &.eiu-icn-disabled-sec {
+        background-image: url(../images/icons/icn_rssfeed_london.svg);
     }
 }
