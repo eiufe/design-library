@@ -842,7 +842,7 @@ span,
     font-style: italic;
     font-weight: 400; }
 
-.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white, .eiu-button-links, .eiu-emphasis, .eiu-action-links, .eiu-icn-headset {
+.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white, .eiu-button-links, .eiu-emphasis, .eiu-action-links, .eiu-icn-headset-link, .eiu-icn-print-link, .eiu-icn-screen-link, .eiu-icn-trust-link, .eiu-icn-sync-link {
   font-style: normal;
   font-weight: 500; }
   .eiu-type-style-medium-italic {
@@ -1809,36 +1809,63 @@ a {
 .eiu-emphasis:hover:after {
   background: url(../images/icons/icn_arrow_forward_athens.svg) no-repeat; }
 
-.eiu-action-links, .eiu-icn-headset {
+.eiu-action-links, .eiu-icn-headset-link, .eiu-icn-print-link, .eiu-icn-screen-link, .eiu-icn-trust-link, .eiu-icn-sync-link {
   position: relative;
   border: solid 1px #D7D7D7;
   border-radius: 16px;
   line-height: 1.38;
   padding: 4px 15px 4px 41px; }
-  .eiu-action-links:before, .eiu-icn-headset:before {
-    height: 22px;
-    width: 20px;
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .eiu-action-links, .eiu-icn-headset-link, .eiu-icn-print-link, .eiu-icn-screen-link, .eiu-icn-trust-link, .eiu-icn-sync-link {
+      padding: 4px 11px 4px 37px; } }
+  .eiu-action-links:before, .eiu-icn-headset-link:before, .eiu-icn-print-link:before, .eiu-icn-screen-link:before, .eiu-icn-trust-link:before, .eiu-icn-sync-link:before {
+    height: 24px;
+    width: 24px;
     content: "";
     position: absolute;
     top: 4px;
     left: 0;
-    margin-left: 16px; }
-  .eiu-action-links:hover, .eiu-icn-headset:hover {
+    margin-left: 12px; }
+  .eiu-action-links:hover, .eiu-icn-headset-link:hover, .eiu-icn-print-link:hover, .eiu-icn-screen-link:hover, .eiu-icn-trust-link:hover, .eiu-icn-sync-link:hover {
     background-color: transparent;
     color: #142680; }
-  .eiu-action-links:focus, .eiu-icn-headset:focus {
+  .eiu-action-links:focus, .eiu-icn-headset-link:focus, .eiu-icn-print-link:focus, .eiu-icn-screen-link:focus, .eiu-icn-trust-link:focus, .eiu-icn-sync-link:focus {
     box-shadow: 0 0 0 2px #19D2B9;
     outline: none;
     border-color: transparent; }
-  .eiu-action-links:active, .eiu-icn-headset:active {
+  .eiu-action-links:active, .eiu-icn-headset-link:active, .eiu-icn-print-link:active, .eiu-icn-screen-link:active, .eiu-icn-trust-link:active, .eiu-icn-sync-link:active {
     box-shadow: 0 0 0 1px #19D2B9;
     border-color: transparent; }
 
-.eiu-icn-headset:before {
+.eiu-icn-headset-link:before {
   background: url(../images/icons/icn_headset_chicago.svg) no-repeat; }
 
-.eiu-icn-headset:hover:before {
+.eiu-icn-headset-link:hover:before {
   background: url(../images/icons/icn_headset_athens.svg) no-repeat; }
+
+.eiu-icn-print-link:before {
+  background: url(../images/icons/icn_print_chicago.svg) no-repeat; }
+
+.eiu-icn-print-link:hover:before {
+  background: url(../images/icons/icn_print_athens.svg) no-repeat; }
+
+.eiu-icn-screen-link:before {
+  background: url(../images/icons/icn_screen_chicago.svg) no-repeat; }
+
+.eiu-icn-screen-link:hover:before {
+  background: url(../images/icons/icn_screen_athens.svg) no-repeat; }
+
+.eiu-icn-trust-link:before {
+  background: url(../images/icons/icn_trust_chicago.svg) no-repeat; }
+
+.eiu-icn-trust-link:hover:before {
+  background: url(../images/icons/icn_trust_athens.svg) no-repeat; }
+
+.eiu-icn-sync-link:before {
+  background: url(../images/icons/icn_sync_chicago.svg) no-repeat; }
+
+.eiu-icn-sync-link:hover:before {
+  background: url(../images/icons/icn_sync_athens.svg) no-repeat; }
 
 .eiu-icon-links, .eiu-icn-twitter, .eiu-icn-facebook, .eiu-icn-instagram, .eiu-icn-youtube, .eiu-icn-linkedin, .eiu-icn-mail, .eiu-icn-print, .eiu-icn-rssfeed, .eiu-icn-twitter-sec, .eiu-icn-facebook-sec, .eiu-icn-instagram-sec, .eiu-icn-youtube-sec, .eiu-icn-linkedin-sec, .eiu-icn-mail-sec, .eiu-icn-print-sec, .eiu-icn-rssfeed-sec {
   height: 36px;

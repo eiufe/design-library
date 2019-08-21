@@ -161,14 +161,18 @@
     padding: 4px 15px 4px 41px;
     @extend .eiu-type-style-medium;
 
+    @include bp-mobile {
+        padding: 4px 11px 4px 37px;
+    }
+
     &:before {
-        height: 22px;
-        width: 20px;
+        height: 24px;
+        width: 24px;
         content: "";
         position: absolute;
         top: 4px;
         left: 0;
-        margin-left: 16px;
+        margin-left: 12px;
     }
 
     &:hover {
@@ -188,7 +192,7 @@
     }
 }
 
-.eiu-icn-headset {
+.eiu-icn-headset-link {
     @extend .eiu-action-links;
 
     &:before {
@@ -200,204 +204,252 @@
     }
 }
 
-    .eiu-icon-links {
-        height: 36px;
-        width: 36px;
-        background-color: $color-brand-sec-kiev;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        border-bottom: none;
-        border: 2px solid $color-brand-thimpu;
+.eiu-icn-print-link {
+    @extend .eiu-action-links;
 
-        &:hover, &:active {
-            background-color: $color-brand-bejing;
-        }
-
-        &:focus {
-            border-color: $color-brand-sec-honolulu;
-            outline: none;
-        }
-
-        &.eiu-icn-disabled {
-            background-color: $color-brand-sec-berlin;
-            cursor: not-allowed;
-        }
+    &:before {
+        background: url(../images/icons/icn_print_chicago.svg) no-repeat;
     }
 
-    .eiu-icn-twitter {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_twitter_white.svg);
-        background-position: 6px;
+    &:hover:before {
+        background: url(../images/icons/icn_print_athens.svg) no-repeat;
+    }
+}
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_twitter_london.svg);
-        }
+.eiu-icn-screen-link {
+    @extend .eiu-action-links;
+
+    &:before {
+        background: url(../images/icons/icn_screen_chicago.svg) no-repeat;
     }
 
-    .eiu-icn-facebook {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_facebook_white.svg);
-        background-position: 11px 6px;
+    &:hover:before {
+        background: url(../images/icons/icn_screen_athens.svg) no-repeat;
+    }
+}
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_facebook_london.svg);
-        }
+.eiu-icn-trust-link {
+    @extend .eiu-action-links;
+
+    &:before {
+        background: url(../images/icons/icn_trust_chicago.svg) no-repeat;
     }
 
-    .eiu-icn-instagram {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_instagram_white.svg);
-        background-position: 6px;
+    &:hover:before {
+        background: url(../images/icons/icn_trust_athens.svg) no-repeat;
+    }
+}
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_instagram_london.svg);
-        }
+.eiu-icn-sync-link {
+    @extend .eiu-action-links;
+
+    &:before {
+        background: url(../images/icons/icn_sync_chicago.svg) no-repeat;
     }
 
-    .eiu-icn-youtube {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_youtube_white.svg);
-        background-position: 6px;
+    &:hover:before {
+        background: url(../images/icons/icn_sync_athens.svg) no-repeat;
+    }
+}
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_youtube_london.svg);
-        }
+.eiu-icon-links {
+    height: 36px;
+    width: 36px;
+    background-color: $color-brand-sec-kiev;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border-bottom: none;
+    border: 2px solid $color-brand-thimpu;
+
+    &:hover, &:active {
+        background-color: $color-brand-bejing;
     }
 
-    .eiu-icn-linkedin {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_linkedin_white.svg);
-        background-position: 7px;
-
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_linkedin_london.svg);
-        }
+    &:focus {
+        border-color: $color-brand-sec-honolulu;
+        outline: none;
     }
 
-    .eiu-icn-mail {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_mail_white.svg);
-        background-position: 7px;
-
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_mail_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-color: $color-brand-sec-berlin;
+        cursor: not-allowed;
     }
+}
 
-    .eiu-icn-print {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_print_white.svg);
-        background-position: 7px;
+.eiu-icn-twitter {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_twitter_white.svg);
+    background-position: 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_print_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_twitter_london.svg);
     }
+}
 
-    .eiu-icn-rssfeed {
-        @extend .eiu-icon-links;
-        background-image: url(../images/icons/icn_rssfeed_white.svg);
-        background-position: 9px 5px;
+.eiu-icn-facebook {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_facebook_white.svg);
+    background-position: 11px 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_rssfeed_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_facebook_london.svg);
     }
+}
 
-    .eiu-icon-links-sec {
+.eiu-icn-instagram {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_instagram_white.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_instagram_london.svg);
+    }
+}
+
+.eiu-icn-youtube {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_youtube_white.svg);
+    background-position: 6px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_youtube_london.svg);
+    }
+}
+
+.eiu-icn-linkedin {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_linkedin_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_linkedin_london.svg);
+    }
+}
+
+.eiu-icn-mail {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_mail_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_mail_london.svg);
+    }
+}
+
+.eiu-icn-print {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_print_white.svg);
+    background-position: 7px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_print_london.svg);
+    }
+}
+
+.eiu-icn-rssfeed {
+    @extend .eiu-icon-links;
+    background-image: url(../images/icons/icn_rssfeed_white.svg);
+    background-position: 9px 5px;
+
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_rssfeed_london.svg);
+    }
+}
+
+.eiu-icon-links-sec {
+    background-color: $color-brand-thimpu;
+    border-color: $color-brand-sec-kiev;
+
+    &:hover, &:active {
         background-color: $color-brand-thimpu;
-        border-color: $color-brand-sec-kiev;
-
-        &:hover, &:active {
-            background-color: $color-brand-thimpu;
-            opacity: 0.85;
-        }
+        opacity: 0.85;
     }
+}
 
-    .eiu-icn-twitter-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_twitter_kiev.svg);
-        background-position: 6px;
+.eiu-icn-twitter-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_twitter_kiev.svg);
+    background-position: 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_twitter_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_twitter_london.svg);
     }
+}
 
-    .eiu-icn-facebook-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_facebook_kiev.svg);
-        background-position: 11px 6px;
+.eiu-icn-facebook-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_facebook_kiev.svg);
+    background-position: 11px 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_facebook_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_facebook_london.svg);
     }
+}
 
-    .eiu-icn-instagram-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_instagram_kiev.svg);
-        background-position: 6px;
+.eiu-icn-instagram-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_instagram_kiev.svg);
+    background-position: 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_instagram_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_instagram_london.svg);
     }
+}
 
-    .eiu-icn-youtube-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_youtube_kiev.svg);
-        background-position: 6px;
+.eiu-icn-youtube-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_youtube_kiev.svg);
+    background-position: 6px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_youtube_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_youtube_london.svg);
     }
+}
 
-    .eiu-icn-linkedin-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_linkedin_kiev.svg);
-        background-position: 7px;
+.eiu-icn-linkedin-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_linkedin_kiev.svg);
+    background-position: 7px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_linkedin_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_linkedin_london.svg);
     }
+}
 
-    .eiu-icn-mail-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_mail_kiev.svg);
-        background-position: 7px;
+.eiu-icn-mail-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_mail_kiev.svg);
+    background-position: 7px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_mail_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_mail_london.svg);
     }
+}
 
-    .eiu-icn-print-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_print_kiev.svg);
-        background-position: 7px;
+.eiu-icn-print-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_print_kiev.svg);
+    background-position: 7px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_print_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_print_london.svg);
     }
+}
 
-    .eiu-icn-rssfeed-sec {
-        @extend .eiu-icon-links;
-        @extend .eiu-icon-links-sec;
-        background-image: url(../images/icons/icn_rssfeed_kiev.svg);
-        background-position: 9px 5px;
+.eiu-icn-rssfeed-sec {
+    @extend .eiu-icon-links;
+    @extend .eiu-icon-links-sec;
+    background-image: url(../images/icons/icn_rssfeed_kiev.svg);
+    background-position: 9px 5px;
 
-        &.eiu-icn-disabled {
-            background-image: url(../images/icons/icn_rssfeed_london.svg);
-        }
+    &.eiu-icn-disabled {
+        background-image: url(../images/icons/icn_rssfeed_london.svg);
     }
+}
