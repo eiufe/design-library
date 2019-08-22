@@ -856,7 +856,7 @@ span,
     font-style: italic;
     font-weight: 300; }
 
-.eiu-type-style-bold, .eiu-type-size-overline, .eiu-headings, h1, h2, h3, h4, h5, h6 {
+.eiu-type-style-bold, .eiu-type-size-overline, .eiu-headings, h1, h2, h3, h4, h5, h6, .eiu-nav-link.eiu-selected, .eiu-selected.eiu-icn-nav-link, .eiu-nav-link-inverse.eiu-selected, .eiu-selected.eiu-icn-nav-link-inverse {
   font-style: normal;
   font-weight: 700; }
   .eiu-type-style-bold-italic {
@@ -908,7 +908,7 @@ span,
   font-size: 1.3125rem;
   line-height: 1.52381; }
 
-.eiu-type-size-eta, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white {
+.eiu-type-size-eta, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-white, .eiu-nav-link, .eiu-icn-nav-link, .eiu-nav-link-inverse, .eiu-icn-nav-link-inverse {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556; }
@@ -1746,6 +1746,7 @@ a {
       outline-color: transparent;
       border-bottom: solid 1px #19D2B9; }
 
+/* Arrow links - START */
 .eiu-icn-arrow:before {
   background: url(../images/icons/icn_arrow_forward.svg) no-repeat; }
 
@@ -1775,6 +1776,8 @@ a {
   height: 20px;
   width: 20px; }
 
+/* Arrow links - END */
+/* Button links - START  */
 .eiu-button-links, .eiu-emphasis {
   position: relative;
   line-height: 1.38;
@@ -1867,6 +1870,87 @@ a {
 .eiu-icn-sync-link:hover:before {
   background: url(../images/icons/icn_sync_athens.svg) no-repeat; }
 
+/* Button links - END  */
+/* Navigation links - START */
+.eiu-nav-link, .eiu-icn-nav-link {
+  border-bottom: none;
+  line-height: 1.39; }
+  .eiu-nav-link:hover, .eiu-icn-nav-link:hover {
+    background-color: transparent;
+    color: #142680; }
+  .eiu-nav-link:focus, .eiu-icn-nav-link:focus {
+    outline: solid 2px #19D2B9;
+    color: #142680; }
+  .eiu-nav-link:active, .eiu-icn-nav-link:active {
+    color: #3C4FAF;
+    outline: none; }
+
+.eiu-icn-nav-link {
+  margin-left: 28px;
+  position: relative; }
+  .eiu-icn-nav-link:before {
+    height: 17.5px;
+    width: 17.5px;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -28px;
+    background: url(../images/icons/icn_search_kiev.svg) no-repeat; }
+
+.eiu-nav-link-inverse, .eiu-icn-nav-link-inverse {
+  color: #FFFFFF;
+  border-bottom: none;
+  line-height: 1.39; }
+  .eiu-nav-link-inverse:hover, .eiu-icn-nav-link-inverse:hover {
+    background-color: transparent;
+    color: #F2F2F2; }
+  .eiu-nav-link-inverse:focus, .eiu-icn-nav-link-inverse:focus {
+    outline: solid 2px #19D2B9;
+    color: #F2F2F2; }
+  .eiu-nav-link-inverse:active, .eiu-icn-nav-link-inverse:active {
+    color: #D7D7D7;
+    outline: none; }
+
+.eiu-icn-nav-link-inverse {
+  margin-left: 28px;
+  position: relative; }
+  .eiu-icn-nav-link-inverse:before {
+    height: 17.5px;
+    width: 17.5px;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -28px;
+    background: url(../images/icons/icn_search_berlin.svg) no-repeat; }
+
+.eiu-nav-link-inverse-sec, .eiu-icn-nav-link-inverse-sec {
+  color: #FFFFFF;
+  border-bottom: none; }
+  .eiu-nav-link-inverse-sec:hover, .eiu-icn-nav-link-inverse-sec:hover {
+    background-color: transparent;
+    color: #F2F2F2;
+    text-decoration: underline; }
+  .eiu-nav-link-inverse-sec:focus, .eiu-icn-nav-link-inverse-sec:focus {
+    outline: solid 1px #19D2B9;
+    color: #F2F2F2; }
+  .eiu-nav-link-inverse-sec:active, .eiu-icn-nav-link-inverse-sec:active {
+    outline: none;
+    border-bottom-color: #FFFFFF; }
+
+.eiu-icn-nav-link-inverse-sec {
+  margin-left: 25px;
+  position: relative; }
+  .eiu-icn-nav-link-inverse-sec:before {
+    height: 14px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    background: url(../images/icons/icn_search_berlin.svg) no-repeat; }
+
+/* Navigation links - END */
+/* Icon links - START */
 .eiu-icon-links, .eiu-icn-twitter, .eiu-icn-facebook, .eiu-icn-instagram, .eiu-icn-youtube, .eiu-icn-linkedin, .eiu-icn-mail, .eiu-icn-print, .eiu-icn-rssfeed, .eiu-icn-twitter-sec, .eiu-icn-facebook-sec, .eiu-icn-instagram-sec, .eiu-icn-youtube-sec, .eiu-icn-linkedin-sec, .eiu-icn-mail-sec, .eiu-icn-print-sec, .eiu-icn-rssfeed-sec {
   height: 36px;
   width: 36px;
@@ -1987,6 +2071,7 @@ a {
   .eiu-icn-rssfeed-sec.eiu-icn-disabled {
     background-image: url(../images/icons/icn_rssfeed_london.svg); }
 
+/* Icon links - END */
 .demo-color-box {
   height: 100px;
   width: 100px;
