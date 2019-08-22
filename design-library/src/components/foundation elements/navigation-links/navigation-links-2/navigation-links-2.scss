@@ -58,6 +58,8 @@
     }
 }
 
+/* Arrow links - START */
+
 .eiu-icn-arrow {
     @extend .eiu-links;
 
@@ -101,6 +103,10 @@
         width: 20px;
     }
 }
+
+/* Arrow links - END */
+
+/* Button links - START  */
 
 .eiu-button-links {
     position: relative;
@@ -251,7 +257,132 @@
         background: url(../images/icons/icn_sync_athens.svg) no-repeat;
     }
 }
+/* Button links - END  */
 
+/* Navigation links - START */
+
+.eiu-nav-link {
+    @extend .eiu-type-size-eta;
+    border-bottom: none;
+    line-height: 1.39;
+
+    &:hover {
+        background-color: transparent;
+        color: $color-brand-sec-athens;
+    }
+
+    &:focus {
+        outline: solid 2px $color-brand-sec-honolulu;
+        color: $color-brand-sec-athens;
+    }
+
+    &:active {
+        color: $color-brand-sec-chicago;
+        outline: none;
+    }
+
+    &.eiu-selected {
+        @extend .eiu-type-style-bold;
+    }
+}
+
+.eiu-icn-nav-link {
+    @extend .eiu-nav-link;
+    margin-left: 28px;
+    position: relative;
+
+    &:before {
+        height: 17.5px;
+        width: 17.5px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: -28px;
+        background: url(../images/icons/icn_search_kiev.svg) no-repeat;
+    }
+}
+
+.eiu-nav-link-inverse {
+    color: $color-brand-thimpu;
+    @extend .eiu-type-size-eta;
+    border-bottom: none;
+    line-height: 1.39;
+
+    &:hover {
+        background-color: transparent;
+        color: $color-brand-sec-berlin;
+    }
+
+    &:focus {
+        outline: solid 2px $color-brand-sec-honolulu;
+        color: $color-brand-sec-berlin;
+    }
+
+    &:active {
+        color: $color-brand-sec-cardiff;
+        outline: none;
+    }
+
+    &.eiu-selected {
+        @extend .eiu-type-style-bold;
+    }
+}
+.eiu-icn-nav-link-inverse {
+    @extend .eiu-nav-link-inverse;
+    margin-left: 28px;
+    position: relative;
+
+    &:before {
+        height: 17.5px;
+        width: 17.5px;
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -28px;
+        background: url(../images/icons/icn_search_berlin.svg) no-repeat;
+    }
+}
+.eiu-nav-link-inverse-sec {
+    color: $color-brand-thimpu;
+    border-bottom: none;
+    &:hover {
+        background-color: transparent;
+        color: $color-brand-sec-berlin;
+        //border-bottom-color: $color-brand-sec-berlin;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: solid 1px $color-brand-sec-honolulu;
+        color: $color-brand-sec-berlin;
+    }
+
+    &:active {
+        outline: none;
+        border-bottom-color: $color-brand-thimpu;
+        //text-decoration: underline;
+    }
+}
+
+.eiu-icn-nav-link-inverse-sec {
+    @extend .eiu-nav-link-inverse-sec;
+    margin-left: 25px;
+    position: relative;
+
+    &:before {
+        height: 14px;
+        width: 14px;
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -25px;
+        background: url(../images/icons/icn_search_berlin.svg) no-repeat;
+    }
+}
+
+/* Navigation links - END */
+
+/* Icon links - START */
 .eiu-icon-links {
     height: 36px;
     width: 36px;
@@ -453,3 +584,4 @@
         background-image: url(../images/icons/icn_rssfeed_london.svg);
     }
 }
+/* Icon links - END */
