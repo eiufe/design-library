@@ -1925,11 +1925,11 @@ a {
 
 .eiu-nav-link-inverse-sec, .eiu-icn-nav-link-inverse-sec {
   color: #FFFFFF;
-  border-bottom: none; }
+  border-bottom: solid 1px transparent; }
   .eiu-nav-link-inverse-sec:hover, .eiu-icn-nav-link-inverse-sec:hover {
     background-color: transparent;
     color: #F2F2F2;
-    text-decoration: underline; }
+    border-bottom-color: #F2F2F2; }
   .eiu-nav-link-inverse-sec:focus, .eiu-icn-nav-link-inverse-sec:focus {
     outline: solid 1px #19D2B9;
     color: #F2F2F2; }
