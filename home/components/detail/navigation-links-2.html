@@ -746,12 +746,12 @@
 }
 <span class="hljs-selector-class">.eiu-nav-link-inverse-sec</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-thimpu</span>;
-    <span class="hljs-attribute">border-bottom</span>: none;
+    <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">1px</span> transparent;
+
     &amp;:hover {
         <span class="hljs-attribute">background-color</span>: transparent;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-sec-berlin</span>;
-        <span class="hljs-comment">//border-bottom-color: $color-brand-sec-berlin;</span>
-        <span class="hljs-attribute">text-decoration</span>: underline;
+        <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-variable">$color-brand-sec-berlin</span>;
     }
 
     &amp;:focus {
@@ -762,7 +762,6 @@
     &amp;:active {
         <span class="hljs-attribute">outline</span>: none;
         <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-variable">$color-brand-thimpu</span>;
-        <span class="hljs-comment">//text-decoration: underline;</span>
     }
 }
 
