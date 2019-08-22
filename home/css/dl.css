@@ -1726,9 +1726,9 @@ a {
     background-color: transparent;
     color: #142680;
     border-bottom: 2px solid #142680; }
-  .eiu-links:focus, .eiu-icn-arrow:focus, .eiu-icn-arrow-white:focus, .eiu-links.eiu-link-focus, .eiu-link-focus.eiu-icn-arrow, .eiu-link-focus.eiu-icn-arrow-white {
+  .eiu-links:focus, .eiu-icn-arrow:focus, .eiu-icn-arrow-white:focus {
     outline: solid 2px #19D2B9; }
-  .eiu-links:active, .eiu-icn-arrow:active, .eiu-icn-arrow-white:active, .eiu-links.eiu-link-active, .eiu-link-active.eiu-icn-arrow, .eiu-link-active.eiu-icn-arrow-white {
+  .eiu-links:active, .eiu-icn-arrow:active, .eiu-icn-arrow-white:active {
     outline-color: transparent;
     border-bottom-color: #19D2B9; }
   .eiu-links.eiu-minor, .eiu-minor.eiu-icn-arrow, .eiu-minor.eiu-icn-arrow-white {
@@ -1740,9 +1740,9 @@ a {
       background-color: transparent;
       color: #142680;
       border-bottom-width: 1px; }
-    .eiu-links.eiu-minor:focus, .eiu-minor.eiu-icn-arrow:focus, .eiu-minor.eiu-icn-arrow-white:focus, .eiu-links.eiu-minor.eiu-link-focus, .eiu-minor.eiu-link-focus.eiu-icn-arrow, .eiu-minor.eiu-link-focus.eiu-icn-arrow-white {
+    .eiu-links.eiu-minor:focus, .eiu-minor.eiu-icn-arrow:focus, .eiu-minor.eiu-icn-arrow-white:focus {
       outline-width: 1px; }
-    .eiu-links.eiu-minor:active, .eiu-minor.eiu-icn-arrow:active, .eiu-minor.eiu-icn-arrow-white:active, .eiu-links.eiu-minor.eiu-link-active, .eiu-minor.eiu-link-active.eiu-icn-arrow, .eiu-minor.eiu-link-active.eiu-icn-arrow-white {
+    .eiu-links.eiu-minor:active, .eiu-minor.eiu-icn-arrow:active, .eiu-minor.eiu-icn-arrow-white:active {
       outline-color: transparent;
       border-bottom: solid 1px #19D2B9; }
 

@@ -22,11 +22,11 @@
         border-bottom: 2px solid $color-brand-sec-athens;
     }
 
-    &:focus, &.eiu-link-focus {
+    &:focus {
         outline: solid 2px $color-brand-sec-honolulu;
     }
 
-    &:active, &.eiu-link-active {
+    &:active {
         outline-color: transparent;
         border-bottom-color: $color-brand-sec-honolulu;
     }
@@ -47,11 +47,11 @@
             border-bottom-width: 1px;
         }
 
-        &:focus, &.eiu-link-focus {
+        &:focus {
             outline-width: 1px;
         }
 
-        &:active, &.eiu-link-active {
+        &:active {
             outline-color: transparent;
             border-bottom: solid 1px $color-brand-sec-honolulu;
         }
