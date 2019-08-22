@@ -1,5 +1,5 @@
 .eiu-links {
-    margin-left: 20px;
+    margin-left: 19px;
     position: relative;
     border-bottom-color: transparent;
     line-height: 1.39;
@@ -12,7 +12,7 @@
         content: "";
         position: absolute;
         top: 4px;
-        left: -20px;
+        left: -19px;
         z-index: 10;
     }
 
@@ -23,22 +23,25 @@
     }
 
     &:focus {
+        color: $color-brand-sec-athens;
         outline: solid 2px $color-brand-sec-honolulu;
     }
 
     &:active {
+        color: $color-brand-bejing;
         outline-color: transparent;
         border-bottom-color: $color-brand-sec-honolulu;
     }
 
     &.eiu-minor {
+        margin-left: 18px;
         border-bottom-width: 1px;
-        @extend .eiu-type-style-regular;
         @extend .eiu-type-size-theta;
 
         &:before {
             height: 11.4px;
             width: 11.6px;
+            left: -18px;
         }
 
         &:hover {
@@ -52,6 +55,7 @@
         }
 
         &:active {
+            color: $color-brand-bejing;
             outline-color: transparent;
             border-bottom: solid 1px $color-brand-sec-honolulu;
         }
@@ -68,11 +72,22 @@
     }
 }
 
+.eiu-icn-arrow-milo {
+    @extend .eiu-links;
+    font-family: MiloTEOS;
+
+    &:before {
+        background: url(../images/icons/icn_arrow_forward.svg) no-repeat;
+    }
+}
+
 .eiu-icn-arrow-white {
     @extend .eiu-links;
+    margin-left: 26px;
 
     &:before {
         background: url(../images/icons/icn_arrow_forward_white.svg) no-repeat;
+        left: -26px;
     }
 
     &:after {
@@ -81,7 +96,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -25px;
+        left: -30px;
         background-color: $color-brand-sec-chicago;
         border-radius: 50%;
     }
@@ -98,9 +113,18 @@
         background-color: $color-brand-sec-honolulu;
     }
 
-    &.eiu-minor:after {
-        height: 20px;
-        width: 20px;
+    &.eiu-minor {
+        margin-left: 24px;
+
+        &:before {
+            left: -24px;
+        }
+
+        &:after {
+            height: 20px;
+            width: 20px;
+            left: -28px;
+        }
     }
 }
 
@@ -329,7 +353,7 @@
 }
 .eiu-icn-nav-link-inverse {
     @extend .eiu-nav-link-inverse;
-    margin-left: 28px;
+    margin-left: 26px;
     position: relative;
 
     &:before {
@@ -338,7 +362,7 @@
         content: "";
         position: absolute;
         top: 3px;
-        left: -28px;
+        left: -26px;
         background: url(../images/icons/icn_search_berlin.svg) no-repeat;
     }
 }
@@ -365,7 +389,7 @@
 
 .eiu-icn-nav-link-inverse-sec {
     @extend .eiu-nav-link-inverse-sec;
-    margin-left: 25px;
+    margin-left: 22px;
     position: relative;
 
     &:before {
@@ -374,7 +398,7 @@
         content: "";
         position: absolute;
         top: 3px;
-        left: -25px;
+        left: -22px;
         background: url(../images/icons/icn_search_berlin.svg) no-repeat;
     }
 }
