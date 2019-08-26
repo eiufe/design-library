@@ -1726,6 +1726,10 @@ a {
     background-color: transparent;
     color: #142680;
     border-bottom: 2px solid #142680; }
+    .eiu-links:hover:before, .eiu-icn-arrow:hover:before, .eiu-icn-arrow-milo:hover:before, .eiu-icn-arrow-white:hover:before {
+      left: -16px;
+      -webkit-transition: left 0.5s ease;
+      transition: left 0.5s ease; }
   .eiu-links:focus, .eiu-icn-arrow:focus, .eiu-icn-arrow-milo:focus, .eiu-icn-arrow-white:focus {
     color: #142680;
     outline: solid 2px #19D2B9; }
@@ -1744,6 +1748,10 @@ a {
       background-color: transparent;
       color: #142680;
       border-bottom-width: 1px; }
+      .eiu-links.eiu-minor:hover:before, .eiu-minor.eiu-icn-arrow:hover:before, .eiu-minor.eiu-icn-arrow-milo:hover:before, .eiu-minor.eiu-icn-arrow-white:hover:before {
+        left: -15px;
+        -webkit-transition: left 0.5s ease;
+        transition: left 0.5s ease; }
     .eiu-links.eiu-minor:focus, .eiu-minor.eiu-icn-arrow:focus, .eiu-minor.eiu-icn-arrow-milo:focus, .eiu-minor.eiu-icn-arrow-white:focus {
       outline-width: 1px; }
     .eiu-links.eiu-minor:active, .eiu-minor.eiu-icn-arrow:active, .eiu-minor.eiu-icn-arrow-milo:active, .eiu-minor.eiu-icn-arrow-white:active {
@@ -1774,6 +1782,8 @@ a {
     left: -30px;
     background-color: #3C4FAF;
     border-radius: 50%; }
+  .eiu-icn-arrow-white:hover:before {
+    left: -26px; }
   .eiu-icn-arrow-white:hover:after {
     background-color: #142680; }
   .eiu-icn-arrow-white:focus:after {
@@ -1788,6 +1798,8 @@ a {
       height: 20px;
       width: 20px;
       left: -28px; }
+    .eiu-icn-arrow-white.eiu-minor:hover:before {
+      left: -24px; }
 
 /* Arrow links - END */
 /* Button links - START  */
@@ -2035,6 +2047,9 @@ a {
   .eiu-icon-links-sec:hover, .eiu-icn-twitter-sec:hover, .eiu-icn-facebook-sec:hover, .eiu-icn-instagram-sec:hover, .eiu-icn-youtube-sec:hover, .eiu-icn-linkedin-sec:hover, .eiu-icn-mail-sec:hover, .eiu-icn-print-sec:hover, .eiu-icn-rssfeed-sec:hover, .eiu-icon-links-sec:active, .eiu-icn-twitter-sec:active, .eiu-icn-facebook-sec:active, .eiu-icn-instagram-sec:active, .eiu-icn-youtube-sec:active, .eiu-icn-linkedin-sec:active, .eiu-icn-mail-sec:active, .eiu-icn-print-sec:active, .eiu-icn-rssfeed-sec:active {
     background-color: #FFFFFF;
     opacity: 0.85; }
+  .eiu-icon-links-sec.eiu-icn-disabled, .eiu-icn-disabled.eiu-icn-twitter-sec, .eiu-icn-disabled.eiu-icn-facebook-sec, .eiu-icn-disabled.eiu-icn-instagram-sec, .eiu-icn-disabled.eiu-icn-youtube-sec, .eiu-icn-disabled.eiu-icn-linkedin-sec, .eiu-icn-disabled.eiu-icn-mail-sec, .eiu-icn-disabled.eiu-icn-print-sec, .eiu-icn-disabled.eiu-icn-rssfeed-sec {
+    background-color: #fff;
+    opacity: 0.25; }
 
 .eiu-icn-twitter-sec {
   background-image: url(../images/icons/icn_twitter_kiev.svg);
