@@ -428,6 +428,12 @@
         <span class="hljs-attribute">background-color</span>: transparent;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-sec-athens</span>;
         <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-brand-sec-athens</span>;
+
+        &amp;:before {
+            <span class="hljs-attribute">left</span>: -<span class="hljs-number">16px</span>;
+            -webkit-<span class="hljs-attribute">transition</span>: left <span class="hljs-number">0.5s</span> ease;
+            <span class="hljs-attribute">transition</span>: left <span class="hljs-number">0.5s</span> ease;
+        }
     }
 
     &amp;:focus {
@@ -456,6 +462,12 @@
             <span class="hljs-attribute">background-color</span>: transparent;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-sec-athens</span>;
             <span class="hljs-attribute">border-bottom-width</span>: <span class="hljs-number">1px</span>;
+
+            &amp;:before {
+                <span class="hljs-attribute">left</span>: -<span class="hljs-number">15px</span>;
+                -webkit-<span class="hljs-attribute">transition</span>: left <span class="hljs-number">0.5s</span> ease;
+                <span class="hljs-attribute">transition</span>: left <span class="hljs-number">0.5s</span> ease;
+            }
         }
 
         &amp;:focus {
@@ -509,8 +521,13 @@
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
     }
 
-    &amp;:hover:after {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color-brand-sec-athens</span>;
+    &amp;:hover {
+        &amp;:before {
+            <span class="hljs-attribute">left</span>: -<span class="hljs-number">26px</span>;
+        }
+        &amp;:after {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color-brand-sec-athens</span>;
+        }
     }
 
     &amp;:focus:after {
@@ -532,6 +549,10 @@
             <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
             <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
             <span class="hljs-attribute">left</span>: -<span class="hljs-number">28px</span>;
+        }
+
+        &amp;:hover:before {
+            <span class="hljs-attribute">left</span>: -<span class="hljs-number">24px</span>;
         }
     }
 }
@@ -926,6 +947,11 @@
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color-brand-thimpu</span>;
         <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.85</span>;
     }
+
+    &amp;<span class="hljs-selector-class">.eiu-icn-disabled</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.25</span>;
+    }
 }
 
 <span class="hljs-selector-class">.eiu-icn-twitter-sec</span> {
@@ -1031,7 +1057,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">14.1 KB</span>
+                    <span class="Meta-value">14.6 KB</span>
                 </li>
             </ul>
         </div>

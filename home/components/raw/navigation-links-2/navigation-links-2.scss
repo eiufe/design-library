@@ -20,6 +20,12 @@
         background-color: transparent;
         color: $color-brand-sec-athens;
         border-bottom: 2px solid $color-brand-sec-athens;
+
+        &:before {
+            left: -16px;
+            -webkit-transition: left 0.5s ease;
+            transition: left 0.5s ease;
+        }
     }
 
     &:focus {
@@ -48,6 +54,12 @@
             background-color: transparent;
             color: $color-brand-sec-athens;
             border-bottom-width: 1px;
+
+            &:before {
+                left: -15px;
+                -webkit-transition: left 0.5s ease;
+                transition: left 0.5s ease;
+            }
         }
 
         &:focus {
@@ -101,8 +113,13 @@
         border-radius: 50%;
     }
 
-    &:hover:after {
-        background-color: $color-brand-sec-athens;
+    &:hover {
+        &:before {
+            left: -26px;
+        }
+        &:after {
+            background-color: $color-brand-sec-athens;
+        }
     }
 
     &:focus:after {
@@ -124,6 +141,10 @@
             height: 20px;
             width: 20px;
             left: -28px;
+        }
+
+        &:hover:before {
+            left: -24px;
         }
     }
 }
@@ -517,6 +538,11 @@
     &:hover, &:active {
         background-color: $color-brand-thimpu;
         opacity: 0.85;
+    }
+
+    &.eiu-icn-disabled {
+        background-color: #fff;
+        opacity: 0.25;
     }
 }
 
