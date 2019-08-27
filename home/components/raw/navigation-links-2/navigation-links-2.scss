@@ -221,7 +221,7 @@
         width: 24px;
         content: "";
         position: absolute;
-        top: 4px;
+        top: 3  px;
         left: 0;
         margin-left: 12px;
     }
@@ -424,8 +424,12 @@
     }
 }
 
-/* Navigation links - END */
+.eiu-nav-link-inverse-minor {
+    @extend .eiu-nav-link-inverse-sec;
+    @extend .eiu-type-size-iota;
+}
 
+/* Navigation links - END */
 /* Icon links - START */
 .eiu-icon-links {
     height: 36px;

@@ -923,7 +923,7 @@ span,
   font-size: 1rem;
   line-height: 1.5; }
 
-.eiu-type-size-iota {
+.eiu-type-size-iota, .eiu-nav-link-inverse-minor {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.53846; }
@@ -1851,7 +1851,7 @@ a {
     width: 24px;
     content: "";
     position: absolute;
-    top: 4px;
+    top: 3  px;
     left: 0;
     margin-left: 12px; }
   .eiu-action-links:hover, .eiu-icn-headset-link:hover, .eiu-icn-print-link:hover, .eiu-icn-screen-link:hover, .eiu-icn-trust-link:hover, .eiu-icn-sync-link:hover {
@@ -1948,17 +1948,17 @@ a {
     left: -26px;
     background: url(../images/icons/icn_search_berlin.svg) no-repeat; }
 
-.eiu-nav-link-inverse-sec, .eiu-icn-nav-link-inverse-sec {
+.eiu-nav-link-inverse-sec, .eiu-icn-nav-link-inverse-sec, .eiu-nav-link-inverse-minor {
   color: #FFFFFF;
   border-bottom: solid 1px transparent; }
-  .eiu-nav-link-inverse-sec:hover, .eiu-icn-nav-link-inverse-sec:hover {
+  .eiu-nav-link-inverse-sec:hover, .eiu-icn-nav-link-inverse-sec:hover, .eiu-nav-link-inverse-minor:hover {
     background-color: transparent;
     color: #F2F2F2;
     border-bottom-color: #F2F2F2; }
-  .eiu-nav-link-inverse-sec:focus, .eiu-icn-nav-link-inverse-sec:focus {
+  .eiu-nav-link-inverse-sec:focus, .eiu-icn-nav-link-inverse-sec:focus, .eiu-nav-link-inverse-minor:focus {
     outline: solid 1px #19D2B9;
     color: #F2F2F2; }
-  .eiu-nav-link-inverse-sec:active, .eiu-icn-nav-link-inverse-sec:active {
+  .eiu-nav-link-inverse-sec:active, .eiu-icn-nav-link-inverse-sec:active, .eiu-nav-link-inverse-minor:active {
     outline: none;
     border-bottom-color: #FFFFFF; }
 
