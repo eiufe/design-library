@@ -408,10 +408,8 @@
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">19px</span>;
     <span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">border-bottom-color</span>: transparent;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.39</span>;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-eta</span>, 25px);
     @<span class="hljs-keyword">extend</span> .eiu-type-style-medium;
-    @<span class="hljs-keyword">extend</span> .eiu-type-size-eta;
-
     &amp;:before {
         <span class="hljs-attribute">height</span>: <span class="hljs-number">13px</span>;
         <span class="hljs-attribute">width</span>: <span class="hljs-number">13px</span>;
@@ -448,7 +446,7 @@
     &amp;<span class="hljs-selector-class">.eiu-minor</span> {
         <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">18px</span>;
         <span class="hljs-attribute">border-bottom-width</span>: <span class="hljs-number">1px</span>;
-        @<span class="hljs-keyword">extend</span> .eiu-type-size-theta;
+        @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-theta</span>, 22px);
 
         &amp;:before {
             <span class="hljs-attribute">height</span>: <span class="hljs-number">11.4px</span>;
@@ -561,7 +559,7 @@
 
 <span class="hljs-selector-class">.eiu-button-links</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.38</span>;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-theta</span>, 22px);
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span> <span class="hljs-number">30px</span> <span class="hljs-number">4px</span> <span class="hljs-number">15px</span>;
     <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span> <span class="hljs-variable">$color-brand-sec-cardiff</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
@@ -614,7 +612,7 @@
     <span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span> <span class="hljs-variable">$color-brand-sec-cardiff</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">16px</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.38</span>;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-theta</span>, 22px);
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span> <span class="hljs-number">15px</span> <span class="hljs-number">4px</span> <span class="hljs-number">41px</span>;
     @<span class="hljs-keyword">extend</span> .eiu-type-style-medium;
 
@@ -713,9 +711,8 @@
 <span class="hljs-comment">/* Navigation links - START */</span>
 
 <span class="hljs-selector-class">.eiu-nav-link</span> {
-    @<span class="hljs-keyword">extend</span> .eiu-type-size-eta;
     <span class="hljs-attribute">border-bottom</span>: none;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.39</span>;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-eta</span>, 25px);
 
     &amp;:hover {
         <span class="hljs-attribute">background-color</span>: transparent;
@@ -755,9 +752,8 @@
 
 <span class="hljs-selector-class">.eiu-nav-link-inverse</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-brand-thimpu</span>;
-    @<span class="hljs-keyword">extend</span> .eiu-type-size-eta;
     <span class="hljs-attribute">border-bottom</span>: none;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.39</span>;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-eta</span>, 25px);
 
     &amp;:hover {
         <span class="hljs-attribute">background-color</span>: transparent;
@@ -832,7 +828,7 @@
 
 <span class="hljs-selector-class">.eiu-nav-link-inverse-minor</span> {
     @<span class="hljs-keyword">extend</span> .eiu-nav-link-inverse-sec;
-    @<span class="hljs-keyword">extend</span> .eiu-type-size-iota;
+    @<span class="hljs-keyword">include</span> font-size(<span class="hljs-variable">$font-size-iota</span>, 20px);
 }
 
 <span class="hljs-comment">/* Navigation links - END */</span>
@@ -1059,7 +1055,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">14.7 KB</span>
+                    <span class="Meta-value">14.8 KB</span>
                 </li>
             </ul>
         </div>

@@ -2,10 +2,8 @@
     margin-left: 19px;
     position: relative;
     border-bottom-color: transparent;
-    line-height: 1.39;
+    @include font-size($font-size-eta, 25px);
     @extend .eiu-type-style-medium;
-    @extend .eiu-type-size-eta;
-
     &:before {
         height: 13px;
         width: 13px;
@@ -42,7 +40,7 @@
     &.eiu-minor {
         margin-left: 18px;
         border-bottom-width: 1px;
-        @extend .eiu-type-size-theta;
+        @include font-size($font-size-theta, 22px);
 
         &:before {
             height: 11.4px;
@@ -155,7 +153,7 @@
 
 .eiu-button-links {
     position: relative;
-    line-height: 1.38;
+    @include font-size($font-size-theta, 22px);
     padding: 4px 30px 4px 15px;
     border: solid 1px $color-brand-sec-cardiff;
     border-radius: 4px;
@@ -208,7 +206,7 @@
     position: relative;
     border: solid 1px $color-brand-sec-cardiff;
     border-radius: 16px;
-    line-height: 1.38;
+    @include font-size($font-size-theta, 22px);
     padding: 4px 15px 4px 41px;
     @extend .eiu-type-style-medium;
 
@@ -307,9 +305,8 @@
 /* Navigation links - START */
 
 .eiu-nav-link {
-    @extend .eiu-type-size-eta;
     border-bottom: none;
-    line-height: 1.39;
+    @include font-size($font-size-eta, 25px);
 
     &:hover {
         background-color: transparent;
@@ -349,9 +346,8 @@
 
 .eiu-nav-link-inverse {
     color: $color-brand-thimpu;
-    @extend .eiu-type-size-eta;
     border-bottom: none;
-    line-height: 1.39;
+    @include font-size($font-size-eta, 25px);
 
     &:hover {
         background-color: transparent;
@@ -426,7 +422,7 @@
 
 .eiu-nav-link-inverse-minor {
     @extend .eiu-nav-link-inverse-sec;
-    @extend .eiu-type-size-iota;
+    @include font-size($font-size-iota, 20px);
 }
 
 /* Navigation links - END */
