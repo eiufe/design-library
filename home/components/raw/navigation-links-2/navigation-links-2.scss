@@ -13,9 +13,10 @@
         top: 4px;
         left: -19px;
         z-index: 10;
-        -webkit-transition: left 0.5s ease-in;
+        //-webkit-transition: left 0.5s ease-in;
+        //transition: left 0.5s ease-in;
         transition: left 0.5s;
-        //transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        transition-timing-function: cubic-bezier(0.4,0.0,1,1);
     }
 
     &:hover {
@@ -25,9 +26,10 @@
 
         &:before {
             left: -16px;
-            -webkit-transition: left 0.5s ease-in;
+            //-webkit-transition: left 0.5s ease-in;
+            //transition: left 0.5s ease-in;
             transition: left 0.5s;
-            //transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
         }
     }
 
@@ -51,6 +53,8 @@
             height: 11.4px;
             width: 11.6px;
             left: -18px;
+            -webkit-transition: left 0.5s ease-in;
+            transition: left 0.5s ease-in;
         }
 
         &:hover {
@@ -60,8 +64,8 @@
 
             &:before {
                 left: -15px;
-                -webkit-transition: left 0.5s ease;
-                transition: left 0.5s ease;
+                -webkit-transition: left 0.5s ease-in;
+                transition: left 0.5s ease-in;
             }
         }
 
