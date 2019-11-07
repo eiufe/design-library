@@ -435,6 +435,40 @@
 }
 
 /* Navigation links - END */
+/* Call to action links - START */
+.eiu-action-link {
+
+    @extend .eiu-type-style-medium;
+    border: 1px solid $color-brand-sec-chicago;
+    border-radius: 16px;
+    color: $color-brand-sec-chicago;
+    padding: 4px 16px;
+    background: none;
+
+    @include bp-mobile {
+        padding: 4px 12px;
+    }
+
+    &:hover {
+        background: none;
+        border: 1px solid $color-brand-sec-athens;
+        color: $color-brand-sec-athens;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px $color-brand-sec-honolulu;
+        border-color: transparent;
+        color: $color-brand-sec-athens;
+        outline: none;
+    }
+
+    &:active {
+        box-shadow: 0 0 0 1px $color-brand-sec-honolulu;
+        border-color: transparent;
+    }
+}
+
+/* Call to action links - END */
 /* Icon links - START */
 .eiu-icon-links {
     height: 36px;

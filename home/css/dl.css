@@ -842,7 +842,7 @@ span,
     font-style: italic;
     font-weight: 400; }
 
-.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-milo, .eiu-icn-arrow-white, .eiu-button-links, .eiu-emphasis, .eiu-action-links, .eiu-icn-headset-link, .eiu-icn-print-link, .eiu-icn-screen-link, .eiu-icn-trust-link, .eiu-icn-sync-link {
+.eiu-type-style-medium, .eiu-links, .eiu-icn-arrow, .eiu-icn-arrow-milo, .eiu-icn-arrow-white, .eiu-button-links, .eiu-emphasis, .eiu-action-links, .eiu-icn-headset-link, .eiu-icn-print-link, .eiu-icn-screen-link, .eiu-icn-trust-link, .eiu-icn-sync-link, .eiu-action-link {
   font-style: normal;
   font-weight: 500; }
   .eiu-type-style-medium-italic {
@@ -2271,6 +2271,30 @@ a {
   line-height: 1.53846; }
 
 /* Navigation links - END */
+/* Call to action links - START */
+.eiu-action-link {
+  border: 1px solid #3C4FAF;
+  border-radius: 16px;
+  color: #3C4FAF;
+  padding: 4px 16px;
+  background: none; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .eiu-action-link {
+      padding: 4px 12px; } }
+  .eiu-action-link:hover {
+    background: none;
+    border: 1px solid #142680;
+    color: #142680; }
+  .eiu-action-link:focus {
+    box-shadow: 0 0 0 2px #19D2B9;
+    border-color: transparent;
+    color: #142680;
+    outline: none; }
+  .eiu-action-link:active {
+    box-shadow: 0 0 0 1px #19D2B9;
+    border-color: transparent; }
+
+/* Call to action links - END */
 /* Icon links - START */
 .eiu-icon-links, .eiu-icn-twitter, .eiu-icn-facebook, .eiu-icn-instagram, .eiu-icn-youtube, .eiu-icn-linkedin, .eiu-icn-mail, .eiu-icn-print, .eiu-icn-rssfeed, .eiu-icn-twitter-sec, .eiu-icn-facebook-sec, .eiu-icn-instagram-sec, .eiu-icn-youtube-sec, .eiu-icn-linkedin-sec, .eiu-icn-mail-sec, .eiu-icn-print-sec, .eiu-icn-rssfeed-sec {
   height: 36px;
