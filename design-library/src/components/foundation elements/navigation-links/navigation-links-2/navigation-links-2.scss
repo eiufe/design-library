@@ -437,8 +437,6 @@
 /* Navigation links - END */
 /* Call to action links - START */
 .eiu-action-link {
-
-    @extend .eiu-type-style-medium;
     border: 1px solid $color-brand-sec-chicago;
     border-radius: 16px;
     color: $color-brand-sec-chicago;
